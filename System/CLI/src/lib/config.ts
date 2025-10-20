@@ -18,27 +18,36 @@ let configCache: Config | null = null;
 export function cfg(): Config {
   if (configCache) return configCache;
   
-  // Find repo root by looking for pmm.config.json
+  // Find repo root by looking for config in supported locations
   let currentDir = __dirname;
   while (currentDir !== path.dirname(currentDir)) {
-    const configPath = path.join(currentDir, 'pmm.config.json');
-    try {
-      const configContent = require('fs').readFileSync(configPath, 'utf8');
-      const config = JSON.parse(configContent);
-      configCache = {
-        productContextDir: path.resolve(currentDir, config.productContextDir),
-        templatesDir: path.resolve(currentDir, config.templatesDir),
-        blocksDir: path.resolve(currentDir, config.blocksDir),
-        projectsDir: path.resolve(currentDir, config.projectsDir),
-        promptsDir: path.resolve(currentDir, config.promptsDir)
-      };
-      return configCache;
-    } catch {
-      currentDir = path.dirname(currentDir);
+    const candidatePaths = [
+      path.join(currentDir, 'pmm.config.json'),
+      path.join(currentDir, 'config', 'pmm', 'config.json')
+    ];
+
+    for (const candidate of candidatePaths) {
+      try {
+        const configContent = require('fs').readFileSync(candidate, 'utf8');
+        const config = JSON.parse(configContent);
+        const rootDir = path.dirname(path.dirname(path.dirname(candidate))) || currentDir;
+        configCache = {
+          productContextDir: path.resolve(rootDir, config.productContextDir),
+          templatesDir: path.resolve(rootDir, config.templatesDir),
+          blocksDir: path.resolve(rootDir, config.blocksDir),
+          projectsDir: path.resolve(rootDir, config.projectsDir),
+          promptsDir: path.resolve(rootDir, config.promptsDir)
+        };
+        return configCache;
+      } catch {
+        // try next candidate or move up a directory
+      }
     }
+
+    currentDir = path.dirname(currentDir);
   }
   
-  throw new Error('pmm.config.json not found');
+  throw new Error('pmm.config.json not found (looked for pmm.config.json and config/pmm/config.json)');
 }
 
 export async function ensureDir(dirPath: string): Promise<void> {
