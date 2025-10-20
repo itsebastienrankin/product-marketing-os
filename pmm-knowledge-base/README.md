@@ -42,7 +42,7 @@ Geographic market adaptations
 
 ---
 
-### 3. [`/02-templates`](./02-templates/) — **TOOLS TO CREATE**
+### 3. [`/04-templates`](./04-templates/) — **TOOLS TO CREATE**
 > Reusable document templates for campaigns, briefs, and frameworks
 
 Ready-to-use templates for common PMM deliverables:
@@ -58,7 +58,7 @@ Ready-to-use templates for common PMM deliverables:
 
 ---
 
-### 4. [`/03-prompts`](./03-prompts/) — **TOOLS TO GENERATE**
+### 4. [`/05-prompts`](./05-prompts/) — **TOOLS TO GENERATE**
 > AI prompts that pull from your knowledge base to create content
 
 Pre-built prompts for AI content generation:
@@ -88,7 +88,7 @@ Strategic planning documents:
 
 ---
 
-### 6. [`/05-config`](./05-config/) — **SYSTEM CONFIGURATION**
+### 6. [`/06-config`](./06-config/) — **SYSTEM CONFIGURATION**
 > Behind-the-scenes files and utilities
 
 Technical configuration and automation:
@@ -199,7 +199,7 @@ All content can be tagged by:
 - **Segment**: smb, enterprise, mid-market
 - **Vertical**: healthcare, finance, retail, etc.
 
-See [`/05-config/tag-index.md`](./05-config/tag-index.md) for the complete tagging system.
+See [`/06-config/tag-index.md`](./06-config/tag-index.md) for the complete tagging system.
 
 ---
 

@@ -87,8 +87,8 @@ When your product knowledge is structured, every output your organization produc
 2. **Start broad**: Fill out `/pmm-knowledge-base/00-overview/` with your company and product info.
 3. **Get specific**: Create folders for your target segments in `/01-product-context/segments/` using the provided templates.
 4. **Add depth**: If relevant, add verticals (`/01-product-context/verticals/`) and regions (`/01-product-context/regions/`).
-5. **Generate content**: Use templates in `/02-templates/` and prompts in `/03-prompts/` to create aligned marketing assets.
-6. **Optional — CLI automation**: Use tools in `/05-config/CLI/` to automate workflows (see `HOW TO USE` for details).
+5. **Generate content**: Use templates in `/04-templates/` and prompts in `/05-prompts/` to create aligned marketing assets.
+6. **Optional — CLI automation**: Use tools in `/06-config/CLI/` to automate workflows (see `HOW TO USE` for details).
 
 Once your knowledge base is built, **everything your team creates will align automatically.**
 

@@ -48,7 +48,7 @@ In Cursor:
 2. Run this command:
 
    ```bash
-   node pmm-knowledge-base/05-config/CLI/dist/index.js new-project --name "Your Product Name"
+   node pmm-knowledge-base/06-config/CLI/dist/index.js new-project --name "Your Product Name"
    ```
 
 This creates a folder under:
@@ -84,7 +84,7 @@ Now, let's turn all that raw information into a structured knowledge base.
 Run this command in Cursor:
 
 ```bash
-node pmm-knowledge-base/05-config/CLI/dist/index.js ingest --project "Your Product Name" --auto-structure
+node pmm-knowledge-base/06-config/CLI/dist/index.js ingest --project "Your Product Name" --auto-structure
 ```
 
 **What this does:**
@@ -95,7 +95,7 @@ node pmm-knowledge-base/05-config/CLI/dist/index.js ingest --project "Your Produ
   - `/pmm-knowledge-base/00-overview/` - Company and product info
   - `/pmm-knowledge-base/01-product-context/segments/` - Personas and segment messaging
   - `/pmm-knowledge-base/01-product-context/verticals/` - Industry-specific positioning
-  - `/pmm-knowledge-base/02-templates/` - Populated battlecards and messaging frameworks
+  - `/pmm-knowledge-base/04-templates/` - Populated battlecards and messaging frameworks
 
 After a few moments, check your knowledge base:
 ```
@@ -137,7 +137,7 @@ Once your product context is in place, you can generate aligned deliverables dir
 **Example command:**
 
 ```bash
-node pmm-knowledge-base/05-config/CLI/dist/index.js generate positioning \
+node pmm-knowledge-base/06-config/CLI/dist/index.js generate positioning \
   --project "Your Product Name" \
   --name "SMB SaaS" \
   --template "positioning-template.hbs"
@@ -157,7 +157,7 @@ You can open that file in Cursor, edit it, and finalize it.
 Once a draft is ready to share or approve, run:
 
 ```bash
-node pmm-knowledge-base/05-config/CLI/dist/index.js publish \
+node pmm-knowledge-base/06-config/CLI/dist/index.js publish \
   --project "Your Product Name" \
   --path "Projects/your-product-name/Drafts/positioning/smb-saas/README.md"
 ```
@@ -179,7 +179,7 @@ Whenever you add new research or insights:
 2. Run this command again:
 
 ```bash
-node pmm-knowledge-base/05-config/CLI/dist/index.js regenerate --project "Your Product Name" --all
+node pmm-knowledge-base/06-config/CLI/dist/index.js regenerate --project "Your Product Name" --all
 ```
 
 The OS will re-analyze your content and refresh your knowledge base automatically — keeping it always up to date.
