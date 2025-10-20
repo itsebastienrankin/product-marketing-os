@@ -19,7 +19,7 @@ Once your product context is structured inside the OS, it becomes a **single sys
 ## ⚙️ How it works
 
 ### 🧩 **PMM Knowledge Base**
-Port your product knowledge into **`/pmm-knowledge-base/`** — a structured system organized by:
+Port your product knowledge into **`/product-knowledge-base/`** — a structured system organized by:
 
 **Foundation** (`/00-overview/`)
 - Company and product overview
@@ -83,8 +83,8 @@ When your product knowledge is structured, every output your organization produc
 ---
 
 ## 🧭 Next Steps
-1. **Explore the knowledge base**: Open `/pmm-knowledge-base/README.md` to understand the structure.
-2. **Start broad**: Fill out `/pmm-knowledge-base/00-overview/` with your company and product info.
+1. **Explore the knowledge base**: Open `/product-knowledge-base/README.md` to understand the structure.
+2. **Start broad**: Fill out `/product-knowledge-base/00-company-overview/` with your company and product info.
 3. **Get specific**: Create folders for your target segments in `/01-product-context/segments/` using the provided templates.
 4. **Add depth**: If relevant, add verticals (`/01-product-context/verticals/`) and regions (`/01-product-context/regions/`).
 5. **Generate content**: Use templates in `/04-templates/` and prompts in `/05-prompts/` to create aligned marketing assets.
