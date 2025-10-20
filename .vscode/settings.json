@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "System": true,
+    "node_modules": true,
+    ".git": true,
+    ".cursor": true,
+    "pnpm-lock.yaml": true,
+    "pnpm-workspace.yaml": true,
+    "*.log": true
+  }
+}

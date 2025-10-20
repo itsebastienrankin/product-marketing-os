@@ -1,0 +1,7 @@
+{
+  "productContextDir": "product context",
+  "templatesDir": "product context",
+  "blocksDir": "System/Blocks",
+  "projectsDir": "Projects",
+  "promptsDir": "Prompts"
+}

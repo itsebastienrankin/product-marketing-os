@@ -1,0 +1,216 @@
+# 🚀 HOW TO USE PRODUCT MARKETING OS  
+*A simple guide to turning your product marketing knowledge into a living system.*
+
+---
+
+## 🧭 What This System Does
+
+Product Marketing OS helps you **codify everything you know about your product** — your personas, positioning, messaging, segments, competitors, and more — into a single organized workspace that keeps every team and AI-generated output aligned.
+
+Once your product context is built, you can use it to:
+- Create **campaign briefs, ad copy, and content** that are always on-message.  
+- Help **sales teams** build one-pagers and decks that match your positioning.  
+- Give **creative teams** instant access to the right tone, proof points, and differentiators.  
+- Let **new hires** onboard faster by exploring your product context.  
+
+You only have to maintain one source of truth — and everything else stays in sync.
+
+---
+
+## 🧰 What You'll Need
+
+- **Cursor** (installed on your computer)  
+- This Product Marketing OS repository (already open in Cursor)  
+- A few of your existing product marketing docs — exports from Google Docs, PDFs, decks, notes, etc.  
+
+You don't need to be a developer.  
+You'll just copy and paste the simple commands below into Cursor's terminal.
+
+---
+
+## 🪄 Overview of the Workflow
+
+1. **Create a workspace** for your product.  
+2. **Drop in your existing documents.**  
+3. **Run one command** — the OS will automatically read, organize, and build your product knowledge base.  
+4. **Review and edit** what it generates.  
+5. **Generate aligned deliverables** (briefs, assets, messaging docs).  
+6. **Keep it updated** over time.
+
+---
+
+## STEP 1 — Create Your Workspace
+
+Each product or client gets its own workspace.
+
+In Cursor:
+1. Open the **terminal** (bottom panel).
+2. Run this command:
+
+   ```bash
+   node System/CLI/dist/index.js new-project --name "Your Product Name"
+   ```
+
+This creates a folder under:
+```
+Projects/your-product-name/
+```
+
+That's where you'll store your research, documents, and outputs.
+
+---
+
+## STEP 2 — Add Your Product Docs
+
+Gather any materials that describe your product or market:
+
+- Google Doc or Word exports (.docx)
+- Slide decks (.pptx)
+- PDFs, text files, Markdown files
+
+Then drag them all into this folder:
+```
+Projects/your-product-name/Sources/Inbox/
+```
+
+No need to organize or rename anything — the system will handle that.
+
+---
+
+## STEP 3 — Let the OS Structure Everything for You
+
+Now, let's turn all that raw information into a structured knowledge base.
+
+Run this command in Cursor:
+
+```bash
+node System/CLI/dist/index.js ingest --project "Your Product Name" --auto-structure
+```
+
+**What this does:**
+
+- Reads and converts all your documents into Markdown.
+- Combines them into a single "compiled context."
+- Uses AI to extract insights and fill in your product context templates, including:
+  - Personas
+  - Positioning
+  - Messaging Frameworks
+  - Segments
+  - Verticals
+  - Competitive Insights
+  - Battlecards
+
+After a few moments, check your folder:
+```
+product context/
+```
+
+You'll see all your structured templates filled out and ready to review.
+
+---
+
+## STEP 4 — Review and Edit Your Product Context
+
+Open each file in `/product context/` inside Cursor.
+
+Every file (like `personas-template.md`, `positioning-template.md`, etc.) is written in plain language and easy to edit.
+
+- Look for any "TBD" fields and fill them in.
+- Adjust the tone or details to match your product's messaging.
+- Add examples, proof points, or data where needed.
+
+When you're done, you now have a complete, centralized product knowledge base.
+
+---
+
+## STEP 5 — Generate Deliverables
+
+Once your product context is in place, you can generate aligned deliverables directly from it — things like:
+
+- Positioning docs
+- Messaging frameworks
+- Campaign or creative briefs
+- Ad copy or sales enablement materials
+
+**Example command:**
+
+```bash
+node System/CLI/dist/index.js generate positioning \
+  --project "Your Product Name" \
+  --name "SMB SaaS" \
+  --template "positioning-template.hbs"
+```
+
+This creates a draft document under:
+```
+Projects/your-product-name/Drafts/positioning/smb-saas/README.md
+```
+
+You can open that file in Cursor, edit it, and finalize it.
+
+---
+
+## STEP 6 — Publish Final Deliverables
+
+Once a draft is ready to share or approve, run:
+
+```bash
+node System/CLI/dist/index.js publish \
+  --project "Your Product Name" \
+  --path "Projects/your-product-name/Drafts/positioning/smb-saas/README.md"
+```
+
+Your final version will appear here:
+```
+Projects/your-product-name/Final/positioning/smb-saas/
+```
+
+Each published document is timestamped and versioned automatically.
+
+---
+
+## STEP 7 — Keep It Updated
+
+Whenever you add new research or insights:
+
+1. Drop new files into your project's `/Sources/Inbox/` folder.
+2. Run this command again:
+
+```bash
+node System/CLI/dist/index.js regenerate --project "Your Product Name" --all
+```
+
+The OS will re-analyze your content and refresh your product context automatically — keeping it always up to date.
+
+---
+
+## 🧩 Summary
+
+| Action | Command | Result |
+|--------|---------|--------|
+| Create workspace | `new-project` | Sets up your project folder |
+| Add docs | — | Drop files into `/Sources/Inbox/` |
+| Structure everything | `ingest --auto-structure` | Builds all product context files |
+| Generate deliverable | `generate` | Creates positioning, messaging, or campaign docs |
+| Publish final | `publish` | Moves drafts to `/Final/` |
+| Update everything | `regenerate --all` | Refreshes all context files |
+
+---
+
+## 💡 Tips for Non-Technical Users
+
+- You only ever need to copy and paste the commands above.
+- You can re-run commands at any time — they won't break anything.
+- Everything you create lives in simple Markdown files (like Google Docs you can version).
+- You can always edit or improve files directly in Cursor.
+- If you get stuck, scroll up to the command you just ran — the terminal tells you exactly where files were created.
+
+---
+
+## 🧠 The Big Idea
+
+Once your product context is in the OS, you've built a single marketing brain for your product.
+Every new campaign, asset, or team can plug into it — so your message stays consistent, your strategy scales, and you never have to rebuild from scratch again.
+
+That's it — you're ready to go.
+Welcome to your new product marketing system. 🎉
