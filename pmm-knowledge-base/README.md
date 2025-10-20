@@ -142,12 +142,12 @@ Technical configuration and automation:
 1. **Read** `/00-overview/` — Understand the company and products
 2. **Explore** `/01-product-context/segments/` — Learn how we position by audience
 3. **Review** example content in `/01-product-context/verticals/` or `/regions/`
-4. **Use** `/02-templates/` when creating new deliverables
+4. **Use** `/04-templates/` when creating new deliverables
 
 ### For Creating Content
 1. **Identify** your audience: Which segment? Which vertical? Which region?
 2. **Reference** the relevant folders in `/01-product-context/`
-3. **Use** a template from `/02-templates/` OR a prompt from `/03-prompts/`
+3. **Use** a template from `/04-templates/` OR a prompt from `/05-prompts/`
 4. **Ensure** messaging aligns with positioning and messaging pillars
 
 ### For AI Content Generation
@@ -157,7 +157,7 @@ Provide context in this order:
 2. Segment positioning (from /01-product-context/segments/)
 3. Vertical value prop (from /01-product-context/verticals/ if relevant)
 4. Regional considerations (from /01-product-context/regions/ if relevant)
-5. Use prompt from /03-prompts/ to generate
+5. Use prompt from /05-prompts/ to generate
 ```
 
 ---
@@ -244,17 +244,17 @@ See [`/06-config/tag-index.md`](./06-config/tag-index.md) for the complete taggi
 ## 🆘 Need Help?
 
 ### Finding Content
-- **Can't find something?**: Check [`/05-config/tag-index.md`](./05-config/tag-index.md)
-- **What's a term?**: See [`/05-config/glossary.md`](./05-config/glossary.md)
+- **Can't find something?**: Check [`/06-config/tag-index.md`](./06-config/tag-index.md)
+- **What's a term?**: See [`/06-config/glossary.md`](./06-config/glossary.md)
 
 ### Creating Content
-- **Starting a campaign?**: Use [`/02-templates/campaign-brief-template.md`](./02-templates/campaign-brief-template.md)
-- **Need AI-generated content?**: Use prompts in [`/03-prompts/`](./03-prompts/)
+- **Starting a campaign?**: Use [`/04-templates/campaign-brief-template.md`](./04-templates/campaign-brief-template.md)
+- **Need AI-generated content?**: Use prompts in [`/05-prompts/`](./05-prompts/)
 - **Competitive situation?**: Check [`/04-strategy/competitive-intelligence.md`](./04-strategy/competitive-intelligence.md)
 
 ### Understanding Structure
 - **New to PMM?**: Read this README + [`/01-product-context/README.md`](./01-product-context/README.md)
-- **Need technical help?**: See [`/05-config/CLI/SETUP-GUIDE.md`](./05-config/CLI/SETUP-GUIDE.md)
+- **Need technical help?**: See [`/06-config/CLI/SETUP-GUIDE.md`](./06-config/CLI/SETUP-GUIDE.md)
 
 ---
 
