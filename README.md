@@ -18,18 +18,27 @@ Once your product context is structured inside the OS, it becomes a **single sys
 
 ## ⚙️ How it works
 
-### 🧩 **Product Context**
-Port your product knowledge into the templates inside **`/product context/`**.  
-Each template helps you structure and codify your product story so that both humans and AI tools can that context to do their jobs faster and with better results: 
-- Personas  
-- Segments  
-- Verticals  
-- Positioning  
-- Messaging frameworks  
-- Competitive insights  
-- Battlecards  
+### 🧩 **PMM Knowledge Base**
+Port your product knowledge into **`/pmm-knowledge-base/`** — a structured system organized by:
 
-The OS uses these templates to structure your product context — creating a knowledge base that every project, brief, or campaign can draw from automatically.
+**Foundation** (`/00-overview/`)
+- Company and product overview
+- Brand positioning and voice
+
+**Market Context** (`/01-segment-context/`, `/02-vertical-context/`, `/03-regional-context/`)
+- Personas and buyer insights by segment
+- Industry-specific positioning and pain points
+- Regional messaging and localization
+
+**Templates & Prompts** (`/04-templates/`, `/05-prompts/`)
+- Reusable document templates for campaigns, briefs, and battlecards
+- AI prompts for generating aligned content (emails, ads, landing pages)
+
+**Strategy** (`/06-strategy/`)
+- GTM plans, competitive intelligence, pricing strategy
+- Annual planning and launch calendars
+
+The knowledge base creates a single source of truth that every project, brief, or campaign can draw from automatically.
 
 ---
 
@@ -74,12 +83,14 @@ When your product knowledge is structured, every output your organization produc
 ---
 
 ## 🧭 Next Steps
-1. Open **HOW-TO-USE.md** — it'll walk you through setup inside Cursor.  
-2. **One-upload workflow**: Drop all your product docs into a project, run `ingest --auto-structure`, and the OS builds your Product Context files automatically.
-3. Create your first project and generate a few deliverables.  
-4. Customize your prompts for creative, sales, or demand gen workflows.  
+1. **Explore the knowledge base**: Open `/pmm-knowledge-base/README.md` to understand the structure.
+2. **Start broad**: Fill out `/pmm-knowledge-base/00-overview/` with your company and product info.
+3. **Get specific**: Create folders for your target segments in `/01-product-context/segments/` using the provided templates.
+4. **Add depth**: If relevant, add verticals (`/01-product-context/verticals/`) and regions (`/01-product-context/regions/`).
+5. **Generate content**: Use templates in `/02-templates/` and prompts in `/03-prompts/` to create aligned marketing assets.
+6. **Optional — CLI automation**: Use tools in `/05-config/CLI/` to automate workflows (see `HOW TO USE` for details).
 
-Once your product context is in the OS, **everything your team creates will align automatically.**
+Once your knowledge base is built, **everything your team creates will align automatically.**
 
 ---
 

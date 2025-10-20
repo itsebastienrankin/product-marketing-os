@@ -1,0 +1,107 @@
+# PMM Knowledge Base Metadata
+
+## Project Information
+name: Product Marketing OS
+version: 1.0.0
+last_updated: 2025-10-20
+owner: Product Marketing Team
+
+## Company Information
+company_name: [Your Company Name]
+website: [Your Website]
+industry: [Your Industry]
+
+## Product Information
+primary_product: [Product Name]
+product_category: [Category]
+launch_date: [Date]
+
+## Target Market
+primary_segments:
+  - segment_id: smb
+    name: Small & Medium Business
+    priority: high
+  - segment_id: enterprise
+    name: Enterprise
+    priority: high
+  - segment_id: mid-market
+    name: Mid-Market
+    priority: medium
+
+primary_verticals:
+  - vertical_id: healthcare
+    name: Healthcare
+    priority: high
+  - vertical_id: financial-services
+    name: Financial Services
+    priority: medium
+  - vertical_id: retail
+    name: Retail
+    priority: medium
+
+primary_regions:
+  - region_id: north-america
+    name: North America
+    priority: high
+  - region_id: emea
+    name: EMEA
+    priority: medium
+  - region_id: apac
+    name: APAC
+    priority: low
+
+## Key Personas
+buyer_personas:
+  - persona_id: champion
+    name: Product Champion
+    role: End User / Power User
+  - persona_id: economic-buyer
+    name: Economic Buyer
+    role: Budget Holder
+  - persona_id: technical-buyer
+    name: Technical Buyer
+    role: Evaluator
+
+## Competitive Landscape
+primary_competitors:
+  - competitor_id: competitor-1
+    name: [Competitor Name]
+    category: direct
+  - competitor_id: competitor-2
+    name: [Competitor Name]
+    category: direct
+  - competitor_id: competitor-3
+    name: [Competitor Name]
+    category: indirect
+
+## Tags & Categories
+content_tags:
+  - awareness
+  - consideration
+  - decision
+  - retention
+  - expansion
+
+channel_tags:
+  - email
+  - social
+  - paid
+  - content
+  - events
+  - sales
+
+asset_types:
+  - template
+  - prompt
+  - framework
+  - playbook
+  - battlecard
+  - brief
+
+## Versioning
+schema_version: 1.0
+changelog:
+  - date: 2025-10-20
+    version: 1.0.0
+    changes: Initial knowledge base structure created
+
