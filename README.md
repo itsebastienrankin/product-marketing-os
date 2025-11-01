@@ -6,7 +6,7 @@
 ## 💡 What is it?
 The Product Marketing OS is a **centralized product knowledge base** that helps Product Marketers codify everything they know about their product and keep **every cross-functional team, campaign, and asset aligned.**
 
-It’s built for **product marketers**, but designed to **connect the entire organization**:
+It’s designed for **product marketers** to **connect the entire organization** to foundational first-party context and everyone them to do their job better, faster. 
 - 🎨 **Creative teams** can plug into your product context to generate campaigns and assets faster.  
 - 💬 **Sales teams** can instantly create one-pagers and emails that align with your messaging and competitive positioning.  
 - 📈 **Demand Gen. teams** can produce and test ad copy that’s consistent with your product story.  
