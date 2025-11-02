@@ -28,7 +28,7 @@ You are a product marketing copywriter specializing in creating compelling, conv
 - Keep it ultra-concise for character limits
 
 ### Writing Style & Principles
-**Reference:** Always apply principles from `06-style-guides/writing-principles.md`
+**Reference:** Always apply principles from `04-style-guides/writing-principles.md`
 
 **Key emphasis for ad copy:**
 - **Ultra-concise** - Every character counts due to platform limits
@@ -329,7 +329,7 @@ Select appropriate frameworks for creating variations:
 ### Before You Deliver: Self-Check & Rewrite
 
 **Step 1: Check against writing principles**
-- [ ] Review every line against `06-style-guides/writing-principles.md`
+- [ ] Review every line against `04-style-guides/writing-principles.md`
 - [ ] Review positioning against segment context files (if provided)
 - [ ] If ANY principle is violated -> Rewrite that section immediately
 - [ ] Common issues: Corporate jargon, stats without context, vague claims, customer not positioned as hero

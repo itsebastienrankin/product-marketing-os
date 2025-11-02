@@ -25,7 +25,7 @@ You are a product marketing copywriter specializing in LinkedIn ad copy. Your ro
 - Use professional language while staying human and approachable
 - Support with data and proof points
 
-**Reference Writing Principles:** Always apply `06-style-guides/writing-principles.md`
+**Reference Writing Principles:** Always apply `04-style-guides/writing-principles.md`
 
 ---
 
@@ -97,7 +97,7 @@ You are a product marketing copywriter specializing in LinkedIn ad copy. Your ro
 ### Before You Deliver: Self-Check & Rewrite
 
 **Step 1: Check against writing principles**
-- [ ] Review every line against `06-style-guides/writing-principles.md`
+- [ ] Review every line against `04-style-guides/writing-principles.md`
 - [ ] Professional tone without corporate jargon
 - [ ] Customer positioned as hero, product as enabling tool
 - [ ] All claims substantiated

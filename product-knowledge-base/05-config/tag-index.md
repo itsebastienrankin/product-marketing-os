@@ -22,31 +22,31 @@ Tags help you quickly locate relevant content across the knowledge base. Use thi
 Content focused on making prospects aware of problems and solutions.
 
 **Tagged content**:
-- `/05-prompts/ad_copy.md`
-- `/05-prompts/webinar-prompt.md`
+- `/03-prompts/ad_copy.md`
+- `/03-prompts/webinar-prompt.md`
 - `/06-strategy/gtm-strategy.md`
 
 #### `consideration`
 Content for prospects actively evaluating solutions.
 
 **Tagged content**:
-- `/05-prompts/case_study.md`
-- `/05-prompts/nurture-sequence-prompt.md`
-- `/04-templates/battlecard-template.md`
+- `/03-prompts/case_study.md`
+- `/03-prompts/nurture-sequence-prompt.md`
+- `/02-templates/battlecard-template.md`
 
 #### `decision`
 Content designed to close deals and drive purchase decisions.
 
 **Tagged content**:
-- `/05-prompts/outbound_email.md`
-- `/04-templates/messaging-framework-template.md`
+- `/03-prompts/outbound_email.md`
+- `/02-templates/messaging-framework-template.md`
 - `/06-strategy/pricing-and-packaging.md`
 
 #### `retention`
 Content focused on keeping and expanding existing customers.
 
 **Tagged content**:
-- `/04-templates/product-gtm-template.md`
+- `/02-templates/product-gtm-template.md`
 
 #### `expansion`
 Content for upsell, cross-sell, and account growth.
@@ -62,57 +62,57 @@ Content for upsell, cross-sell, and account growth.
 Email marketing content and templates.
 
 **Tagged content**:
-- `/05-prompts/outbound_email.md`
-- `/05-prompts/nurture-sequence-prompt.md`
-- `/04-templates/campaign-brief-template.md`
+- `/03-prompts/outbound_email.md`
+- `/03-prompts/nurture-sequence-prompt.md`
+- `/02-templates/campaign-brief-template.md`
 
 #### `social`
 Social media content and strategies.
 
 **Tagged content**:
-- `/05-prompts/ad_copy.md`
-- `/04-templates/creative-brief-template.md`
+- `/03-prompts/ad_copy.md`
+- `/02-templates/creative-brief-template.md`
 
 #### `paid`
 Paid advertising content (search, social, display).
 
 **Tagged content**:
-- `/05-prompts/ad_copy.md`
-- `/05-prompts/conversion-landing-page-prompt.md`
+- `/03-prompts/ad_copy.md`
+- `/03-prompts/conversion-landing-page-prompt.md`
 
 #### `content`
 Long-form content marketing (blogs, guides, whitepapers).
 
 **Tagged content**:
-- `/05-prompts/case_study.md`
-- `/05-prompts/webinar-prompt.md`
+- `/03-prompts/case_study.md`
+- `/03-prompts/webinar-prompt.md`
 
 #### `events`
 Event marketing and webinar content.
 
 **Tagged content**:
-- `/05-prompts/webinar-prompt.md`
-- `/04-templates/campaign-brief-template.md`
+- `/03-prompts/webinar-prompt.md`
+- `/02-templates/campaign-brief-template.md`
 
 #### `sales`
 Sales enablement content and tools.
 
 **Tagged content**:
-- `/04-templates/battlecard-template.md`
-- `/04-templates/messaging-framework-template.md`
+- `/02-templates/battlecard-template.md`
+- `/02-templates/messaging-framework-template.md`
 - `/06-strategy/competitive-intelligence.md`
 
 #### `web`
 Website and landing page content.
 
 **Tagged content**:
-- `/05-prompts/conversion-landing-page-prompt.md`
+- `/03-prompts/conversion-landing-page-prompt.md`
 
 #### `pr`
 Public relations and media content.
 
 **Tagged content**:
-- `/05-prompts/press-release-prompt.md`
+- `/03-prompts/press-release-prompt.md`
 
 ---
 
@@ -122,43 +122,43 @@ Public relations and media content.
 Reusable document templates.
 
 **Tagged content**:
-- All files in `/04-templates/`
+- All files in `/02-templates/`
 - Persona, positioning, segment templates
 
 #### `prompt`
 AI prompts for content generation.
 
 **Tagged content**:
-- All files in `/05-prompts/`
+- All files in `/03-prompts/`
 
 #### `framework`
 Strategic frameworks and methodologies.
 
 **Tagged content**:
-- `/04-templates/messaging-framework-template.md`
+- `/02-templates/messaging-framework-template.md`
 - `/06-strategy/gtm-strategy.md`
 
 #### `playbook`
 Step-by-step guides and processes.
 
 **Tagged content**:
-- `/04-templates/launch-checklist-template.md`
-- `/04-templates/product-gtm-template.md`
+- `/02-templates/launch-checklist-template.md`
+- `/02-templates/product-gtm-template.md`
 
 #### `battlecard`
 Competitive intelligence resources.
 
 **Tagged content**:
-- `/04-templates/battlecard-template.md`
+- `/02-templates/battlecard-template.md`
 - `/06-strategy/competitive-intelligence.md`
 
 #### `brief`
 Campaign and creative briefs.
 
 **Tagged content**:
-- `/04-templates/campaign-brief-template.md`
-- `/04-templates/creative-brief-template.md`
-- `/05-prompts/project_brief.md`
+- `/02-templates/campaign-brief-template.md`
+- `/02-templates/creative-brief-template.md`
+- `/03-prompts/project_brief.md`
 
 ---
 
@@ -213,29 +213,29 @@ Positioning and differentiation content.
 
 **Tagged content**:
 - `/00-overview/brand-positioning.md`
-- `/04-templates/positioning-template.hbs`
+- `/02-templates/positioning-template.hbs`
 - `/06-strategy/competitive-intelligence.md`
 
 #### `messaging`
 Messaging and narrative content.
 
 **Tagged content**:
-- `/04-templates/messaging-framework-template.md`
-- `/04-templates/messaging-frameworks-template.hbs`
+- `/02-templates/messaging-framework-template.md`
+- `/02-templates/messaging-frameworks-template.hbs`
 
 #### `competitive`
 Competitive intelligence and analysis.
 
 **Tagged content**:
-- `/04-templates/battlecard-template.md`
+- `/02-templates/battlecard-template.md`
 - `/06-strategy/competitive-intelligence.md`
 
 #### `launch`
 Product launch content.
 
 **Tagged content**:
-- `/04-templates/launch-checklist-template.md`
-- `/04-templates/product-gtm-template.md`
+- `/02-templates/launch-checklist-template.md`
+- `/02-templates/product-gtm-template.md`
 - `/06-strategy/launch-calendar.md`
 
 #### `pricing`
@@ -279,10 +279,10 @@ tags: [awareness, email, template, smb]
 - **Sales enablement**: `battlecard-template`, `messaging-framework`
 
 ### Find Content By Output
-- **Need email copy**: `/05-prompts/outbound_email.md`, `/05-prompts/nurture-sequence-prompt.md`
-- **Need ad copy**: `/05-prompts/ad_copy.md`
-- **Need web copy**: `/05-prompts/conversion-landing-page-prompt.md`
-- **Need PR content**: `/05-prompts/press-release-prompt.md`
+- **Need email copy**: `/03-prompts/outbound_email.md`, `/03-prompts/nurture-sequence-prompt.md`
+- **Need ad copy**: `/03-prompts/ad_copy.md`
+- **Need web copy**: `/03-prompts/conversion-landing-page-prompt.md`
+- **Need PR content**: `/03-prompts/press-release-prompt.md`
 
 ---
 

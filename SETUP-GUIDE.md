@@ -51,10 +51,10 @@ In the left sidebar (file explorer), you should see this structure:
 Product Marketing OS/
 ├── product-knowledge-base/
 │   ├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
-│   ├── 04-templates/            # Document templates (briefs, battlecards, campaigns)
-│   ├── 05-prompts/             # AI prompts (ads, emails, case studies)
-│   ├── 06-style-guides/        # Writing principles for consistency
-│   └── 07-config/              # Config files (metadata, glossary)
+│   ├── 02-templates/            # Document templates (briefs, battlecards, campaigns)
+│   ├── 03-prompts/             # AI prompts (ads, emails, case studies)
+│   ├── 04-style-guides/        # Writing principles for consistency
+│   └── 05-config/              # Config files (metadata, glossary)
 ├── Projects/                    # Your personal workspace (empty to start)
 ├── README.md
 └── SETUP-GUIDE.md              # This file
@@ -71,13 +71,11 @@ When you opened the repository in Cursor, you'll see the `product-knowledge-base
 ```
 product-knowledge-base/
 ├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
-├── 04-templates/            # Document templates (briefs, battlecards, campaigns)
-├── 05-prompts/             # AI prompts (ads, emails, case studies)
-├── 06-style-guides/        # Writing principles for consistency
-└── 07-config/              # Config files (metadata, glossary)
+├── 02-templates/            # Document templates (briefs, battlecards, campaigns)
+├── 03-prompts/             # AI prompts (ads, emails, case studies)
+├── 04-style-guides/        # Writing principles for consistency
+└── 05-config/              # Config files (metadata, glossary)
 ```
-
-*Note: Folders 02-03 are intentionally skipped to maintain logical grouping.*
 
 **The two main folders:**
 

@@ -60,13 +60,11 @@ When you clone this repo, you get two folders:
 ```
 product-knowledge-base/
 ├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
-├── 04-templates/            # Document templates (briefs, battlecards, campaigns)
-├── 05-prompts/             # AI prompts (ads, emails, case studies)
-├── 06-style-guides/        # Writing principles for consistency
-└── 07-config/              # Config files (metadata, glossary)
+├── 02-templates/            # Document templates (briefs, battlecards, campaigns)
+├── 03-prompts/             # AI prompts (ads, emails, case studies)
+├── 04-style-guides/        # Writing principles for consistency
+└── 05-config/              # Config files (metadata, glossary)
 ```
-
-*Note: Folders 02-03 are intentionally skipped to maintain logical grouping.*
 
 **`Projects/`** → **Your Workspace** (local only, not synced)
 - Use this folder to **work on your own projects** (campaigns, drafts, content generation)
