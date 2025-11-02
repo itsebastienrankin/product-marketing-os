@@ -1,6 +1,6 @@
 # [CAMPAIGN NAME]: Campaign Brief
 
-**Project Workbook 🔗** [Insert workbook link]  
+**Workback Schedule 🔗** [Insert workbook link]  
 **Creative Links 🔗** [Insert Figma/design links]  
 **Content Links 🔗** [Insert content links]  
 

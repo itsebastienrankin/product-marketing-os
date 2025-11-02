@@ -1,104 +1,127 @@
-# 🧠 Product Marketing OS  
-*Codify your product knowledge. Align every team. Move faster.*
+# 🧠 Product Marketing OS
+*Codify your marketing strategy to help teams work better and faster with AI*
 
 ---
 
-## 💡 What is it?
-The Product Marketing OS is a **centralized product knowledge base** that helps Product Marketers codify everything they know about their product and keep **every cross-functional team, campaign, and asset aligned.**
+## 📖 What Is This?
 
-It’s built for **product marketers**, but designed to **connect the entire organization**:
-- 🎨 **Creative teams** can plug into your product context to generate campaigns and assets faster.  
-- 💬 **Sales teams** can instantly create one-pagers and emails that align with your messaging and competitive positioning.  
-- 📈 **Demand Gen. teams** can produce and test ad copy that’s consistent with your product story.  
-- ⚙️ **PMMs** maintain one living source of truth — not endless shared docs and decks.
+Product Marketing OS is a **structured knowledge base** that codifies everything you know about your product—positioning, messaging, personas, competitive intelligence—into one centralized system.
 
-Once your product context is structured inside the OS, it becomes a **single system of record** that helps everything from strategy to creative execution move faster, with fewer reviews.
+**Why It Matters:** The biggest blocker to unlocking value with AI isn't the tools—it's the **underlying context/data layer**. Your AI outputs are only as good as the context you give it. Without a codified knowledge layer, AI generates generic, off-brand content. Product Marketing OS helps you build that critical foundation first—codifying your product's marketing strategy into structured context that AI tools can leverage. This is what unlocks creativity at scale, faster execution, and better results. 
 
 ---
 
-## ⚙️ How it works
+## 🚀 How It Works (3 Steps)
 
-### 🧩 **PMM Knowledge Base**
-Port your product knowledge into **`/product-knowledge-base/`** — a structured system organized by:
+**1. Codify Your Knowledge** → Transform insights into structured templates (segment context, messaging pillars, personas)
 
-**Foundation** (`/00-overview/`)
-- Company and product overview
-- Brand positioning and voice
+**2. Connect AI Tools** → Teams and AI access your knowledge base automatically (no more manual handoffs)
 
-**Market Context** (`/01-segment-context/`, `/02-vertical-context/`, `/03-regional-context/`)
-- Personas and buyer insights by segment
-- Industry-specific positioning and pain points
-- Regional messaging and localization
+**3. Scale Execution** → When knowledge layer is solid, everything improves (faster launches, aligned content, fewer reviews)
 
-**Templates & Prompts** (`/04-templates/`, `/05-prompts/`)
-- Reusable document templates for campaigns, briefs, and battlecards
-- AI prompts for generating aligned content (emails, ads, landing pages)
-
-**Strategy** (`/06-strategy/`)
-- GTM plans, competitive intelligence, pricing strategy
-- Annual planning and launch calendars
-
-The knowledge base creates a single source of truth that every project, brief, or campaign can draw from automatically.
+**Result:** You've operationalized insight into a system that scales impact across the entire organization.
 
 ---
 
-### 🚀 **Projects**
-**`/Projects/`** is your personal workspace. It's where you create folders and files for the projects you're working on that are build on top of your product context.  
+## 📊 The Impact
 
-You can:
-- Drop research, source docs, and Google Doc exports directly into it.  
-- Generate campaign briefs, positioning docs, one-pagers, and creative content — all automatically aligned with your product context.  
-- Publish deliverables that teams across marketing, sales, and creative can immediately use.
-
-This is where your **strategic knowledge turns into execution**.
-
----
-
-## 💬 Why It Matters
-Most teams operate with disconnected docs and decks scattered across tools. 
-Product Marketing OS turns that chaos into a **focused knowledge layer** that keeps both people and AI tools aligned.
-
-| Challenge | How PMM/OS Solves It |
-|------------|----------------------|
-| Teams drift off-message | One shared product knowledge base powers every deliverable |
-| PMMs re-explain context repeatedly | Codify once — and let every project draw from it |
-| Creative & demand gen lose time aligning | Templates + prompts auto-generate aligned assets |
-| Sales enablement gets out of date | One source of truth keeps one-pagers and decks current |
+| Before (Fragmented) | After (Structured) |
+|-------------------|------------------|
+| Positioning scattered across docs | Centralized knowledge base |
+| AI generates poor content | Structured inputs = better outputs |
+| Endless review cycles | Pre-aligned content accelerates reviews |
+| PMMs in reactive mode | System architects who scale impact |
+| Knowledge leaves with people | Codified knowledge persists |
 
 ---
 
-## 🪄 What You Can Do With It
-- Build your entire product knowledge base once — and reuse it everywhere.  
-- Generate campaign and creative briefs in seconds.  
-- Keep your content, messaging, and positioning aligned across every team.  
-- Scale onboarding — new teammates ramp up by exploring your live product context.  
-- Power AI tools and internal apps that pull directly from your source of truth.
+## 💡 Why This Changes Everything
+
+**Marketing is becoming more systems-driven.** To thrive in the AI world, marketers need to think like systems architects—building structured workflows, modular prompts, and centralized knowledge bases. Product Marketers sit at the intersection of market, product, and customer—uniquely positioned to build the **knowledge layer** that powers GTM execution.
+
+**The Critical Foundation:** The context/data layer is the biggest blocker to unlocking AI value. Great AI outputs require great inputs. Product Marketing OS helps you build that foundation first.
+
+**For You:** Scale impact across the entire organization, operationalize insight into accessible systems, AI that works (structured inputs = better outputs), build leverage that lifts quality and speed org-wide.
+
+**For Your Company:** Faster launches, consistent messaging, reduced GTM friction, compound returns (investment in structure pays dividends).
+
+---
+
+## 🏗️ What's Inside
+
+When you clone this repo, you get two folders:
+
+**`product-knowledge-base/`** → **Templates to Build Your Knowledge Layer** (synced to GitHub)
+- Contains **templates** you'll fill in with your company's positioning, messaging, personas, and strategy
+- Once filled, this becomes your **centralized knowledge layer**—the foundational context for all your work
+- Managed via Git (create PRs, merge updates) so your team always has the latest knowledge
+- Everyone on your team accesses the same source of truth
+
+```
+product-knowledge-base/
+├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
+├── 04-templates/            # Document templates (briefs, battlecards, campaigns)
+├── 05-prompts/             # AI prompts (ads, emails, case studies)
+├── 06-style-guides/        # Writing principles for consistency
+└── 07-config/              # Config files (metadata, glossary)
+```
+
+**`Projects/`** → **Your Workspace** (local only, not synced)
+- Use this folder to **work on your own projects** (campaigns, drafts, content generation)
+- Uses your knowledge layer from `product-knowledge-base/` as **foundational context**
+- Keeps your knowledge base clean—all your work-in-progress stays local
+- Store generated content here (ads, emails, briefs, case studies)
+
+---
+
+## 🎬 Quick Start
+
+1. **Fork this repo** to your company's GitHub
+2. **Open in Cursor** and follow the [**Setup Guide**](./SETUP-GUIDE.md)
+3. **Fill in the templates** in `product-knowledge-base/` to build your knowledge layer
+4. **Use `Projects/` folder** to work on campaigns and content using your knowledge layer as context
+
+**👉 [Read the Setup Guide](./SETUP-GUIDE.md) for detailed instructions.**
 
 ---
 
 ## 🧠 The Big Idea
-**Stop chasing alignment — build it into your system.**  
-When your product knowledge is structured, every output your organization produces — from an ad to a sales deck — can stay consistent, credible, and on-message.
+
+**The context layer is the foundation.** The biggest blocker to scaling with AI isn't the AI tools themselves—it's having structured, accessible context that AI can leverage. Product Marketers who codify knowledge don't just work better individually—they build the foundation that lifts quality and speed across the entire organization.
+
+**Systems thinking in the AI era:** To thrive in AI-driven marketing, you need to:
+- Build systems, not just assets
+- Abstract processes into reusable workflows
+- Create structured context layers that AI tools can access
+- Think like a systems architect: build once, scale everywhere
+
+**When you build the knowledge layer:**
+- ✅ Every output stays consistent (structured inputs)
+- ✅ Every team moves faster (accessible context)
+- ✅ Every AI tool works better (clear inputs = better outputs)
+- ✅ Every GTM function improves (solid foundation)
+
+**You build once. Everything downstream improves automatically.**
+
+This isn't about more process—it's about better structure. The fastest teams build intentional knowledge systems. The brands that win won't just use AI—they'll design workflows around it, starting with a solid context layer.
 
 ---
 
-## 🧭 Next Steps
-1. **Explore the knowledge base**: Open `/product-knowledge-base/README.md` to understand the structure.
-2. **Start broad**: Fill out `/product-knowledge-base/00-company-overview/` with your company and product info.
-3. **Get specific**: Create folders for your target segments in `/01-product-context/segments/` using the provided templates.
-4. **Add depth**: If relevant, add verticals (`/01-product-context/verticals/`) and regions (`/01-product-context/regions/`).
-5. **Generate content**: Use templates in `/04-templates/` and prompts in `/05-prompts/` to create aligned marketing assets.
-6. **Optional — CLI automation**: Use tools in `/06-config/CLI/` to automate workflows (see `HOW TO USE` for details).
+## ❓ Quick FAQ
 
-Once your knowledge base is built, **everything your team creates will align automatically.**
+**Q: Do I need to be technical?**  
+A: No. Everything is Markdown files and simple commands.
+
+**Q: How long does setup take?**  
+A: Setup: ~15 min. Building knowledge base: a few hours (depends on your context).
+
+**Q: Can my team use this?**  
+A: Yes. Share your GitHub repo and anyone can use it.
 
 ---
 
-## 🧰 License
+## 📄 License
+
 MIT License © 2025 — free to use, adapt, and extend.
 
----
-
-## 🙌 Credits
-Created by **Sebastien Rankin**
-Inspired by the belief that codifying product context helps Marketers move faster without sacrificing quality.
+**Created by Sebastien Rankin**

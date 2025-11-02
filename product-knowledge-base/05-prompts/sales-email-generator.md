@@ -50,6 +50,9 @@ Create outbound sequences that:
 ---
 
 ## 5. Tone Guidelines
+
+**Reference:** Always apply principles from `06-style-guides/writing-principles.md`
+
 - Talk like a real person.
 - Short sentences.
 - Skip buzzwords.
@@ -57,8 +60,8 @@ Create outbound sequences that:
 - Sound **curious, not commissioned**.
 
 **Examples:**
-> “Guessing you already have a system for this — does it make your life easier?”
-> “You probably have this sorted, but figured I’d ask.”
+> "Guessing you already have a system for this — does it make your life easier?"
+> "You probably have this sorted, but figured I'd ask."
 
 ---
 
@@ -130,9 +133,36 @@ Would a quick chat help you see what’s possible?
 
 ---
 
-## 9. AI Instructions
+## 9. Quality Review Checklist
+
+**Before delivering, review against `06-style-guides/writing-principles.md`:**
+
+✅ **Writing Principles Compliance:**
+- [ ] Written in natural, human voice (not corporate)
+- [ ] Uses everyday language (no jargon)
+- [ ] Customer/client positioned as the hero (if applicable)
+- [ ] Active voice throughout
+- [ ] Personal, one-to-one tone
+- [ ] All claims are substantiated (no invented metrics)
+- [ ] No generic buzzwords without explanation
+
+✅ **Email-Specific Quality:**
+- [ ] Write like you're talking, not selling
+- [ ] Be curious, calm, and specific
+- [ ] Aim for *a reply*, not a meeting
+- [ ] Soft closing questions (no hard sales language)
+- [ ] Conversation flows naturally
+
+✅ **Word/Character Limits (STRICT - Must Verify):**
+- [ ] Each email body is **≤ 60 words** (count includes all words in body, exclude subject line and signature)
+- [ ] Subject line is **3-6 words** (count all words including articles like "a", "the", "your")
+- [ ] All emails in sequence meet both limits above
+
+---
+
+## 10. AI Instructions
 When generating emails:
-- Write like you’re talking, not selling.
+- Write like you're talking, not selling.
 - Keep each email under **60 words**.
 - Be curious, calm, and specific.
 - Aim for *a reply*, not a meeting.
