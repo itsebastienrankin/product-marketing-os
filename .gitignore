@@ -130,6 +130,9 @@ dist
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
+
+# Projects folder (local work, not synced to GitHub)
+Projects/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
