@@ -132,7 +132,9 @@ dist
 !.yarn/plugins
 
 # Projects folder (local work, not synced to GitHub)
-Projects/
+# Keep the folder structure but ignore contents
+Projects/*
+!Projects/.gitkeep
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions

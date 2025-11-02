@@ -77,6 +77,8 @@ product-knowledge-base/
 └── 07-config/              # Config files (metadata, glossary)
 ```
 
+*Note: Folders 02-03 are intentionally skipped to maintain logical grouping.*
+
 **The two main folders:**
 
 **`product-knowledge-base/`** → This is where you'll build your company's knowledge layer
