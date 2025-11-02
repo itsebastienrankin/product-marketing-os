@@ -66,6 +66,8 @@ product-knowledge-base/
 └── 07-config/              # Config files (metadata, glossary)
 ```
 
+*Note: Folders 02-03 are intentionally skipped to maintain logical grouping.*
+
 **`Projects/`** → **Your Workspace** (local only, not synced)
 - Use this folder to **work on your own projects** (campaigns, drafts, content generation)
 - Uses your knowledge layer from `product-knowledge-base/` as **foundational context**
