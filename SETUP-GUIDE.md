@@ -37,6 +37,10 @@ Cursor will show you what to do next. Basically, it will:
 - Download the repository to your computer
 - Open it in Cursor
 
+**Important:** After cloning, create the `Projects/` folder—this is your local workspace. It's not in GitHub because all files in `Projects/` stay on your computer only.
+
+Ask Cursor: *"Help me create a Projects folder in my Product Marketing OS directory"*
+
 ### Step 3: Check It Worked
 
 Ask Cursor: *"What's in the product-knowledge-base folder?"*
@@ -49,13 +53,13 @@ In the left sidebar (file explorer), you should see this structure:
 
 ```
 Product Marketing OS/
-├── product-knowledge-base/
+├── product-knowledge-base/      # Synced to GitHub (shared knowledge)
 │   ├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
 │   ├── 02-templates/            # Document templates (briefs, battlecards, campaigns)
 │   ├── 03-prompts/             # AI prompts (ads, emails, case studies)
 │   ├── 04-style-guides/        # Writing principles for consistency
 │   └── 05-config/              # Config files (metadata, glossary)
-├── Projects/                    # Your personal workspace (empty to start)
+├── Projects/                    # Create this folder locally (NOT in GitHub - stays on your computer)
 ├── README.md
 └── SETUP-GUIDE.md              # This file
 ```
@@ -84,9 +88,10 @@ product-knowledge-base/
 - This becomes your shared knowledge base (synced to GitHub so your team can access it)
 - Think of it as: Your company's shared brain (everyone sees the same thing)
 
-**`Projects/`** → This is your personal workspace
+**`Projects/`** → This is your personal workspace (create it after cloning)
+- **Not in GitHub** - you'll create this folder locally after cloning
 - Store your campaigns, drafts, and work-in-progress here
-- This stays on your computer (not synced to GitHub)
+- Files in this folder NEVER get committed to GitHub (they stay on your computer only)
 - Think of it as: Your personal workspace (just for you)
 
 ---
