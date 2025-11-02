@@ -51,7 +51,7 @@ Create outbound sequences that:
 
 ## 5. Tone Guidelines
 
-**Reference:** Always apply principles from `06-style-guides/writing-principles.md`
+**Reference:** Always apply principles from `04-style-guides/writing-principles.md`
 
 - Talk like a real person.
 - Short sentences.
@@ -135,7 +135,7 @@ Would a quick chat help you see what’s possible?
 
 ## 9. Quality Review Checklist
 
-**Before delivering, review against `06-style-guides/writing-principles.md`:**
+**Before delivering, review against `04-style-guides/writing-principles.md`:**
 
 ✅ **Writing Principles Compliance:**
 - [ ] Written in natural, human voice (not corporate)

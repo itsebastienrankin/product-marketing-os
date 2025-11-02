@@ -132,6 +132,7 @@ dist
 !.yarn/plugins
 
 # Projects folder (local work, not synced to GitHub)
+# This folder is NEVER committed to GitHub - all files stay local
 Projects/
 !.yarn/releases
 !.yarn/sdks

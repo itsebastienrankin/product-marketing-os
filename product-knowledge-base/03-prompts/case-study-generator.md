@@ -257,7 +257,7 @@ You are a product marketing copywriter specializing in creating compelling, auth
 
 **Step 1: Check against writing principles and positioning**
 
-**Review against `06-style-guides/writing-principles.md`:**
+**Review against `04-style-guides/writing-principles.md`:**
 - [ ] Written in natural, human voice (not corporate)
 - [ ] Uses everyday language (no jargon)
 - [ ] Customer positioned as the hero
