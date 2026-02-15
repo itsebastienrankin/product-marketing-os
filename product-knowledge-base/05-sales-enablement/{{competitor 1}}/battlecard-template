@@ -21,6 +21,13 @@
 
 **Example:** "We win when teams need speed over enterprise features - live in 2 hours vs Confluence's 2-week implementation"
 
+**Cross-References:**
+- **Our messaging pillars** → `01-segment-context/[segment]/messaging-pillars.md`
+- **Our buyer personas** → `01-segment-context/[segment]/buyer-personas.md`
+- **Full competitor profile** → `competitor-overview` (this folder)
+- **Objection scripts** → `objection-handling-template` (this folder)
+- **FUD playbook** → `FUD-template` (this folder)
+
 ---
 
 ## By Buyer Role (Who Cares About What)
@@ -347,35 +354,25 @@ Use the **Acknowledge → Reframe → Proof → Check** framework
 
 ---
 
-## Win/Loss Patterns
+## Win/Loss Patterns (Quick Reference)
 
-### We typically WIN when:
+| Scenario | Outcome | Key Factor |
+|----------|---------|------------|
+| [Win scenario 1] | ✅ Win | [What drives the win] |
+| [Win scenario 2] | ✅ Win | [What drives the win] |
+| [Loss scenario 1] | ❌ Loss | [What causes the loss] |
+| [Loss scenario 2] | ❌ Loss | [What causes the loss] |
 
-**Scenario #1:** [Description]
-- **Why:** [What drives the win]
-- **Amplify:** [How to emphasize this]
+**Example (Notion vs Confluence):**
 
-**Example:**
-- **Scenario:** SMB teams under 100 without dedicated IT, need speed
-- **Why:** Can't afford 2-4 week implementations, need team productive now
-- **Amplify:** Show same-day value - "You can start using this today, no IT required"
+| Scenario | Outcome | Key Factor |
+|----------|---------|------------|
+| SMB <100, no IT, need speed | ✅ Win | Same-day productivity vs 2-week IT setup |
+| Teams using 5+ tools, want consolidation | ✅ Win | All-in-one vs wiki-only resonates immediately |
+| Large enterprise with Atlassian site license | ❌ Loss | Ecosystem lock-in, IT mandate |
+| Hard on-premise requirement (regulated) | ❌ Loss | We're cloud-only |
 
-**Scenario #2:** [Description]
-**Scenario #3:** [Description]
-
-### We typically LOSE when:
-
-**Scenario #1:** [Description]
-- **Why:** [What causes the loss]
-- **Mitigate:** [How to prevent]
-
-**Example:**
-- **Scenario:** Large enterprise (1,000+ employees) with Atlassian site license, IT mandates Atlassian-only
-- **Why:** Ecosystem lock-in, procurement policy, switching cost too high
-- **Mitigate:** Qualify Atlassian dependency early. Position as complement, not replacement.
-
-**Scenario #2:** [Description]
-**Scenario #3:** [Description]
+> **Detailed win/loss analysis:** See `competitor-overview` for full win/loss intelligence with percentages, context, mitigation strategies, and amplification tactics.
 
 ---
 
@@ -414,22 +411,19 @@ Use the **Acknowledge → Reframe → Proof → Check** framework
 
 ---
 
-## Customer References
+## Customer References (Top Quote for Calls)
 
-### Customers Who Switched FROM Them TO Us
-
-**[Customer Name] - [Industry] - [Size]**
-- **Why they switched:** [Pain point]
-- **Key quote:** "[Compelling quote]"
-- **Metric:** [Quantified outcome]
-- **Use when:** [Deal scenario]
+**Best switch story:**
+> "[Compelling quote from customer who switched from them to us]"
+> — [Customer Name], [Title], [Company - Industry - Size]
 
 **Example:**
-**Acme Corp - SaaS - 50 employees**
-- **Why:** Confluence took 3 months to set up, team never adopted it (40% usage)
-- **Quote:** "We wasted 3 months and $15K on Confluence implementation. With Notion, we were productive the same day. 85% of our team uses it daily now."
-- **Metric:** 2 hours vs 3 months setup, 85% vs 40% adoption
-- **Use when:** Prospect mentions implementation concerns or Confluence comparison
+> "We wasted 3 months and $15K on Confluence implementation. With Notion, we were productive the same day. 85% of our team uses it daily now."
+> — [Name], [Title], Acme Corp - SaaS - 50 employees
+
+**Use when:** [Deal scenario where this quote is most effective — e.g., "Prospect mentions implementation concerns or Confluence comparison"]
+
+> **Full customer reference library:** See `competitor-overview` for complete switch stories with metrics, customers who chose them over us, and lessons learned.
 
 ---
 
