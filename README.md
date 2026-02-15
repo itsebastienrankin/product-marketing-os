@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Product Marketing OS
 *Codify your product marketing foundations so anyone at your company can create on-brand, on-strategy work with AI*
+=======
+# 🧠 Product Marketing OS
+*Structure your product marketing foundations so anyone on your team can create on-brand, on-strategy work with AI*
+>>>>>>> 89dd768 (Sharpen README opening line, Why It Matters, and How It Works)
 
 ---
 
@@ -7,9 +12,15 @@
 
 The Product Marketing OS is a knowledge base that codifies everything you know about your product (positioning, messaging, personas, competitive intelligence, etc) into one centralized repository.
 
+<<<<<<< HEAD
 **Why it matters:** The biggest blocker to making AI useful isn't the tool itself - it's the context it references. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes your product special. Most of that context lives in your head and is scattered across a dozen docs, which makes it hard for people at your company to create assets relevant to their role without looping you in for reviews. You become a bottleneck.  
 
 When you codify it into a shared knowledge base AI tools can reference, you change the way your entire company works: everyone (sales, demand gen, creative, partnerships) can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every brief, every draft, every review. The AI already knows what makes your product special, because you built the foundation it works from.
+=======
+**Why it matters:** The biggest blocker to making AI useful isn't the tool - it's the context layer. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes you special. And right now, most of that context lives in your head and scattered across a dozen docs.
+
+When you codify it into a shared knowledge base, something shifts: anyone on your team (sales, demand gen, creative, partnerships) can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every draft, every review, every Slack thread re-explaining the positioning. The AI already knows what makes your product special, because you built the foundation it works from.
+>>>>>>> 89dd768 (Sharpen README opening line, Why It Matters, and How It Works)
 
 ---
 
@@ -19,9 +30,15 @@ When you codify it into a shared knowledge base AI tools can reference, you chan
 
 **2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assembling context ad-hoc from 6 different places (and hope it's up to date)
 
+<<<<<<< HEAD
 **3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. 
 
 **Result:** You've operationalized your product marketing expertise into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. This is the future of how Product Marketers bring Sales, Product, and Marketing teams together.  
+=======
+**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, better quality creative, fewer review cycles, faster launches. 
+
+**Result:** You've operationalized your product marketing insight into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. 
+>>>>>>> 89dd768 (Sharpen README opening line, Why It Matters, and How It Works)
 
 ---
 
