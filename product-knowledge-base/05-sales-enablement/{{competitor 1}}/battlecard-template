@@ -1,0 +1,471 @@
+# Battlecard: [Competitor Name]
+
+**Last Updated:** [Date]  
+**Owner:** [Product Marketing contact]
+
+---
+
+## Quick Reference (30 Second Brief)
+
+**Use this battlecard when:**
+- [ ] [Deal scenario 1 - e.g., "Customer mentions they're also evaluating Confluence"]
+- [ ] [Deal scenario 2 - e.g., "Incumbent - we're trying to displace them"]
+- [ ] [Deal scenario 3 - e.g., "Large enterprise with Atlassian ecosystem"]
+
+**Our win rate vs them:** [%]  
+**Their typical discount:** [% off list - important for price objections]  
+**Avg deal cycle when competing:** [Weeks]  
+**Deal size impact:** [Larger/smaller/same when competing vs them]
+
+**Quick positioning:** "[One sentence why we win vs them]"
+
+**Example:** "We win when teams need speed over enterprise features - live in 2 hours vs Confluence's 2-week implementation"
+
+---
+
+## By Buyer Role (Who Cares About What)
+
+### Economic Buyer Concerns
+
+**What they care about:**
+- [ ] ROI and total cost of ownership
+- [ ] Implementation risk
+- [ ] Team adoption rates
+
+**Their strength with economic buyers:** [What appeals to VPs/budget holders]
+
+**Example (Confluence):** "Enterprise credibility - 'Industry standard, proven at scale, Fortune 500 approved'"
+
+**Our counter-message:** [How we appeal to economic buyers]
+
+**Example (Notion):** "ROI in first month - team productive in 2 hours vs 2-week implementation. Save $40K+ in IT setup costs."
+
+**Proof points for economic buyers:**
+- [Metric 1 - e.g., "Teams save 10 hrs/week vs Confluence - $4K/month in productivity"]
+- [Metric 2 - e.g., "85% adoption in 1 week vs 40% for Confluence in 6 months"]
+- [Metric 3 - e.g., "No IT setup cost vs $10K-50K for Confluence"]
+
+---
+
+### Champion Concerns
+
+**What they care about:**
+- [ ] Daily workflow and ease of use
+- [ ] Team will actually adopt it
+- [ ] Won't add to their workload
+
+**Their strength with champions:** [What appeals to day-to-day users]
+
+**Example (Confluence):** "Familiar if already using Jira - integrated into workflow they know"
+
+**Our counter-message:** [How we appeal to champions]
+
+**Example (Notion):** "Intuitive interface like Google Docs - no training needed. Plus handles tasks AND docs, not just wikis."
+
+**Proof points for champions:**
+- [Metric 1 - e.g., "Zero training required - interface feels like Google Docs"]
+- [Metric 2 - e.g., "Search finds docs in <10 seconds vs minutes in Confluence"]
+- [Metric 3 - e.g., "Replaces 3-5 tools, not just wiki"]
+
+---
+
+### Technical Buyer Concerns (If Applicable)
+
+**What they care about:**
+- [ ] Security and compliance
+- [ ] Integrations with existing stack
+- [ ] Scalability and maintenance
+
+**Their strength with technical buyers:** [What appeals to CTO/IT]
+
+**Example (Confluence):** "On-premise option for data residency, deep Atlassian ecosystem integration"
+
+**Our counter-message:** [How we appeal to technical buyers]
+
+**Example (Notion):** "SOC2 Type II, enterprise SSO, SCIM provisioning. Cloud-first doesn't mean less secure - it means modern."
+
+**Proof points for technical buyers:**
+- [Security - e.g., "SOC2 Type II certified, GDPR compliant"]
+- [Integrations - e.g., "API + Zapier + native Jira integration"]
+- [Scale - e.g., "Used by teams from 5 to 50,000+ employees"]
+
+---
+
+## Company & Product Overview
+
+**Company:** [Competitor name]  
+**Founded:** [Year]  
+**Size:** [Employees/Revenue]  
+**Market position:** [Leadership position or market share]
+
+**Their positioning strategy:** [Which classic positioning strategy do THEY use?]
+
+**Example (Confluence):** "Leadership + Heritage positioning - 'Industry standard for enterprise wikis since 2004'"
+
+**Their product:**
+[2-3 sentence description]
+
+**Example (Confluence):** "Enterprise wiki and knowledge management tool. Part of Atlassian suite (Jira, Trello, Bitbucket). Strong in IT/engineering documentation with complex permissions and audit capabilities."
+
+**Pricing model:**
+- [Tier 1]: $[Price] - [What's included]
+- [Tier 2]: $[Price] - [What's included]
+- **Typical discount:** [% off list]
+
+---
+
+## Head-to-Head by Pillar
+
+### Pillar 1: [Your Pillar Name - e.g., "Fast Setup"]
+
+| Aspect | Us | Them | Winner | Notes |
+|--------|-----|------|--------|-------|
+| **Setup time** | 2 hours, self-serve | 2-4 weeks, needs IT | ✅ Us | G2 data: 2hr avg vs 2wk avg |
+| **IT involvement** | None required | Mandatory | ✅ Us | SMBs don't have IT resources |
+| **Time to value** | Same day | 6-8 weeks | ✅ Us | Team productive immediately |
+
+**Win message for this pillar:**
+"[One sentence positioning vs them on this pillar]"
+
+**Example:** "Unlike Confluence which takes weeks to set up with IT, Notion is live in 2 hours with zero IT involvement."
+
+---
+
+### Pillar 2: [Your Pillar Name - e.g., "Everything Connected"]
+
+| Aspect | Us | Them | Winner | Notes |
+|--------|-----|------|--------|-------|
+| **Scope** | Docs + wikis + tasks + databases | Wikis only | ✅ Us | Replaces 3-5 tools vs 1 |
+| **Integration** | Everything connected | Need Jira for tasks | ✅ Us | No tool switching |
+| **Search** | Universal search | Wiki search only | ✅ Us | Find anything in <10 sec |
+
+**Win message for this pillar:**
+"[One sentence positioning vs them on this pillar]"
+
+**Example:** "Confluence is just wikis - you still need Jira, Google Docs, spreadsheets. Notion is all of it in one workspace."
+
+---
+
+### Pillar 3: [Your Pillar Name - e.g., "Simple to Use"]
+
+| Aspect | Us | Them | Winner | Notes |
+|--------|-----|------|--------|-------|
+| **Learning curve** | Feels like Google Docs | Complex, needs training | ✅ Us | No training required |
+| **Team adoption** | 85% in 1 week | 40% in 6 months | ✅ Us | Internal data + G2 reviews |
+| **User experience** | Modern, fast | Dated, slow | ✅ Us | NPS: 4.7 vs 3.8 (G2) |
+
+**Win message for this pillar:**
+"[One sentence positioning vs them on this pillar]"
+
+**Example:** "Confluence requires training and IT setup. Notion feels like Google Docs - your team starts using it immediately."
+
+---
+
+## Strengths & How to Counter
+
+### Strength #1: [Title - e.g., "Enterprise Credibility"]
+**What it is:** [Description]
+
+**Example:** "Market leader in enterprise wikis - 75,000+ companies, including most Fortune 500"
+
+**Why it matters:** [Customer perspective]
+
+**Example:** "IT/procurement prefers 'proven at scale' solutions - perceived as safer choice"
+
+**Who cares most:** [Buyer persona]
+
+**Example:** "Economic buyers in large enterprise, risk-averse IT departments"
+
+**How we counter:**
+1. **Reframe:** [Change the conversation]
+   - "Enterprise in 2025 means cloud-first and agile, not legacy on-premise. Ask Salesforce."
+2. **Proof:** [Evidence we're enterprise-ready]
+   - "We're SOC2 Type II, support teams from 5 to 50,000+. [Enterprise customer] uses us at scale."
+3. **Flip:** [Turn their strength into weakness]
+   - "Built for enterprise IT means complex for small teams. You don't need enterprise permissions - you need your team productive."
+
+---
+
+### Strength #2: [Title - e.g., "Atlassian Ecosystem"]
+**What it is:** [Description]
+
+**Example:** "Deep integration with Jira, Trello, Bitbucket - single ecosystem for engineering teams"
+
+**Why it matters:** [Customer perspective]
+
+**Example:** "Teams already in Atlassian stack get seamless integration, single login, unified workflow"
+
+**Who cares most:** [Buyer persona]
+
+**Example:** "Engineering managers, teams heavily using Jira for project management"
+
+**How we counter:**
+1. **Acknowledge:** "Confluence integrates well with Jira if you're all-in on Atlassian"
+2. **Reframe:** "Most teams use tools beyond Atlassian - Google Docs, Sheets, Slack. We integrate with ALL of them, not just Jira."
+3. **Proof:** "We have native Jira integration too, plus API + Zapier for everything else. You're not locked in."
+
+---
+
+### Strength #3: [Title]
+[Same structure as above]
+
+---
+
+## Weaknesses & How to Exploit
+
+### Weakness #1: [Title - e.g., "Implementation Complexity"]
+**What it is:** [Description]
+
+**Example:** "Requires weeks of IT setup for permissions, user management, integrations. Complex admin console."
+
+**Impact on customer:** [Why this matters]
+
+**Example:** "Teams wait 2-4 weeks before they can start using it. IT bottleneck prevents agile teams from moving fast."
+
+**Who feels it most:** [Buyer persona]
+
+**Example:** "Champions who need solution NOW, SMB ops teams without dedicated IT"
+
+**How we exploit:**
+1. **Discovery question:** "How long can your team wait for IT to set this up? Days or weeks?"
+2. **Demo contrast:** Show live Notion workspace created in 2 minutes
+3. **Proof:** "Acme Corp waited 3 months for Confluence. They were live on Notion the same day. [Customer quote]"
+
+**Trap-setting question:**
+"If you could have your team productive tomorrow vs waiting 3 weeks for IT, which would you prefer?"
+
+---
+
+### Weakness #2: [Title - e.g., "Wiki-Only Solution"]
+**What it is:** [Description]
+
+**Example:** "Confluence only handles wikis/documentation. Still need Jira for tasks, Google Docs for docs, spreadsheets for data."
+
+**Impact on customer:** [Why this matters]
+
+**Example:** "Tool sprawl continues - still juggling 3-5 tools, constant context switching, documents scattered"
+
+**Who feels it most:** [Buyer persona]
+
+**Example:** "Product managers, ops teams who need docs + tasks + wikis in one place"
+
+**How we exploit:**
+1. **Discovery question:** "Beyond wikis, what else does your team need? Tasks? Docs? Databases?"
+2. **Demo contrast:** Show doc → task → database all in one Notion workspace
+3. **Proof:** "Teams switch from Confluence + Asana + Google Docs to just Notion. Save 10 hrs/week on context switching."
+
+**Trap-setting question:**
+"How many tools would you eliminate if you could handle wikis, tasks, and docs in one place?"
+
+---
+
+### Weakness #3: [Title]
+[Same structure as above]
+
+---
+
+## Common Objections & Responses
+
+Use the **Acknowledge → Reframe → Proof → Check** framework
+
+### Objection: "We already have Confluence"
+
+**Acknowledge:** "Makes sense - you've invested in Confluence"
+
+**Reframe:** "Most teams we talk to have Confluence but still use 3-4 other tools for docs, tasks, and projects that don't fit in a wiki. Sound familiar?"
+
+**Proof:** "Acme Corp had Confluence but was still drowning in Google Docs and Trello chaos. They use Confluence for IT docs, Notion for everything else. We're complement, not replacement."
+
+**Check:** "Does that resonate? Are you using other tools beyond Confluence?"
+
+---
+
+### Objection: "Confluence is more secure / enterprise-ready"
+
+**Acknowledge:** "Security is critical, especially for [their industry]"
+
+**Reframe:** "The question isn't Confluence vs Notion security - we're both SOC2 Type II, GDPR compliant, enterprise SSO. The question is: do you need on-premise, or is cloud-first ok?"
+
+**Proof:** "[Enterprise customer in same industry] uses Notion at scale. SOC2 Type II, SCIM provisioning, audit logs. Cloud-first doesn't mean less secure - it means modern. Ask Salesforce."
+
+**Check:** "Is on-premise a hard requirement, or is cloud with SOC2/SSO acceptable?"
+
+---
+
+### Objection: "Confluence integrates better with our Atlassian stack"
+
+**Acknowledge:** "If you're all-in on Atlassian, Confluence does integrate seamlessly with Jira"
+
+**Reframe:** "But most teams use tools beyond Atlassian - Google Workspace, Slack, Figma. We integrate with Jira PLUS all your other tools. You're not locked into one ecosystem."
+
+**Proof:** "We have native Jira integration, plus API and Zapier for 5,000+ other tools. [Customer] uses Notion with Jira - gets best of both."
+
+**Check:** "Beyond Jira, what other tools does your team rely on daily?"
+
+---
+
+### Objection: [Another common objection]
+[Same Acknowledge → Reframe → Proof → Check structure]
+
+---
+
+## Trap-Setting Questions
+
+**Questions that expose their weaknesses and highlight our strengths:**
+
+### Setup & Implementation
+- "How long can your team wait for IT to configure a new tool - days or weeks?"
+- "When you need to onboard a new hire, can they start immediately or wait for IT to provision access?"
+- "What happens when your team needs to get started but IT is backlogged for 3 weeks?"
+
+### Scope & Tool Sprawl
+- "Beyond wikis, what else does your team need - tasks, docs, databases?"
+- "How many tools would you eliminate if you could handle all team content in one place?"
+- "When you're looking for a document, how many tools do you have to search?"
+
+### Adoption & Usage
+- "What percentage of your team actually uses your current wiki tool daily?"
+- "How often do team members ask 'where's that doc?' in Slack?"
+- "If setup took 2 hours instead of 2 weeks, would that change your timeline?"
+
+### Cost & ROI
+- "Beyond the software cost, what's the IT setup and ongoing admin time?"
+- "How much are you paying per user for tools you could consolidate?"
+- "If your team could save 10 hours per week on doc search, what's that worth?"
+
+---
+
+## Discovery Questions
+
+**Ask these to identify if you're competing against them:**
+
+- "What other solutions are you evaluating?"
+- "Are you currently using any Atlassian products?" (Jira, Confluence, Trello)
+- "Who's driving this evaluation - engineering, ops, or broader team?"
+- "Do you need on-premise deployment or is cloud acceptable?"
+- "How important is it that your team can start immediately vs waiting for IT setup?"
+
+---
+
+## Win/Loss Patterns
+
+### We typically WIN when:
+
+**Scenario #1:** [Description]
+- **Why:** [What drives the win]
+- **Amplify:** [How to emphasize this]
+
+**Example:**
+- **Scenario:** SMB teams under 100 without dedicated IT, need speed
+- **Why:** Can't afford 2-4 week implementations, need team productive now
+- **Amplify:** Show same-day value - "You can start using this today, no IT required"
+
+**Scenario #2:** [Description]
+**Scenario #3:** [Description]
+
+### We typically LOSE when:
+
+**Scenario #1:** [Description]
+- **Why:** [What causes the loss]
+- **Mitigate:** [How to prevent]
+
+**Example:**
+- **Scenario:** Large enterprise (1,000+ employees) with Atlassian site license, IT mandates Atlassian-only
+- **Why:** Ecosystem lock-in, procurement policy, switching cost too high
+- **Mitigate:** Qualify Atlassian dependency early. Position as complement, not replacement.
+
+**Scenario #2:** [Description]
+**Scenario #3:** [Description]
+
+---
+
+## Their Sales Tactics
+
+### What They Say About Us
+
+**FUD #1:** "[What they claim about us]"
+- **Truth level:** [True / Partially true / False]
+- **Our response:** [How to counter]
+
+**Example:**
+- **FUD:** "Notion isn't secure enough for enterprise"
+- **Truth:** Partially true (we don't have on-premise, they do)
+- **Response:** "We're SOC2 Type II with enterprise SSO. The question is: do you need on-premise in 2025? Most Fortune 500 companies are cloud-first now."
+
+**FUD #2:** [Another claim]
+**FUD #3:** [Another claim]
+
+### Their Discounting Behavior
+
+**Standard discount:** [% off list]  
+**Aggressive discount:** [% off list - when desperate]  
+**Quarter-end pattern:** [Behavior near Q end]
+
+**How to use this:**
+- [Strategy - e.g., "If they're discounting 40%, question their value - 'Why such deep discount?'"]
+
+**Example (Confluence):**
+- Standard: 20-30% off list
+- Aggressive: 40%+ near quarter-end, multi-year deals
+- Quarter-end: Very aggressive to hit ARR targets
+
+**Our counter:**
+- "If Confluence is discounting 40%, ask yourself: what's the real value? We don't discount because teams see ROI immediately - we don't need to buy deals."
+
+---
+
+## Customer References
+
+### Customers Who Switched FROM Them TO Us
+
+**[Customer Name] - [Industry] - [Size]**
+- **Why they switched:** [Pain point]
+- **Key quote:** "[Compelling quote]"
+- **Metric:** [Quantified outcome]
+- **Use when:** [Deal scenario]
+
+**Example:**
+**Acme Corp - SaaS - 50 employees**
+- **Why:** Confluence took 3 months to set up, team never adopted it (40% usage)
+- **Quote:** "We wasted 3 months and $15K on Confluence implementation. With Notion, we were productive the same day. 85% of our team uses it daily now."
+- **Metric:** 2 hours vs 3 months setup, 85% vs 40% adoption
+- **Use when:** Prospect mentions implementation concerns or Confluence comparison
+
+---
+
+## Resources
+
+**Internal:**
+- **Competitor overview:** [Link to detailed competitor overview doc]
+- **Objection handling:** [Link to full objection framework doc]
+- **FUD tactics:** [Link to FUD playbook doc]
+- **Demo script vs them:** [Link to demo script]
+
+**Customer-facing:**
+- **Comparison one-pager:** [Link to PDF]
+- **ROI calculator:** [Link]
+- **Customer testimonial video:** [Link]
+
+**External intelligence:**
+- **G2 comparison:** [Link]
+- **Their pricing page:** [Link]
+- **Recent news:** [Link]
+
+---
+
+## 30-Second Talk Track
+
+**Elevator pitch when competing against them:**
+
+"Yes, [Competitor] is a solid option, especially for [their strength - be fair]. However, customers choose us when [differentiator 1], [differentiator 2], and [differentiator 3]. In fact, [customer] switched from [Competitor] to us and [result with metric]."
+
+**Example (Notion vs Confluence):**
+
+"Yes, Confluence is solid, especially for large enterprises already using the Atlassian stack. However, customers choose us when they need speed (live in 2 hours vs 2 weeks), all-in-one functionality (docs + wikis + tasks, not just wikis), and high adoption rates (85% vs 40%). In fact, Acme Corp switched from Confluence to Notion and went from 3 months of failed implementation to productive in one afternoon."
+
+---
+
+**Last Updated:** [Date]  
+**Next Review:** [Date - quarterly]  
+**Owner:** [Product Marketing contact]
+
