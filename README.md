@@ -1,31 +1,31 @@
-# 🧠 Product Marketing OS
-*Structure your product marketing foundations so anyone on your team can create on-brand, on-strategy work with AI*
+# Product Marketing OS
+*Codify your product marketing foundations so anyone at your company can create on-brand, on-strategy work with AI*
 
 ---
 
-## 📖 What Is This?
+## What Is This?
 
 The Product Marketing OS is a knowledge base that codifies everything you know about your product — positioning, messaging, personas, competitive intelligence — into one centralized repository.
 
-**Why it matters:** The biggest blocker to making AI useful isn't the tool - it's the context layer. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes you special. And right now, most of that context lives in your head and scattered across a dozen docs.
+**Why it matters:** The biggest blocker to making AI useful isn't the tool itself - it's the context it references. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes your product special. Most of that context lives in your head and is scattered across a dozen docs, which makes it hard for people at your company to create assets relevant to their role without looping you in for reviews. You become a bottleneck.  
 
-When you codify it into a shared knowledge base, something shifts: anyone on your team (sales, demand gen, creative, partnerships) can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every draft, every review, every Slack thread re-explaining the positioning. The AI already knows what makes your product special, because you built the foundation it works from.
+When you codify it into a shared knowledge base AI tools can reference, you change the way your entire company works: everyone (sales, demand gen, creative, partnerships) can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every brief, every draft, every review. The AI already knows what makes your product special, because you built the foundation it works from.
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 **1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor.
 
 **2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assembling context ad-hoc from 6 different places (and hope it's up to date)
 
-**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, better quality creative, fewer review cycles, faster launches. 
+**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. 
 
-**Result:** You've operationalized your product marketing insight into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. 
+**Result:** You've operationalized your product marketing expertise into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. This is the future of how Product Marketers bring Sales, Product, and Marketing teams together.  
 
 ---
 
-## 📊 The Impact
+## The Impact
 
 | Before (Fragmented) | After (Structured) |
 |---|---|
@@ -37,7 +37,7 @@ When you codify it into a shared knowledge base, something shifts: anyone on you
 
 ---
 
-## 🏗️ What's Inside
+## What's Inside
 
 ```
 product-knowledge-base/
@@ -56,7 +56,7 @@ product-knowledge-base/
 
 ---
 
-## 🎬 Quick Start
+## Quick Start
 
 1. **Clone this repo** → [Setup Guide](./SETUP-GUIDE.md)
 2. **Build your first segment** → `01-segment-context/` ([README](./product-knowledge-base/01-segment-context/README.md))
@@ -67,7 +67,7 @@ product-knowledge-base/
 
 ---
 
-## 💡 The Big Idea
+## The Big Idea
 
 **The context layer is the foundation.** The biggest blocker to scaling with AI isn't the tools themselves — it's having structured, accessible context that AI can leverage. Product Marketers sit at the intersection of market, product, and customer — uniquely positioned to build the knowledge layer that powers GTM execution.
 
@@ -83,7 +83,7 @@ This isn't about more process — it's about better structure. The fastest teams
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Do I need to be technical?**
 No. Everything is Markdown files. If you can edit a document, you can use this.
@@ -99,7 +99,7 @@ It works with any tool that reads files — Cursor, Claude, ChatGPT, or whatever
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free to use, adapt, and extend.
 
