@@ -1,5 +1,5 @@
 # 🧠 Product Marketing OS
-*Codify your marketing strategy so teams and AI can actually use it*
+*Codify your marketing strategy so AI-augmented teams can actually use it*
 
 ---
 
