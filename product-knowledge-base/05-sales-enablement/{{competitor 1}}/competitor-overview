@@ -42,6 +42,14 @@
 
 **Example:** "Large enterprise already locked into Atlassian ecosystem with dedicated IT, compliance requires on-premise"
 
+**Cross-References:**
+- **Our positioning strategy** → `01-segment-context/[segment]/narrative-and-positioning.md`
+- **Our messaging pillars** → `01-segment-context/[segment]/messaging-pillars.md`
+- **Our buyer personas** → `01-segment-context/[segment]/buyer-personas.md`
+- **Tactical battlecard** → `battlecard-template` (this folder)
+- **Objection scripts** → `objection-handling-template` (this folder)
+- **FUD playbook** → `FUD-template` (this folder)
+
 ---
 
 ## Company Profile
@@ -124,31 +132,35 @@
 
 ### Product Strengths
 
-| Strength | Why It Matters | Who Cares Most | How to Counter |
-|----------|----------------|----------------|----------------|
-| [Strength 1] | [Customer value] | [Buyer persona] | [Our response] |
+| Strength | Why It Matters | Who Cares Most |
+|----------|----------------|----------------|
+| [Strength 1] | [Customer value] | [Buyer persona] |
+
+> **Tactical counter-scripts:** See `battlecard-template` for detailed 3-step counter strategies and trap-setting questions for each strength.
 
 **Example (Confluence):**
 
-| Strength | Why It Matters | Who Cares Most | How to Counter |
-|----------|----------------|----------------|----------------|
-| Enterprise features | Permissions, audit logs, compliance | IT/security buyers | "SMBs don't need enterprise complexity - they need speed" |
-| Jira integration | Seamless link between docs and tasks | Engineering teams | "We integrate with Jira too, plus handle docs AND tasks in one tool" |
-| Marketplace ecosystem | 3,000+ apps/extensions | Power users | "Most teams use <5% of features - more complexity, not value" |
+| Strength | Why It Matters | Who Cares Most |
+|----------|----------------|----------------|
+| Enterprise features | Permissions, audit logs, compliance | IT/security buyers |
+| Jira integration | Seamless link between docs and tasks | Engineering teams |
+| Marketplace ecosystem | 3,000+ apps/extensions | Power users |
 
 ### Product Weaknesses
 
-| Weakness | Customer Impact | Who Feels It Most | How We Exploit |
-|----------|-----------------|-------------------|----------------|
-| [Weakness 1] | [Pain it causes] | [Buyer persona] | [Our advantage] |
+| Weakness | Customer Impact | Who Feels It Most |
+|----------|-----------------|-------------------|
+| [Weakness 1] | [Pain it causes] | [Buyer persona] |
+
+> **Exploitation tactics:** See `battlecard-template` for trap-setting questions and demo contrasts that expose each weakness.
 
 **Example (Confluence):**
 
-| Weakness | Customer Impact | Who Feels It Most | How We Exploit |
-|----------|-----------------|-------------------|----------------|
-| Complex setup | Takes weeks to configure, needs IT | SMB ops/champions | "Live in 2 hours vs 2 weeks - no IT required" |
-| Wiki-only | Need separate tools for tasks/projects | Product/ops teams | "Docs + tasks + projects in one workspace" |
-| Slow performance | Pages load slowly, search laggy | Daily users/champions | "Fast, responsive interface - instant search" |
+| Weakness | Customer Impact | Who Feels It Most |
+|----------|-----------------|-------------------|
+| Complex setup | Takes weeks to configure, needs IT | SMB ops/champions |
+| Wiki-only | Need separate tools for tasks/projects | Product/ops teams |
+| Slow performance | Pages load slowly, search laggy | Daily users/champions |
 
 ---
 
@@ -166,14 +178,7 @@
 
 ### What They Say About Us (FUD)
 
-**Claim #1:** "[What they say]"
-- **Truth level:** [True/Partially true/False]
-- **Our response:** [How we counter]
-
-**Example (Confluence about Notion):**
-- **Claim:** "Notion isn't secure enough for enterprise"
-- **Truth level:** Partially true (we're SOC2, but they have on-premise option we don't)
-- **Response:** "We're SOC2 Type II compliant with enterprise SSO, SCIM, and audit logs. 'Not enterprise' meant something in 2010. Today, cloud-first is the standard. Ask Salesforce."
+> **Detailed FUD tracking and counter-strategies:** See `FUD-template` in this competitor folder for comprehensive FUD coverage, including truth levels, full counter-scripts, supporting materials, and proactive inoculation tactics.
 
 ---
 

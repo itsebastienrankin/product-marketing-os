@@ -1,153 +1,98 @@
-# 🚀 Product Marketing OS Setup Guide
-*Get your own copy in 15 minutes*
+# Setup Guide
 
-**Don't worry if you're new to GitHub or Cursor.** This guide will help you set everything up step by step.
-
----
-
-## 📋 First: Get These Things Ready
-
-You'll need:
-- **GitHub account** ([sign up here](https://github.com/signup) if you don't have one)
-- **Cursor IDE** ([download here](https://cursor.sh/) if you don't have it)
-- [**MacWhisper**](https://goodsnooze.gumroad.com/l/macwhisper) - Optional but recommended. Speak to AI instead of typing.
-
-Get these set up first, then follow the steps below.
-
-### Step 1: Make Your Own Copy on GitHub
-
-1. Go to the Product Marketing OS repository on GitHub (where you found this guide)
-2. Click the **"Fork"** button in the top right
-3. Choose your GitHub account (or your company's account)
-4. Click **"Create fork"**
-
-**What happened:** You just created your own copy of Product Marketing OS on your GitHub account. This is your version—you can edit it, share it with your team, and it won't affect the original.
-
-**Can't fork?** Some company GitHub accounts won't let you fork. Ask Cursor: *"I can't fork the repository. Help me create a new GitHub repository and copy the Product Marketing OS files into it."*
-
-### Step 2: Get It on Your Computer
-
-1. Go to your GitHub account and find the Product Marketing OS repository you just forked
-2. Click the green **"Code"** button
-3. Copy the URL that appears
-4. Open Cursor
-5. Ask Cursor: *"Help me clone this repository to my computer: [paste the URL you copied]"*
-
-Cursor will show you what to do next. Basically, it will:
-- Download the repository to your computer
-- Open it in Cursor
-
-**Important:** After cloning, create the `Projects/` folder—this is your local workspace. It's not in GitHub because all files in `Projects/` stay on your computer only.
-
-Ask Cursor: *"Help me create a Projects folder in my Product Marketing OS directory"*
-
-### Step 3: Check It Worked
-
-Ask Cursor: *"What's in the product-knowledge-base folder?"*
-
-If Cursor responds, you're all set! 🎉
-
-**What you should see in Cursor:**
-
-In the left sidebar (file explorer), you should see this structure:
-
-```
-Product Marketing OS/
-├── product-knowledge-base/      # Synced to GitHub (shared knowledge)
-│   ├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
-│   ├── 02-templates/            # Document templates (briefs, battlecards, campaigns)
-│   ├── 03-prompts/             # AI prompts (ads, emails, case studies)
-│   ├── 04-style-guides/        # Writing principles for consistency
-│   └── 05-config/              # Config files (metadata, glossary)
-├── Projects/                    # Create this folder locally (NOT in GitHub - stays on your computer)
-├── README.md
-└── SETUP-GUIDE.md              # This file
-```
-
-If you see this structure, everything worked! 🎉
+Get your Product Marketing OS running in 10 minutes.
 
 ---
 
-## 🏗️ What You Got
+## Prerequisites
 
-When you opened the repository in Cursor, you'll see the `product-knowledge-base/` folder with these subfolders:
-
-```
-product-knowledge-base/
-├── 01-segment-context/      # Templates for personas, positioning, messaging by segment
-├── 02-templates/            # Document templates (briefs, battlecards, campaigns)
-├── 03-prompts/             # AI prompts (ads, emails, case studies)
-├── 04-style-guides/        # Writing principles for consistency
-└── 05-config/              # Config files (metadata, glossary)
-```
-
-**The two main folders:**
-
-**`product-knowledge-base/`** → This is where you'll build your company's knowledge layer
-- Fill in the templates with your company's info (positioning, messaging, personas)
-- This becomes your shared knowledge base (synced to GitHub so your team can access it)
-- Think of it as: Your company's shared brain (everyone sees the same thing)
-
-**`Projects/`** → This is your personal workspace (create it after cloning)
-- **Not in GitHub** - you'll create this folder locally after cloning
-- Store your campaigns, drafts, and work-in-progress here
-- Files in this folder NEVER get committed to GitHub (they stay on your computer only)
-- Think of it as: Your personal workspace (just for you)
+- A **GitHub account** ([sign up here](https://github.com/signup))
+- **Cursor IDE** ([download here](https://cursor.sh)) — recommended, but any Markdown editor works
+- Your existing product marketing context — positioning docs, persona decks, competitive research, messaging frameworks, even rough notes
 
 ---
 
-## 🎯 Next: Build Your Knowledge Layer
+## Step 1: Clone the Repo
 
-Now that everything is set up, you'll fill in the templates with your company's information.
+**For teams** (recommended): Fork first, then clone your fork.
 
-**Ask Cursor:**
+1. Go to the [Product Marketing OS repo](https://github.com/sebastienrankin/product-marketing-os) on GitHub
+2. Click **Fork** → choose your account or company org
+3. Open Cursor → Command Palette (`Cmd + Shift + P`) → `Git: Clone` → paste your fork URL
+
+**For solo use**: Clone directly.
+
+```bash
+git clone https://github.com/sebastienrankin/product-marketing-os.git
 ```
-I'm setting up Product Marketing OS. Help me create my first market segment.
+
+Then open the folder in Cursor. You should see `product-knowledge-base/` with 5 subfolders in the sidebar.
+
+---
+
+## Step 2: Build Your First Segment
+
+This is the foundation. Open Cursor and paste your existing context:
+
+```
+I want to create my first segment context folder using the templates in
+01-segment-context/{{segment-1}}/.
+
+Here's my product marketing context:
+[Paste your existing positioning doc, messaging framework, persona deck,
+or any raw context you have — even rough notes work]
 
 My segment:
-- Name: [e.g., "SMB", "Mid-Market", "Enterprise"]
-- Revenue range: [e.g., "$250K-$5M"]
-- Decision makers: [e.g., "Founder/CEO"]
-- Main pain points: [list 2-3]
-- What they'd use without our product: [what would they use instead]
+- Segment name: [e.g., "SMB", "Mid-Market SaaS", "Enterprise Retail"]
+- Who they are: [e.g., "Teams of 10-50, $1M-$10M revenue"]
+- Main pain points: [Top 3 problems they face]
+- What they'd use without us: [Status quo, alternative tools, competitors]
+- Our primary position: [One thing we want to own in their mind]
 
-Help me create the folder and fill in the templates for this segment.
+Create a new folder called [segment-name]/ with all 4 files populated from my context.
 ```
 
-Cursor will:
-- Create a new folder for your segment
-- Help you fill in all the templates (messaging, personas, positioning)
-- Ask you questions to get the information it needs
+Cursor will create the folder, populate all 4 templates, and ask clarifying questions if needed. Each template also has a **Quick Start Mode** if you prefer to fill them in manually.
 
-Once your first segment is done, repeat this for each segment your company serves.
+Repeat for each segment your product serves (most companies have 2-4).
 
 ---
 
-## ✨ Start Using It
+## Step 3: Add Competitive Intelligence
 
-Once you've filled in your first segment, you can start generating content.
+Same approach — paste what you know and let AI structure it:
 
-**Important:** Always save your generated content in the `Projects/` folder, not in `product-knowledge-base/`.
-
-**Ask Cursor:**
 ```
-Using our SMB segment context (from product-knowledge-base/01-segment-context/smb/),
-generate LinkedIn ad copy that targets SMB retailers and highlights our 
-key messaging about efficiency. Save it in Projects/campaigns/linkedin-ads-smb.md
+Create a competitive intelligence folder for [COMPETITOR NAME] using the
+templates in 05-sales-enablement/{{competitor 1}}/.
+
+Here's what I know about this competitor:
+[Paste competitive research, win/loss notes, product comparisons,
+or sales team feedback]
+
+Create a new folder called [competitor-name]/ with all 4 files populated.
 ```
+
+Start with the 1-2 competitors you see most often in deals.
 
 ---
 
-## 👥 Working with Your Team
+## Step 4: Start Using It
 
-**Making changes:** When you update something in `product-knowledge-base/`, ask Cursor: *"Help me save these changes to GitHub so my team can see them"*
+With your knowledge base populated, reference it whenever you're generating content:
 
-**Reviewing changes:** When someone else makes changes, ask Cursor: *"Show me how to review and approve changes my teammate made"*
+```
+Using the segment context in 01-segment-context/smb/ and the ad copy generator
+in 03-prompts/ad-copy-generator.md, generate LinkedIn ad copy targeting SMB teams.
+```
 
-Cursor will guide you through the process.
+The prompts in `03-prompts/` are designed to pull from your segment context. The briefs in `02-briefs/` work the same way. Any time you point AI at your knowledge base files, the output reflects your actual positioning.
 
 ---
 
-**You're all set! 🎉**
+## Tips
 
-Your Product Marketing OS is ready. Start building your knowledge layer, then use it to generate aligned content faster than ever.
+- **Start with one segment.** Get it right, then expand.
+- **Imperfect context > no context.** A rough first pass still beats generic AI output.
+- **Let AI do the heavy lifting.** Paste in your raw docs and let Cursor structure them into the templates.
+- **Use branches and PRs** for significant updates so your team can review before changes go live.

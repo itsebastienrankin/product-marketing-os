@@ -73,6 +73,12 @@ This document maps the **buying committee** for [SEGMENT NAME] ([GMV RANGE or PR
 
 **Limit to MAX 3 roles.** If you have more, you're trying to sell to too many people.
 
+**Cross-References:**
+- **Positioning & competitive context** → `narrative-and-positioning.md`
+- **Deal flow & buying stages** → `market-segment-overview.md`
+- **Messaging pillars & copy blocks** → `messaging-pillars.md`
+- **Objection handling scripts** → `05-sales-enablement/` (relevant competitor folder)
+
 ---
 
 ## Quick Start Mode (10 minutes)
@@ -96,19 +102,11 @@ This document maps the **buying committee** for [SEGMENT NAME] ([GMV RANGE or PR
 
 ---
 
-## Segmentation Approach (Choose One)
+## Segmentation Approach
 
-### Option 1: Demographic Segmentation
-**When to use:** Established category, clear market segments by size/revenue
-**Example:** "SMB ($250K-$5M GMV)", "Mid-Market ($5M-$50M)", "Enterprise ($50M+)"
+> **Detailed guidance:** See `market-segment-overview.md` for the full demographic vs. problem-based segmentation framework, including selection criteria and examples.
 
-### Option 2: Problem-Based Segmentation
-**When to use:** New category, customers don't self-identify by size
-**Example:** "Teams drowning in tool sprawl (5+ tools)", "Teams scaling fast (10+ hires/quarter)"
-
-**Insight:** Customers self-identify by problem, not by revenue. "I'm drowning in tools" resonates more than "I'm an SMB with $2M revenue."
-
-**Your choice:**
+**Your choice** (as defined in market-segment-overview.md):
 - [ ] Demographic (use GMV range in YAML)
 - [ ] Problem-based (use problem_intensity in YAML)
 
@@ -389,82 +387,23 @@ This document maps the **buying committee** for [SEGMENT NAME] ([GMV RANGE or PR
 
 ## [SEGMENT] Buying Patterns
 
-### Typical Deal Flow
+> **Detailed deal flow:** See `market-segment-overview.md` for the complete stage-by-stage deal progression (Discovery → Team Validation → Economic Buyer → Technical Review → Close), including timelines, red flags, deal killers, buying triggers, and GTM motion.
 
-**Stage 1: Discovery (Week 1-2)**
-- Champion discovers solution (product-led or inbound)
-- Self-serve trial or demo request
-- Initial validation with 2-3 teammates
-
-**Stage 2: Team Validation (Week 2-4)**
-- Champion expands usage to 5-10 people
-- Team tests in real workflows (not toy data)
-- Key milestone: Team sees value, asks for more access
-
-**Stage 3: Economic Buyer Involvement (Week 4-6)**
-- Champion shows results to VP/budget holder
-- Economic buyer reviews ROI, pricing, contract terms
-- Questions: "How much does this save us?" "What's the risk?"
-
-**Stage 4: Technical Review (Week 5-7, if needed)**
-- Technical buyer reviews security, integrations
-- Usually triggered by deal size (>$10K) or industry (regulated)
-- Key concerns: SOC2, GDPR, SSO, audit logs
-
-**Stage 5: Close (Week 6-8)**
-- Contract negotiation
-- Typical discount: 10-20% on annual plans
-- Close triggers: Budget approval, security clearance, contract signed
-
-**Red Flags That Kill Deals:**
-- [ ] No champion adoption after 2 weeks (not seeing value)
-- [ ] Economic buyer not engaged by week 4 (no budget conversation)
-- [ ] Competitor POC running in parallel (split attention)
-- [ ] "We'll decide after Q[next quarter]" (no budget allocated)
-
-### Buying Triggers
-- [Trigger 1]: [What causes them to start looking]
-- [Trigger 2]: [What creates urgency]
-- [Trigger 3]: [What makes them ready to buy now]
-
-**Example (Notion SMB):**
-- New leadership hire (new VP wants to fix chaos)
-- Company growth spurt (10+ new hires in quarter - onboarding breaks)
-- Audit/compliance requirement (need better documentation)
-
-### Common Objections by Role
-
-**Economic Buyer Objections:**
-- **"We already have [Confluence/Sharepoint]"** → Most teams have it but still use 3-4 other tools. We don't replace Confluence, we replace the chaos around it.
-- **"What's the ROI?"** → Team saves 10 hrs/week on search (8 people × 10 hrs × $50/hr = $4K/month savings)
-- **"Change management risk"** → Start with 1 team/use case, expand organically. No big-bang migration.
-
-**Champion Objections:**
-- **"Team won't learn new tool"** → Familiar interface (like Google Docs), not alien. 85% adoption within 1 week.
-- **"Too complex for our needs"** → Start simple (just pages), discover features as needed. Not forced to use everything.
-- **"What if we outgrow it?"** → Scales from 5 to 500+ people. [Customer] started at 20, now 200 people on it.
-
-**Technical Buyer Objections:**
-- **"Is it secure?"** → SOC2 Type II, GDPR compliant, encryption at rest and in transit. [Link to security docs]
-- **"How does it integrate?"** → Public API, Zapier, webhooks. [Customer] integrated with Slack, Jira, GitHub in <1 day.
-- **"What about data portability?"** → Full export (HTML, Markdown, CSV) at any time. No lock-in.
-
-### Proof Points That Resonate by Role
+### Key Concerns by Role
 
 **Economic Buyer:**
-- ROI: $4K/month saved in search time (10 hrs/week × 8 people × $50/hr)
-- Consolidation: Replace 3-5 tools ($10K-15K/year in SaaS spend)
-- Speed: Team productive in 2 hours, not 2 weeks
+- Primary concern: ROI and implementation risk
+- Key question: "How much does this save us, and what's the risk of switching?"
 
 **Champion:**
-- Adoption: 85% of teams actively using within 1 week
-- Search: Find docs in <10 seconds vs 10 minutes before
-- Ease: "Feels like Google Docs" - familiar patterns, low learning curve
+- Primary concern: Team adoption and daily workflow fit
+- Key question: "Will my team actually use this, or is it one more tool to manage?"
 
 **Technical Buyer:**
-- Security: SOC2 Type II, GDPR, encryption at rest/transit
-- APIs: 99.9% uptime, well-documented REST API, webhooks
-- Scale: Used by companies from 5 to 50,000+ employees
+- Primary concern: Security, integrations, and scalability
+- Key question: "Does this meet our security requirements and integrate with our stack?"
+
+> **For full objection handling scripts** (Acknowledge → Reframe → Proof → Check), see the relevant competitor folder in `05-sales-enablement/`. For proof points by role, see the evidence section in `narrative-and-positioning.md`.
 
 ---
 
@@ -477,32 +416,29 @@ This document maps the **buying committee** for [SEGMENT NAME] ([GMV RANGE or PR
    - Secondary content for champion (daily workflow, ease)
    - Tertiary content for technical buyer (only if deal requires technical review)
 
-2. **Map Content to Buying Stage**
-   - Week 1-2 (Discovery): Champion-focused content (ease, workflow, daily pain)
-   - Week 4-6 (Evaluation): Economic buyer content (ROI, consolidation, team productivity)
-   - Week 5-7 (Technical Review): Technical content (security, APIs, compliance)
-
-3. **Use Role-Specific Language**
+2. **Use Role-Specific Language**
    - Economic Buyer: Business outcomes, ROI, risk mitigation
    - Champion: Daily workflow, ease of use, team adoption
    - Technical Buyer: Security, integrations, scalability
 
-4. **Address Role-Specific Objections**
-   - Pull objections and responses from "Common Objections by Role"
-   - Use proof points that resonate with each role
-   - Reference competitive alternatives they consider
-
-5. **Follow Buying Committee Structure**
+3. **Follow Buying Committee Structure**
    - Always identify which role you're targeting
    - Use appropriate authority language (signs contract, influences, can veto)
    - Reference decision timeline for timing content
+
+4. **Cross-Reference Other Documents**
+   - **Deal flow & buying stages** → `market-segment-overview.md`
+   - **Positioning & proof points** → `narrative-and-positioning.md`
+   - **Messaging pillars & copy blocks** → `messaging-pillars.md`
+   - **Objection handling scripts** → `05-sales-enablement/` (relevant competitor folder)
 
 **When generating sales content, emails, or enablement:**
 - Start with Economic Buyer (they sign the deal)
 - Support with Champion content (they drive adoption)
 - Add Technical Buyer content only when needed (deal-specific)
-- Reference buying triggers for outbound timing
-- Use role-specific objections and proof points
+- Reference deal flow and buying triggers from `market-segment-overview.md`
+- Pull proof points from `narrative-and-positioning.md`
+- Use objection handling scripts from `05-sales-enablement/`
 
 ---
 
@@ -511,9 +447,9 @@ This document maps the **buying committee** for [SEGMENT NAME] ([GMV RANGE or PR
 - [ ] **Limit to MAX 3 roles** (Economic Buyer + Champion + optional Technical Buyer)
 - [ ] **Identify PRIMARY buyer** (who signs contract - focus 80% of effort here)
 - [ ] **Map authority levels** (budget holder, veto power, decision timeline)
-- [ ] **Document typical deal flow** (week by week, what happens when)
-- [ ] **List role-specific objections** (different concerns per role)
-- [ ] **Add proof points by role** (what resonates with each stakeholder)
+- [ ] **Complete role-specific details** (pain points, competitive alternatives, decision factors per role)
+- [ ] **Ensure market-segment-overview.md has deal flow** (stage-by-stage progression)
+- [ ] **Ensure narrative-and-positioning.md has proof points** (evidence catalog)
 - [ ] **Validate with sales team** (do deals actually work this way?)
 - [ ] **Update last modified date**
 
