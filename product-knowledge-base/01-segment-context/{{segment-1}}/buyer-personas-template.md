@@ -1,246 +1,470 @@
-# [PRODUCT NAME] [SEGMENT NAME] Personas
-**Last Updated:** [Date]
+# [PRODUCT NAME] [SEGMENT NAME] Buyer Committee
+**Last Updated:** [February 15, 2026]
 
 ## AI-Readable Metadata
 ```yaml
 product_name: "[PRODUCT NAME]"
 segment: "[SEGMENT NAME]"
-gmv_range: "[GMV RANGE]"
+segment_type: "demographic"  # or "problem_based" - see segmentation guide below
+gmv_range: "[GMV RANGE]"  # if demographic
+problem_intensity: "[PROBLEM DESCRIPTION]"  # if problem_based
 product_category: "[PRODUCT CATEGORY]"
-personas:
-  - name: "[PERSONA 1 NAME]"
-    titles: ["[Job title 1]", "[Job title 2]", "[Job title 3]"]
-    primary_position: "[ONE position for this persona]"
-    competitive_alternatives: ["[Alternative 1]", "[Alternative 2]"]
+
+# Buying Committee Structure
+buying_committee:
+  economic_buyer:
+    title: "[Job Title - e.g., VP Operations]"
+    role: "economic_buyer"
+    authority: "Budget holder - signs the contract"
+    veto_power: true
+    decision_timeline: "[When they get involved - e.g., Weeks 4-8]"
+    typical_involvement: "[Early/Mid/Late in sales cycle]"
+    cares_about: ["ROI", "Team productivity", "Risk mitigation"]
+    competitive_alternatives:
+      - type: "status_quo"
+        name: "[What they use now - e.g., 'Manual process in spreadsheets']"
+        why_they_use: "[Why they tolerate it - e.g., 'Free, familiar, no change management']"
+        our_advantage: "[How you're different - e.g., 'Automated in minutes, not hours']"
     key_pain_points: ["[Pain 1]", "[Pain 2]", "[Pain 3]"]
     success_metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
-  - name: "[PERSONA 2 NAME]"
-    titles: ["[Job title 1]", "[Job title 2]"]
-    primary_position: "[ONE position for this persona]"
-    competitive_alternatives: ["[Alternative 1]", "[Alternative 2]"]
+    
+  champion:
+    title: "[Job Title - e.g., Product Manager]"
+    role: "champion"
+    authority: "Internal advocate - influences buyer, no budget authority"
+    veto_power: false
+    decision_timeline: "[When they get involved - e.g., Weeks 1-8]"
+    typical_involvement: "[Discovery through close - they drive the deal]"
+    cares_about: ["Daily workflow", "Ease of use", "Team adoption"]
+    competitive_alternatives:
+      - type: "status_quo"
+        name: "[What they use daily - e.g., 'Copy/paste between 5 tools']"
+        why_they_use: "[Why they tolerate it - e.g., 'Only way to get work done']"
+        our_advantage: "[How you're different - e.g., 'Everything in one place']"
     key_pain_points: ["[Pain 1]", "[Pain 2]", "[Pain 3]"]
     success_metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
-  - name: "[PERSONA 3 NAME]"
-    titles: ["[Job title 1]", "[Job title 2]"]
-    primary_position: "[ONE position for this persona]"
-    competitive_alternatives: ["[Alternative 1]", "[Alternative 2]"]
-    key_pain_points: ["[Pain 1]", "[Pain 2]", "[Pain 3]"]
-    success_metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
-  - name: "[PERSONA 4 NAME]"
-    titles: ["[Job title 1]", "[Job title 2]"]
-    primary_position: "[ONE position for this persona]"
-    competitive_alternatives: ["[Alternative 1]", "[Alternative 2]"]
+    
+  technical_buyer:
+    title: "[Job Title - e.g., CTO, Head of Engineering]"
+    role: "technical_evaluator"
+    authority: "Technical veto - can kill deal on security/integration/scalability grounds"
+    veto_power: true
+    decision_timeline: "[When they get involved - e.g., Weeks 5-7]"
+    typical_involvement: "[Mid-to-late - technical evaluation phase]"
+    cares_about: ["Security", "Integrations", "Scalability", "Maintenance"]
+    competitive_alternatives:
+      - type: "build_internal"
+        name: "[Custom solution - e.g., 'Build it ourselves']"
+        why_they_use: "[Why they prefer building - e.g., 'Full control, customization']"
+        our_advantage: "[How you're different - e.g., 'Live in days, not months of dev time']"
     key_pain_points: ["[Pain 1]", "[Pain 2]", "[Pain 3]"]
     success_metrics: ["[Metric 1]", "[Metric 2]", "[Metric 3]"]
 ```
 
-## Overview
-This document provides detailed personas for the key roles typically involved in [PRODUCT CATEGORY] purchasing decisions within [SEGMENT] organizations ([GMV RANGE]). Each persona includes insights into pain points, decision factors, competitive alternatives they consider, and tailored messaging strategies to support effective sales conversations and content development.
+---
 
-**Key Positioning Principles Applied:**
-- **Context-Based Decision Making:** Understand what category/context each persona sees you in
-- **Competitive Alternatives per Persona:** Identify what each persona would use/do without your product
-- **Focused Messaging:** Each persona needs one focused message that supports your primary position
-- **Position-Based Communication:** Communicate based on the position you own, not features
+## Overview
+This document maps the **buying committee** for [SEGMENT NAME] ([GMV RANGE or PROBLEM DESCRIPTION]). Unlike traditional personas, this framework identifies who holds budget authority, veto power, and when each stakeholder enters the buying process.
+
+**Key Framework Applied: Buying Committee Model**
+- Economic Buyer: Signs the contract (budget holder)
+- Champion: Drives adoption internally (no veto)
+- Technical Buyer: Can kill deal on technical grounds (veto power)
+
+**Limit to MAX 3 roles.** If you have more, you're trying to sell to too many people.
+
+---
+
+## Quick Start Mode (10 minutes)
+
+**Skip detailed research and fill out essentials:**
+
+1. **Economic Buyer Only** (5 mins)
+   - Title, authority level, what they care about
+   - Their current alternative (status quo)
+   - Top 3 pain points
+
+2. **Decision Timeline** (2 mins)
+   - When does economic buyer get involved?
+   - How long is typical sales cycle?
+
+3. **Champion** (3 mins)
+   - Who advocates internally?
+   - What's their daily pain?
+
+**This minimum context is enough for AI to generate targeted content. Expand later.**
+
+---
+
+## Segmentation Approach (Choose One)
+
+### Option 1: Demographic Segmentation
+**When to use:** Established category, clear market segments by size/revenue
+**Example:** "SMB ($250K-$5M GMV)", "Mid-Market ($5M-$50M)", "Enterprise ($50M+)"
+
+### Option 2: Problem-Based Segmentation
+**When to use:** New category, customers don't self-identify by size
+**Example:** "Teams drowning in tool sprawl (5+ tools)", "Teams scaling fast (10+ hires/quarter)"
+
+**Insight:** Customers self-identify by problem, not by revenue. "I'm drowning in tools" resonates more than "I'm an SMB with $2M revenue."
+
+**Your choice:**
+- [ ] Demographic (use GMV range in YAML)
+- [ ] Problem-based (use problem_intensity in YAML)
 
 ---
 
 ## Instructions for Completion
-Replace all [BRACKETED PLACEHOLDERS] with your specific product and segment information.
 
-### Persona Research Questions
-1. **Market Context:** What category/context does each persona see you competing in?
-2. **Competitive Alternatives:** What would each persona use/do if your product didn't exist?
-3. **Primary Position:** What one position should you own for each persona's decision-making?
-4. **Decision Makers:** Who are the main decision makers in this segment?
-5. **Role & Responsibilities:** What are their primary responsibilities and daily challenges?
-6. **Current Approach:** How are they currently approaching [PRODUCT CATEGORY]?
-7. **Success Metrics:** How do they measure success and ROI?
-8. **Switching Barriers:** What are the common barriers to switching to your solution?  
+### Research Questions:
+1. **Who signs the contract?** (Economic buyer - this is your PRIMARY focus)
+2. **Who drives the deal internally?** (Champion)
+3. **Who can kill the deal?** (Technical buyer - optional if no technical veto)
+4. **When does each person get involved?** (Decision timeline)
+5. **What does each person care about most?** (Different priorities per role)
+6. **What would each use without your product?** (Competitive alternatives per role)
 
----
+### Buying Committee Priority:
+1. **MUST HAVE:** Economic Buyer (budget holder)
+2. **HIGHLY RECOMMENDED:** Champion (internal advocate)
+3. **OPTIONAL:** Technical Buyer (only if technical veto is common)
 
-## Persona Comparison Table
-
-| Persona | Title | Key Pain Points | Primary Concerns | Measured By | Emotional Drivers |
-|----------|--------|----------------|------------------|--------------|-------------------|
-| **[PERSONA 1 NAME]** | [Job titles] | [Top 3 pain points] | [What they care about most] | [Success metrics] | [Emotional motivators] |
-| **[PERSONA 2 NAME]** | [Job titles] | [Top 3 pain points] | [What they care about most] | [Success metrics] | [Emotional motivators] |
-| **[PERSONA 3 NAME]** | [Job titles] | [Top 3 pain points] | [What they care about most] | [Success metrics] | [Emotional motivators] |
-| **[PERSONA 4 NAME]** | [Job titles] | [Top 3 pain points] | [What they care about most] | [Success metrics] | [Emotional motivators] |
+**Rule:** If you need more than 3 roles to close deals, your sales process is broken. Simplify.
 
 ---
 
-## Persona 1: [PERSONA 1 NAME]
+## Buying Committee Structure (Map First, Then Fill Details)
+
+### Economic Buyer (PRIMARY - Budget Holder)
+**Title:** [Job title - e.g., VP Operations, Director of Sales]
+**Authority:** Signs contract, holds budget
+**Veto Power:** Yes
+**Involvement:** [When they enter - e.g., Week 4-8 after champion validates]
+
+**Example (Notion SMB):**
+- Title: VP Operations, Head of Ops
+- Authority: Signs contract after team validates
+- Involvement: Week 4-6 (after 2-3 weeks of champion usage)
+- Cares about: ROI, team productivity, minimal disruption
+
+---
+
+### Champion (Internal Advocate)
+**Title:** [Job title - e.g., Product Manager, Operations Manager]
+**Authority:** Influences buyer, no budget
+**Veto Power:** No
+**Involvement:** [When they enter - e.g., Week 1-8, drives entire process]
+
+**Example (Notion SMB):**
+- Title: Product Manager, Ops Manager
+- Authority: Influences VP, no budget
+- Involvement: Week 1-8 (discovery through close)
+- Cares about: Daily workflow, ease of use, team adoption
+
+---
+
+### Technical Buyer (Optional - Technical Veto)
+**Title:** [Job title - e.g., CTO, Head of Engineering]
+**Authority:** Can veto on technical grounds
+**Veto Power:** Yes
+**Involvement:** [When they enter - e.g., Week 5-7 for technical evaluation]
+
+**Example (Notion SMB):**
+- Title: CTO, Head of Engineering
+- Authority: Can veto on security/integration
+- Involvement: Week 5-7 (if deal size >$10K)
+- Cares about: Security, APIs, data governance
+
+**Note:** Only include Technical Buyer if technical evaluation is a common deal blocker. Otherwise, stop at 2 roles.
+
+---
+
+## Buying Committee Comparison Table
+
+| Role | Authority | Veto Power | Involvement Timeline | Cares About | Measured By |
+|------|-----------|------------|----------------------|-------------|-------------|
+| **Economic Buyer** | Budget holder, signs contract | ✅ Yes | [Timeline] | [Priorities] | [Success metrics] |
+| **Champion** | Internal advocate, influences | ❌ No | [Timeline] | [Priorities] | [Success metrics] |
+| **Technical Buyer** | Technical veto only | ✅ Yes | [Timeline] | [Priorities] | [Success metrics] |
+
+---
+
+## Economic Buyer (PRIMARY - This is your focus)
 
 ### Title
-[List 3–5 common job titles for this persona]
+[List 3-5 common job titles]
+
+**Example (Notion SMB):** VP Operations, Head of Operations, COO
 
 ### Role
-[One sentence describing their primary role and responsibilities]
+[One sentence: primary responsibility and budget authority]
+
+**Example (Notion SMB):** "Owns operational efficiency for 20-50 person team. Signs contracts for tools that affect team productivity."
 
 ### Market Context & Competitive Alternatives
-**Current Market Context:** [What category/context does this persona see you competing in?]
-**Competitive Alternatives:** [What would this persona use/do if your product didn't exist? Could be status quo, DIY, different category, or direct competitor]
-**Primary Position for This Persona:** [ONE position you should own for this persona's decision-making]
+
+**Current Market Context:** [What category do they see you in?]
+
+**Example (Notion SMB):** "They see us competing in 'team collaboration tools' alongside Confluence, Asana, Monday.com"
+
+**Competitive Alternatives:** [What would they use/do without you?]
+
+**Example (Notion SMB):**
+| Alternative | Why They Use It | Our Advantage |
+|-------------|-----------------|---------------|
+| **Status Quo: Google Docs + Trello + Slack** | Free, familiar, no change management | Everything in one place - no context switching |
+| **Confluence** | IT approved, enterprise features | 10x faster setup (2 hours vs 2 weeks) |
+| **Spreadsheets + manual process** | No cost, full control | Automated in minutes, not manual hours |
+
+**Primary Position for This Role:** [One position you own for economic buyer decisions]
+
+**Example (Notion SMB):** "Fastest to implement - live in 2 hours, not 2 weeks"
 
 ### Key Details
 
 | Aspect | Details |
-|--------|----------|
-| **Key Responsibilities** | [Responsibility 1]: [Description]<br> [Responsibility 2]: [Description]<br> [Responsibility 3]: [Description] |
-| **Key Pain Points** | [Pain Point 1]: [Description]<br> [Pain Point 2]: [Description]<br> [Pain Point 3]: [Description] |
-| **Cares About** | [Priority 1]: [Description]<br> [Priority 2]: [Description]<br> [Priority 3]: [Description] |
+|--------|---------|
+| **Key Responsibilities** | **[Responsibility 1]:** [Description]<br>**[Responsibility 2]:** [Description]<br>**[Responsibility 3]:** [Description] |
+| **Key Pain Points** | **[Pain 1]:** [Specific problem with quantified impact]<br>**[Pain 2]:** [Specific problem]<br>**[Pain 3]:** [Specific problem] |
+| **Cares About** | **[Priority 1]:** [Why this matters to their role]<br>**[Priority 2]:** [Why this matters]<br>**[Priority 3]:** [Why this matters] |
 | **Measured By** | [Metric 1], [Metric 2], [Metric 3] |
-| **Fears** | [Fear 1]: [Description]<br> [Fear 2]: [Description] |
-| **Emotional Drivers** | [Driver 1]: [Description]<br> [Driver 2]: [Description] |
+| **Fears** | **[Fear 1]:** [What keeps them up at night]<br>**[Fear 2]:** [Risk they want to avoid] |
+| **Emotional Drivers** | **[Driver 1]:** [What motivates them personally]<br>**[Driver 2]:** [What they want to achieve] |
+
+**Example (Notion SMB Economic Buyer):**
+
+| Aspect | Details |
+|--------|---------|
+| **Key Responsibilities** | **Team Productivity:** Ensure 20-50 person team operates efficiently<br>**Tool Stack:** Evaluate and purchase software that affects workflows<br>**Onboarding:** Get new hires productive quickly |
+| **Key Pain Points** | **Tool Sprawl:** Team uses 5+ tools (Drive, Confluence, Trello, Slack) - constant context switching<br>**Search Time:** Team wastes 10+ hours/week searching for documents<br>**Onboarding Chaos:** New hires spend first week asking "where's X?" |
+| **Cares About** | **ROI:** Need to see productivity gains within first month<br>**Minimal Disruption:** Can't afford long implementation or training<br>**Team Adoption:** Need team to actually use it, not abandon after 2 weeks |
+| **Measured By** | Team NPS, Time-to-productivity for new hires, Tool consolidation (fewer subscriptions) |
+| **Fears** | **Another Failed Tool:** Spending $10K+ on tool that team abandons<br>**Implementation Hell:** 3-month implementation that derails team |
+| **Emotional Drivers** | **Simplification:** Want to reduce complexity, not add to it<br>**Team Wins:** Want team to feel productive, not frustrated |
 
 ### Decision Factors
 
 | Factor | Details |
-|--------|----------|
-| **Primary Position Message** | **[one focused message for this persona that supports your primary position]** |
-| **Reasons They Choose [YOUR PRODUCT]** | [Reason 1]: [Description - tied to primary position]<br> [Reason 2]: [Description - tied to primary position]<br> [Reason 3]: [Description - tied to primary position] |
-| **Reasons They Don't Choose [YOUR PRODUCT]** | [Objection 1]: [Description - often related to competitive alternatives]<br> [Objection 2]: [Description]<br> [Objection 3]: [Description] |
-| **Winning Messages** | **[Message 1 - PRIMARY]** - [Supports your one position]<br> [Message 2] - [Supports primary]<br> [Message 3] - [Supports primary] |
+|--------|---------|
+| **Primary Position Message** | **[One focused message that maps to your position]** |
+| **Reasons They Choose You** | **[Reason 1]:** [Tied to position - with proof]<br>**[Reason 2]:** [Tied to position - with proof]<br>**[Reason 3]:** [Tied to position - with proof] |
+| **Reasons They Don't Choose You** | **[Objection 1]:** [Common concern - how to address]<br>**[Objection 2]:** [Common concern]<br>**[Objection 3]:** [Common concern] |
+| **Winning Messages** | **[Message 1 - PRIMARY]:** [Supports your position]<br>**[Message 2]:** [Reinforces primary]<br>**[Message 3]:** [Reinforces primary] |
+
+**Example (Notion SMB Economic Buyer):**
+
+| Factor | Details |
+|--------|---------|
+| **Primary Position Message** | **"Get your team organized in 2 hours, not 2 weeks"** |
+| **Reasons They Choose You** | **Fast Setup:** Live in 2 hours vs Confluence (2 weeks) - G2 data<br>**Team Adoption:** 85% of teams actively using within 1 week (vs 40% for Confluence)<br>**Consolidation:** Replaces 3-5 tools - reduces monthly SaaS spend |
+| **Reasons They Don't Choose You** | **"We already have Confluence":** Most teams have Confluence but still use 3-4 other tools for docs that don't fit<br>**"Change management risk":** Team can start with 1 use case, expand organically - no big bang migration<br>**"Too expensive":** ROI in first month from reduced search time ($5K/month in productivity @ 10 hrs/week saved) |
+| **Winning Messages** | **"From chaos to organized in one afternoon":** Show before/after of team workspace<br>**"Your team finds what they need, when they need it":** No more Slack "where's that doc?" messages<br>**"Start small, grow naturally":** Begin with team wiki, expand to docs and projects |
 
 ---
 
-## Persona 2: [PERSONA 2 NAME]
+## Champion (Internal Advocate - Drives the Deal)
 
 ### Title
-[List 3–5 common job titles for this persona]
+[List 3-5 common job titles]
+
+**Example (Notion SMB):** Product Manager, Operations Manager, Team Lead
 
 ### Role
-[one sentence describing their primary role and responsibilities]
+[One sentence: day-to-day responsibilities and why they care]
+
+**Example (Notion SMB):** "Manages day-to-day team operations. Feels pain of tool sprawl directly. Advocates for solutions to VP."
 
 ### Market Context & Competitive Alternatives
-**Current Market Context:** [What category/context does this persona see you competing in?]
-**Competitive Alternatives:** [What would this persona use/do if your product didn't exist? Could be status quo, DIY, different category, or direct competitor]
-**Primary Position for This Persona:** [one position you should own for this persona's decision-making]
+
+**Current Market Context:** [What category do they see you in?]
+
+**Example (Notion SMB):** "They see us as 'productivity tool' that could replace 3-4 tools they currently juggle"
+
+**Competitive Alternatives:** [What would they use/do without you?]
+
+**Example (Notion SMB):**
+| Alternative | Why They Use It | Our Advantage |
+|-------------|-----------------|---------------|
+| **Copy/paste between Drive/Trello/Slack** | Only way to get work done today | Everything connected in one workspace |
+| **Asana for tasks only** | Team already uses it for projects | Docs + tasks + wiki in one place |
+| **Manual organization in folders** | Free, simple | Powerful search finds everything instantly |
+
+**Primary Position for This Role:** [One position you own for champion's daily workflow]
+
+**Example (Notion SMB):** "Easiest to organize everything - drag/drop simplicity"
 
 ### Key Details
 
 | Aspect | Details |
-|--------|----------|
-| **Key Responsibilities** | [Responsibility 1]: [Description]<br> [Responsibility 2]: [Description]<br> [Responsibility 3]: [Description] |
-| **Key Pain Points** | [Pain Point 1]: [Description]<br> [Pain Point 2]: [Description]<br> [Pain Point 3]: [Description] |
-| **Cares About** | [Priority 1]: [Description]<br> [Priority 2]: [Description]<br> [Priority 3]: [Description] |
+|--------|---------|
+| **Key Responsibilities** | **[Responsibility 1]:** [Daily task]<br>**[Responsibility 2]:** [Daily task]<br>**[Responsibility 3]:** [Daily task] |
+| **Key Pain Points** | **[Pain 1]:** [Specific daily frustration]<br>**[Pain 2]:** [Specific daily frustration]<br>**[Pain 3]:** [Specific daily frustration] |
+| **Cares About** | **[Priority 1]:** [What makes their day easier]<br>**[Priority 2]:** [What makes their day easier]<br>**[Priority 3]:** [What makes their day easier] |
 | **Measured By** | [Metric 1], [Metric 2], [Metric 3] |
-| **Fears** | [Fear 1]: [Description]<br> [Fear 2]: [Description] |
-| **Emotional Drivers** | [Driver 1]: [Description]<br> [Driver 2]: [Description] |
+| **Fears** | **[Fear 1]:** [What would make their life harder]<br>**[Fear 2]:** [What they want to avoid] |
+| **Emotional Drivers** | **[Driver 1]:** [What motivates them]<br>**[Driver 2]:** [What they want to achieve] |
+
+**Example (Notion SMB Champion):**
+
+| Aspect | Details |
+|--------|---------|
+| **Key Responsibilities** | **Coordinate Team Work:** Ensure everyone knows what's happening<br>**Document Processes:** Create and maintain team documentation<br>**Onboard New Hires:** Get new people up to speed quickly |
+| **Key Pain Points** | **Human Search Engine:** Team asks them "where's X?" 20+ times per day in Slack<br>**Context Switching:** Jump between 5 tools constantly - lose train of thought<br>**Outdated Docs:** Can't find current version - multiple copies in Drive |
+| **Cares About** | **Daily Workflow:** Tool needs to fit how they actually work<br>**Team Adoption:** If team doesn't use it, more work for them<br>**Ease of Use:** No time to learn complex systems |
+| **Measured By** | Team asks for help less often, Documents stay up-to-date, New hires productive faster |
+| **Fears** | **Another Tool to Manage:** Don't want one more thing to maintain<br>**Team Resistance:** Team refuses to adopt, they're stuck managing multiple tools |
+| **Emotional Drivers** | **Stop Being Human Search Engine:** Want team to find things themselves<br>**Simplify Life:** Reduce number of tools and tabs open |
 
 ### Decision Factors
 
 | Factor | Details |
-|--------|----------|
-| **Primary Position Message** | **[one focused message for this persona that supports your primary position]** |
-| **Reasons They Choose [YOUR PRODUCT]** | [Reason 1]: [Description - tied to primary position]<br> [Reason 2]: [Description - tied to primary position]<br> [Reason 3]: [Description - tied to primary position] |
-| **Reasons They Don't Choose [YOUR PRODUCT]** | [Objection 1]: [Description - often related to competitive alternatives]<br> [Objection 2]: [Description]<br> [Objection 3]: [Description] |
-| **Winning Messages** | **[Message 1 - PRIMARY]** - [Supports your one position]<br> [Message 2] - [Supports primary]<br> [Message 3] - [Supports primary] |
+|--------|---------|
+| **Primary Position Message** | **[One focused message for champion's daily pain]** |
+| **Reasons They Choose You** | **[Reason 1]:** [Solves daily pain]<br>**[Reason 2]:** [Solves daily pain]<br>**[Reason 3]:** [Makes their life easier] |
+| **Reasons They Don't Choose You** | **[Objection 1]:** [Daily workflow concern]<br>**[Objection 2]:** [Adoption concern]<br>**[Objection 3]:** [Learning curve concern] |
+| **Winning Messages** | **[Message 1 - PRIMARY]:** [Addresses daily pain]<br>**[Message 2]:** [Shows ease]<br>**[Message 3]:** [Proves adoption] |
+
+**Example (Notion SMB Champion):**
+
+| Factor | Details |
+|--------|---------|
+| **Primary Position Message** | **"Stop being the human search engine - your team finds everything themselves"** |
+| **Reasons They Choose You** | **Powerful Search:** Find any doc in <10 seconds across all content<br>**Simple Organization:** Drag-and-drop pages - no complex folder structures<br>**Team Adoption:** Intuitive enough that team uses it without training |
+| **Reasons They Don't Choose You** | **"Team won't learn new tool":** Familiar patterns (like Google Docs), not alien interface<br>**"Too many features, too complex":** Start with basic pages, discover features as needed<br>**"What if it's another abandoned tool?":** Free trial - validate adoption before paying |
+| **Winning Messages** | **"Your team finds what they need without asking you":** Show search finding doc instantly<br>**"Organize it your way, in minutes":** Demo drag-and-drop simplicity<br>**"If your team doesn't love it, don't pay":** Low-risk trial approach |
 
 ---
 
-## Persona 3: [PERSONA 3 NAME]
+## Technical Buyer (Optional - Include Only If Technical Veto Is Common)
+
+**When to include:** Only if technical evaluation is a regular part of your sales process and CTOs/technical leaders can kill deals.
+
+**When to skip:** If deals close without deep technical review, or if technical concerns are minor. Don't create this section just to have 3 personas.
 
 ### Title
-[List 3–5 common job titles for this persona]
+[List 3-5 common job titles]
+
+**Example (Notion SMB):** CTO, Head of Engineering, VP Engineering (only on deals >$10K/year)
 
 ### Role
-[one sentence describing their primary role and responsibilities]
+[One sentence: technical oversight and veto authority]
+
+**Example (Notion SMB):** "Evaluates tools for security, scalability, and integration requirements. Has veto power on technical grounds."
 
 ### Market Context & Competitive Alternatives
-**Current Market Context:** [What category/context does this persona see you competing in?]
-**Competitive Alternatives:** [What would this persona use/do if your product didn't exist? Could be status quo, DIY, different category, or direct competitor]
-**Primary Position for This Persona:** [one position you should own for this persona's decision-making]
+
+**Current Market Context:** [What category do they see you in?]
+
+**Example (Notion SMB):** "They see us as 'SaaS collaboration tool' that needs security/compliance review"
+
+**Competitive Alternatives:** [What would they prefer?]
+
+**Example (Notion SMB):**
+| Alternative | Why They Prefer It | Our Advantage |
+|-------------|---------------------|---------------|
+| **Build internally** | Full control, custom features | Live in days vs months of dev time |
+| **Self-hosted open source** | Data stays on-premises | Enterprise plan with SSO, audit logs, data residency |
+| **Incumbent (Confluence)** | Already approved, IT comfortable | Modern APIs, easier integration, better developer experience |
+
+**Primary Position for This Role:** [One position for technical evaluation]
+
+**Example (Notion SMB):** "Enterprise-grade security without enterprise complexity"
 
 ### Key Details
 
+[Use same table structure as Economic Buyer and Champion - focus on technical concerns]
+
+**Example (Notion SMB Technical Buyer):**
+
 | Aspect | Details |
-|--------|----------|
-| **Key Responsibilities** | [Responsibility 1]: [Description]<br> [Responsibility 2]: [Description]<br> [Responsibility 3]: [Description] |
-| **Key Pain Points** | [Pain Point 1]: [Description]<br> [Pain Point 2]: [Description]<br> [Pain Point 3]: [Description] |
-| **Cares About** | [Priority 1]: [Description]<br> [Priority 2]: [Description]<br> [Priority 3]: [Description] |
-| **Measured By** | [Metric 1], [Metric 2], [Metric 3] |
-| **Fears** | [Fear 1]: [Description]<br> [Fear 2]: [Description] |
-| **Emotional Drivers** | [Driver 1]: [Description]<br> [Driver 2]: [Description] |
-
-### Decision Factors
-
-| Factor | Details |
-|--------|----------|
-| **Primary Position Message** | **[One focused message for this persona that supports your primary position]** |
-| **Reasons They Choose [YOUR PRODUCT]** | [Reason 1]: [Description - tied to primary position]<br> [Reason 2]: [Description - tied to primary position]<br> [Reason 3]: [Description - tied to primary position] |
-| **Reasons They Don't Choose [YOUR PRODUCT]** | [Objection 1]: [Description - often related to competitive alternatives]<br> [Objection 2]: [Description]<br> [Objection 3]: [Description] |
-| **Winning Messages** | **[Message 1 - PRIMARY]** - [Supports your one position]<br> [Message 2] - [Supports primary]<br> [Message 3] - [Supports primary] |
+|--------|---------|
+| **Key Responsibilities** | **Security & Compliance:** Ensure tools meet security standards<br>**Integration:** Evaluate how tools connect to existing stack<br>**Scalability:** Assess if tool grows with company |
+| **Key Pain Points** | **Security Reviews Take Weeks:** Slow down team while reviewing tools<br>**Integration Complexity:** Poorly documented APIs waste engineering time<br>**Vendor Lock-in:** Hard to migrate data if tool doesn't work out |
+| **Cares About** | **Security:** SOC2, GDPR, data encryption<br>**APIs:** Well-documented, reliable integrations<br>**Data Portability:** Can export data if needed |
+| **Measured By** | Security incident rate, Integration stability, Time spent on vendor reviews |
+| **Fears** | **Data Breach:** Tool becomes security vulnerability<br>**Engineering Distraction:** Team spends weeks building integrations |
+| **Emotional Drivers** | **Enable Team Safely:** Want to say "yes" to team requests without security risk<br>**Reduce Vendor Overhead:** Fewer tools to manage and integrate |
 
 ---
 
-## Persona 4: [PERSONA 4 NAME]
+## [SEGMENT] Buying Patterns
 
-### Title
-[List 3–5 common job titles for this persona]
+### Typical Deal Flow
 
-### Role
-[One sentence describing their primary role and responsibilities]
+**Stage 1: Discovery (Week 1-2)**
+- Champion discovers solution (product-led or inbound)
+- Self-serve trial or demo request
+- Initial validation with 2-3 teammates
 
-### Market Context & Competitive Alternatives
-**Current Market Context:** [What category/context does this persona see you competing in?]
-**Competitive Alternatives:** [What would this persona use/do if your product didn't exist? Could be status quo, DIY, different category, or direct competitor]
-**Primary Position for This Persona:** [One position you should own for this persona's decision-making]
+**Stage 2: Team Validation (Week 2-4)**
+- Champion expands usage to 5-10 people
+- Team tests in real workflows (not toy data)
+- Key milestone: Team sees value, asks for more access
 
-### Key Details
+**Stage 3: Economic Buyer Involvement (Week 4-6)**
+- Champion shows results to VP/budget holder
+- Economic buyer reviews ROI, pricing, contract terms
+- Questions: "How much does this save us?" "What's the risk?"
 
-| Aspect | Details |
-|--------|----------|
-| **Key Responsibilities** | [Responsibility 1]: [Description]<br> [Responsibility 2]: [Description]<br> [Responsibility 3]: [Description] |
-| **Key Pain Points** | [Pain Point 1]: [Description]<br> [Pain Point 2]: [Description]<br> [Pain Point 3]: [Description] |
-| **Cares About** | [Priority 1]: [Description]<br> [Priority 2]: [Description]<br> [Priority 3]: [Description] |
-| **Measured By** | [Metric 1], [Metric 2], [Metric 3] |
-| **Fears** | [Fear 1]: [Description]<br> [Fear 2]: [Description] |
-| **Emotional Drivers** | [Driver 1]: [Description]<br> [Driver 2]: [Description] |
+**Stage 4: Technical Review (Week 5-7, if needed)**
+- Technical buyer reviews security, integrations
+- Usually triggered by deal size (>$10K) or industry (regulated)
+- Key concerns: SOC2, GDPR, SSO, audit logs
 
-### Decision Factors
+**Stage 5: Close (Week 6-8)**
+- Contract negotiation
+- Typical discount: 10-20% on annual plans
+- Close triggers: Budget approval, security clearance, contract signed
 
-| Factor | Details |
-|--------|----------|
-| **Primary Position Message** | **[One focused message for this persona that supports your primary position]** |
-| **Reasons They Choose [YOUR PRODUCT]** | [Reason 1]: [Description - tied to primary position]<br> [Reason 2]: [Description - tied to primary position]<br> [Reason 3]: [Description - tied to primary position] |
-| **Reasons They Don't Choose [YOUR PRODUCT]** | [Objection 1]: [Description - often related to competitive alternatives]<br> [Objection 2]: [Description]<br> [Objection 3]: [Description] |
-| **Winning Messages** | **[Message 1 - PRIMARY]** - [Supports your one position]<br> [Message 2] - [Supports primary]<br> [Message 3] - [Supports primary] |
-
----
-
-## [SEGMENT] Buying Patterns and Guidance
+**Red Flags That Kill Deals:**
+- [ ] No champion adoption after 2 weeks (not seeing value)
+- [ ] Economic buyer not engaged by week 4 (no budget conversation)
+- [ ] Competitor POC running in parallel (split attention)
+- [ ] "We'll decide after Q[next quarter]" (no budget allocated)
 
 ### Buying Triggers
-- [Trigger 1]: [Description]  
-- [Trigger 2]: [Description]  
-- [Trigger 3]: [Description]  
+- [Trigger 1]: [What causes them to start looking]
+- [Trigger 2]: [What creates urgency]
+- [Trigger 3]: [What makes them ready to buy now]
 
-### Objections to Expect
-- **[Common Objection 1]** → Mitigate with [Response strategy]  
-- **[Common Objection 2]** → Mitigate with [Response strategy]  
-- **[Common Objection 3]** → Mitigate with [Response strategy]  
+**Example (Notion SMB):**
+- New leadership hire (new VP wants to fix chaos)
+- Company growth spurt (10+ new hires in quarter - onboarding breaks)
+- Audit/compliance requirement (need better documentation)
 
-### Proof Points That Resonate
-- [Proof point 1]: [Description]  
-- [Proof point 2]: [Description]  
-- [Proof point 3]: [Description]  
+### Common Objections by Role
 
----
+**Economic Buyer Objections:**
+- **"We already have [Confluence/Sharepoint]"** → Most teams have it but still use 3-4 other tools. We don't replace Confluence, we replace the chaos around it.
+- **"What's the ROI?"** → Team saves 10 hrs/week on search (8 people × 10 hrs × $50/hr = $4K/month savings)
+- **"Change management risk"** → Start with 1 team/use case, expand organically. No big-bang migration.
 
-## Notes on Feature Emphasis for [SEGMENT]
+**Champion Objections:**
+- **"Team won't learn new tool"** → Familiar interface (like Google Docs), not alien. 85% adoption within 1 week.
+- **"Too complex for our needs"** → Start simple (just pages), discover features as needed. Not forced to use everything.
+- **"What if we outgrow it?"** → Scales from 5 to 500+ people. [Customer] started at 20, now 200 people on it.
 
-### Core Features
-- [Feature 1]: [Why it matters to this segment]  
-- [Feature 2]: [Why it matters to this segment]  
-- [Feature 3]: [Why it matters to this segment]  
+**Technical Buyer Objections:**
+- **"Is it secure?"** → SOC2 Type II, GDPR compliant, encryption at rest and in transit. [Link to security docs]
+- **"How does it integrate?"** → Public API, Zapier, webhooks. [Customer] integrated with Slack, Jira, GitHub in <1 day.
+- **"What about data portability?"** → Full export (HTML, Markdown, CSV) at any time. No lock-in.
 
-### Growth Features
-- [Feature 1]: [How it helps them grow]  
-- [Feature 2]: [How it helps them grow]  
-- [Feature 3]: [How it helps them grow]  
+### Proof Points That Resonate by Role
+
+**Economic Buyer:**
+- ROI: $4K/month saved in search time (10 hrs/week × 8 people × $50/hr)
+- Consolidation: Replace 3-5 tools ($10K-15K/year in SaaS spend)
+- Speed: Team productive in 2 hours, not 2 weeks
+
+**Champion:**
+- Adoption: 85% of teams actively using within 1 week
+- Search: Find docs in <10 seconds vs 10 minutes before
+- Ease: "Feels like Google Docs" - familiar patterns, low learning curve
+
+**Technical Buyer:**
+- Security: SOC2 Type II, GDPR, encryption at rest/transit
+- APIs: 99.9% uptime, well-documented REST API, webhooks
+- Scale: Used by companies from 5 to 50,000+ employees
 
 ---
 
@@ -248,46 +472,48 @@ Replace all [BRACKETED PLACEHOLDERS] with your specific product and segment info
 
 **How AI should use this document when generating content:**
 
-1. **Target Specific Personas**
-   - Use Primary Position Message for persona-specific messaging
-   - Reference pain points and emotional drivers when crafting content
-   - Address fears and concerns directly in messaging
+1. **Prioritize Economic Buyer**
+   - Lead with content that addresses budget holder concerns (ROI, risk, speed)
+   - Secondary content for champion (daily workflow, ease)
+   - Tertiary content for technical buyer (only if deal requires technical review)
 
-2. **Apply Competitive Context**
-   - Understand what alternatives each persona considers
-   - Address objections related to competitive alternatives
-   - Differentiate messaging based on persona's competitive context
+2. **Map Content to Buying Stage**
+   - Week 1-2 (Discovery): Champion-focused content (ease, workflow, daily pain)
+   - Week 4-6 (Evaluation): Economic buyer content (ROI, consolidation, team productivity)
+   - Week 5-7 (Technical Review): Technical content (security, APIs, compliance)
 
-3. **Use Persona-Specific Messaging**
-   - Pull winning messages that resonate with each persona
-   - Reference decision factors when creating calls-to-action
-   - Align messaging with how each persona is measured (success metrics)
+3. **Use Role-Specific Language**
+   - Economic Buyer: Business outcomes, ROI, risk mitigation
+   - Champion: Daily workflow, ease of use, team adoption
+   - Technical Buyer: Security, integrations, scalability
 
-4. **Address Buying Journey**
-   - Use buying triggers to time content appropriately
-   - Prepare objection responses based on common barriers
-   - Reference proof points that resonate with each persona
+4. **Address Role-Specific Objections**
+   - Pull objections and responses from "Common Objections by Role"
+   - Use proof points that resonate with each role
+   - Reference competitive alternatives they consider
 
-5. **Maintain Segment Consistency**
-   - Ensure persona messaging aligns with segment positioning
-   - Cross-reference with messaging pillars for consistency
-   - Use market context to inform persona communication
+5. **Follow Buying Committee Structure**
+   - Always identify which role you're targeting
+   - Use appropriate authority language (signs contract, influences, can veto)
+   - Reference decision timeline for timing content
 
-**When generating sales emails, outreach, or persona-specific content:**
-- Start with AI-Readable Metadata to understand all personas
-- Use Primary Position Message as the core message for each persona
-- Include pain points and benefits relevant to that persona
-- Address competitive alternatives that persona considers
-- Reference emotional drivers and fears appropriately
+**When generating sales content, emails, or enablement:**
+- Start with Economic Buyer (they sign the deal)
+- Support with Champion content (they drive adoption)
+- Add Technical Buyer content only when needed (deal-specific)
+- Reference buying triggers for outbound timing
+- Use role-specific objections and proof points
 
 ---
 
 ## Template Completion Checklist
 
-- [ ] Replace all [BRACKETED PLACEHOLDERS] with specific information  
-- [ ] Research and validate persona details with sales team  
-- [ ] Include specific pain points and decision factors  
-- [ ] Add winning messages that resonate with each persona  
-- [ ] Include relevant proof points and success metrics  
-- [ ] Review with stakeholders for accuracy and completeness  
-- [ ] Update last modified date  
+- [ ] **Limit to MAX 3 roles** (Economic Buyer + Champion + optional Technical Buyer)
+- [ ] **Identify PRIMARY buyer** (who signs contract - focus 80% of effort here)
+- [ ] **Map authority levels** (budget holder, veto power, decision timeline)
+- [ ] **Document typical deal flow** (week by week, what happens when)
+- [ ] **List role-specific objections** (different concerns per role)
+- [ ] **Add proof points by role** (what resonates with each stakeholder)
+- [ ] **Validate with sales team** (do deals actually work this way?)
+- [ ] **Update last modified date**
+
