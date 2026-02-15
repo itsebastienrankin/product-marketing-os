@@ -1,5 +1,5 @@
 # 🧠 Product Marketing OS
-*Codify your marketing strategy so teams and AI can actually use it*
+*Structure your product marketing foundations so anyone on your team can create on-brand, on-strategy work with AI*
 
 ---
 
@@ -7,9 +7,9 @@
 
 The Product Marketing OS is a knowledge base that codifies everything you know about your product — positioning, messaging, personas, competitive intelligence — into one centralized repository.
 
-**Why it matters:** The biggest blocker to making AI useful isn't the tool — it's the context layer. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes you special. And right now, most of that context lives in your head and scattered across a dozen docs.
+**Why it matters:** The biggest blocker to making AI useful isn't the tool - it's the context layer. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes you special. And right now, most of that context lives in your head and scattered across a dozen docs.
 
-When you codify it into a shared knowledge base, something shifts: anyone on your team — sales, demand gen, content, agencies — can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every draft, every review, every Slack thread re-explaining the positioning. The AI already knows what makes your product special, because you built the foundation it works from.
+When you codify it into a shared knowledge base, something shifts: anyone on your team (sales, demand gen, creative, partnerships) can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every draft, every review, every Slack thread re-explaining the positioning. The AI already knows what makes your product special, because you built the foundation it works from.
 
 ---
 
@@ -17,11 +17,11 @@ When you codify it into a shared knowledge base, something shifts: anyone on you
 
 **1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor.
 
-**2. Connect Your Tools** → Teams and AI access your knowledge base directly. No more assembling context from 6 different places.
+**2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assembling context ad-hoc from 6 different places (and hope it's up to date)
 
-**3. Scale Execution** → When the knowledge layer is solid, everything improves — faster launches, aligned content, fewer review cycles.
+**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, better quality creative, fewer review cycles, faster launches. 
 
-**Result:** You've operationalized your product marketing insight into a system that scales impact across the entire organization.
+**Result:** You've operationalized your product marketing insight into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. 
 
 ---
 
