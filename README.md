@@ -5,7 +5,7 @@
 
 ## What Is This?
 
-The Product Marketing OS is a knowledge base that codifies everything you know about your product — positioning, messaging, personas, competitive intelligence — into one centralized repository.
+The Product Marketing OS is a knowledge base that codifies everything you know about your product (positioning, messaging, personas, competitive intelligence, etc) into one centralized repository.
 
 **Why it matters:** The biggest blocker to making AI useful isn't the tool itself - it's the context it references. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes your product special. Most of that context lives in your head and is scattered across a dozen docs, which makes it hard for people at your company to create assets relevant to their role without looping you in for reviews. You become a bottleneck.  
 
