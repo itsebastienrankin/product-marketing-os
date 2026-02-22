@@ -44,7 +44,7 @@ Each segment is completely independent. They share a product, but everything els
 
 ## How to Create a New Segment
 
-Copy the `{{segment-1}}/` template folder, rename it (e.g., `smb/`, `enterprise/`), and populate the files. The fastest path is AI-assisted — see the [Setup Guide](../../SETUP-GUIDE.md) for the exact prompt.
+Copy the `{{segment-1}}/` template folder, rename it (e.g., `smb/`, `enterprise/`), and populate the files. The fastest path is using the **Knowledge Architect** agent (if you've set up `06-agents/`) or AI-assisted prompts — see the [Setup Guide](../../SETUP-GUIDE.md) for the exact approach.
 
 If working manually, fill in this order:
 1. `narrative-and-positioning.md` — strategic foundation
