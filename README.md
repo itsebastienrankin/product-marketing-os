@@ -5,7 +5,7 @@
 
 ## What Is This?
 
-The Product Marketing OS is a knowledge base that codifies everything you know about your product (positioning, messaging, personas, competitive intelligence, etc) into one centralized repository.
+The Product Marketing OS is a knowledge base that codifies everything you know about your product — positioning, messaging, personas, competitive intelligence — into one centralized repository.
 
 **Why it matters:** The biggest blocker to making AI useful isn't the tool itself - it's the context it references. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes your product special. Most of that context lives in your head and is scattered across a dozen docs, which makes it hard for people at your company to create assets relevant to their role without looping you in for reviews. You become a bottleneck.  
 
@@ -15,11 +15,11 @@ When you codify it into a shared knowledge base AI tools can reference, you chan
 
 ## How It Works
 
-**1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor.
+**1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor. Use the **Knowledge Architect** agent to convert your existing docs into structured templates automatically.
 
-**2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assembling context ad-hoc from 6 different places (and hope it's up to date)
+**2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assemble context ad-hoc from 6 different places and hope it's up to date. Activate the **PMM OS agent team** in Cursor to automate workflows.
 
-**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. 
+**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. The agent team (Content Generator, Advisory Board, Consistency Guardian) works together to create, review, and refine content automatically.
 
 **Result:** You've operationalized your product marketing expertise into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. This is the future of how Product Marketers bring Sales, Product, and Marketing teams together.  
 
@@ -45,7 +45,8 @@ product-knowledge-base/
 ├── 02-briefs/                 # Campaign and creative brief templates
 ├── 03-prompts/                # AI generators for ads, emails, landing pages, case studies
 ├── 04-style-guides/           # Writing principles for voice and tone consistency
-└── 05-sales-enablement/       # Competitive intelligence — per competitor
+├── 05-sales-enablement/       # Competitive intelligence — per competitor
+└── 06-agents/                 # PMM OS agent system (Cursor skills + docs)
 ```
 
 **Segment Context** (`01-segment-context/`) — One folder per market segment, each with 4 files: positioning & narrative, messaging pillars, buyer personas, and market overview. This is the strategic foundation everything else references. [See the README →](./product-knowledge-base/01-segment-context/README.md)
@@ -54,14 +55,17 @@ product-knowledge-base/
 
 **Briefs, Prompts & Style Guides** — Templates and AI prompt generators that pull from your segment context. Outputs reflect your actual positioning, proof points, and customer language — not generic copy.
 
+**Agents** (`06-agents/`) — Cursor skills that act as a PMM agent team: Knowledge Architect, Content Generator, Consistency Guardian, Advisory Board, and Orchestrator. Copy or symlink `06-agents/skills/` into `.cursor/skills/` to use them in Cursor. [See the README →](./product-knowledge-base/06-agents/README.md)
+
 ---
 
 ## Quick Start
 
 1. **Clone this repo** → [Setup Guide](./SETUP-GUIDE.md)
-2. **Build your first segment** → `01-segment-context/` ([README](./product-knowledge-base/01-segment-context/README.md))
-3. **Add your first competitor** → `05-sales-enablement/` ([README](./product-knowledge-base/05-sales-enablement/README.md))
-4. **Generate content** → Use the prompts in `03-prompts/` with your segment context as input
+2. **Set up agents** (optional but recommended) → Copy or symlink `06-agents/skills/` into `.cursor/skills/` to activate the PMM agent team
+3. **Build your first segment** → Use the **Knowledge Architect** agent or templates in `01-segment-context/` ([README](./product-knowledge-base/01-segment-context/README.md))
+4. **Add your first competitor** → Use the **Knowledge Architect** agent or templates in `05-sales-enablement/` ([README](./product-knowledge-base/05-sales-enablement/README.md))
+5. **Generate content** → Use the **Content Generator** agent or prompts in `03-prompts/` with your segment context as input
 
 **[Read the Setup Guide →](./SETUP-GUIDE.md)**
 
@@ -95,7 +99,10 @@ Cloning the repo: 10 minutes. Building your first segment: 2-4 hours with AI ass
 Yes. Share via GitHub and everyone accesses the same knowledge base.
 
 **What if I don't use Cursor?**
-It works with any tool that reads files — Cursor, Claude, ChatGPT, or whatever comes next.
+The knowledge base works with any tool that reads files — Cursor, Claude, ChatGPT, or whatever comes next. The agent system (`06-agents/`) is specifically designed for Cursor, but you can still use the templates, prompts, and briefs with any AI tool.
+
+**What are the agents?**
+The PMM OS includes a team of specialized AI agents that work together: **Knowledge Architect** (codifies your knowledge), **Content Generator** (creates marketing content), **Consistency Guardian** (ensures alignment), **Advisory Board** (provides buyer feedback), and **Orchestrator** (coordinates the team). They automatically hand off work, review and refine content, and ensure quality before delivering results. [See the Agents README →](./product-knowledge-base/06-agents/README.md)
 
 ---
 

@@ -26,14 +26,44 @@ Get your Product Marketing OS running in 10 minutes.
 git clone https://github.com/sebastienrankin/product-marketing-os.git
 ```
 
-Then open the folder in Cursor. You should see `product-knowledge-base/` with 5 subfolders in the sidebar.
+Then open the folder in Cursor. You should see `product-knowledge-base/` with 6 subfolders in the sidebar.
 
 ---
 
-## Step 2: Build Your First Segment
+## Step 2: Set Up Agents (Optional but Recommended)
 
-This is the foundation. Open Cursor and paste your existing context:
+The PMM OS includes a team of specialized agents that automate workflows. To activate them:
 
+1. Copy or symlink the agent skills into Cursor:
+   ```bash
+   mkdir -p .cursor/skills
+   cd .cursor/skills
+   for name in knowledge-architect content-generator consistency-guardian advisory-board pmm-orchestrator; do
+     ln -sf "../../product-knowledge-base/06-agents/skills/$name" "$name"
+   done
+   ```
+
+2. Restart Cursor to load the skills.
+
+Now you can use agents like: "I have a positioning doc and persona deck - populate my SMB segment folder" and the **Knowledge Architect** agent will handle it automatically.
+
+**[See the Agents README →](./product-knowledge-base/06-agents/README.md)** for full capabilities.
+
+---
+
+## Step 3: Build Your First Segment
+
+This is the foundation. You can use the **Knowledge Architect** agent (if set up) or paste your context directly:
+
+**With Knowledge Architect agent:**
+```
+I have a positioning doc and persona deck - populate my SMB segment folder
+
+[Paste your existing positioning doc, messaging framework, persona deck,
+or any raw context you have — even rough notes work]
+```
+
+**Without agents (manual):**
 ```
 I want to create my first segment context folder using the templates in
 01-segment-context/{{segment-1}}/.
@@ -52,16 +82,25 @@ My segment:
 Create a new folder called [segment-name]/ with all 4 files populated from my context.
 ```
 
-Cursor will create the folder, populate all 4 templates, and ask clarifying questions if needed. Each template also has a **Quick Start Mode** if you prefer to fill them in manually.
+Cursor (with or without agents) will create the folder, populate all 4 templates, and ask clarifying questions if needed. Each template also has a **Quick Start Mode** if you prefer to fill them in manually.
 
 Repeat for each segment your product serves (most companies have 2-4).
 
 ---
 
-## Step 3: Add Competitive Intelligence
+## Step 4: Add Competitive Intelligence
 
-Same approach — paste what you know and let AI structure it:
+Same approach — use the **Knowledge Architect** agent or paste what you know:
 
+**With Knowledge Architect agent:**
+```
+Convert these competitive research notes into a battlecard for Competitor X
+
+[Paste competitive research, win/loss notes, product comparisons,
+or sales team feedback]
+```
+
+**Without agents (manual):**
 ```
 Create a competitive intelligence folder for [COMPETITOR NAME] using the
 templates in 05-sales-enablement/{{competitor 1}}/.
@@ -77,10 +116,22 @@ Start with the 1-2 competitors you see most often in deals.
 
 ---
 
-## Step 4: Start Using It
+## Step 5: Start Using It
 
-With your knowledge base populated, reference it whenever you're generating content:
+With your knowledge base populated, generate content using agents or prompts:
 
+**With Content Generator agent:**
+```
+Generate 3 Meta ad variants for our Q1 SMB campaign targeting CFOs
+```
+
+The agent team will:
+1. Generate content using your segment context
+2. Get buyer feedback from the Advisory Board
+3. Review for PMM OS alignment with Consistency Guardian
+4. Iterate until quality thresholds are met
+
+**Without agents (manual):**
 ```
 Using the segment context in 01-segment-context/smb/ and the ad copy generator
 in 03-prompts/ad-copy-generator.md, generate LinkedIn ad copy targeting SMB teams.
