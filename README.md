@@ -49,13 +49,13 @@ product-knowledge-base/
 └── 06-agents/                 # PMM OS agent system (Cursor skills + docs)
 ```
 
-**Segment Context** (`01-segment-context/`) — One folder per market segment, each with 4 files: positioning & narrative, messaging pillars, buyer personas, and market overview. This is the strategic foundation everything else references. [See the README →](./product-knowledge-base/01-segment-context/README.md)
+**Segment Context** (`01-segment-context/`) — One folder per market segment, each with 4 files: positioning & narrative, messaging pillars, buyer personas, and market overview. This is the strategic foundation everything else references. [Segment context guide →](./product-knowledge-base/01-segment-context/README.md)
 
-**Sales Enablement** (`05-sales-enablement/`) — One folder per competitor, each with 4 files: competitive overview, battlecard, objection scripts, and FUD playbook. Designed for sales teams to use in active deals. [See the README →](./product-knowledge-base/05-sales-enablement/README.md)
+**Sales Enablement** (`05-sales-enablement/`) — One folder per competitor, each with 4 files: competitive overview, battlecard, objection scripts, and FUD playbook. Designed for sales teams to use in active deals. [Sales enablement guide →](./product-knowledge-base/05-sales-enablement/README.md)
 
 **Briefs, Prompts & Style Guides** — Templates and AI prompt generators that pull from your segment context. Outputs reflect your actual positioning, proof points, and customer language — not generic copy.
 
-**Agents** (`06-agents/`) — Cursor skills that act as a PMM agent team: Knowledge Architect, Content Generator, Consistency Guardian, Advisory Board, and Orchestrator. Copy or symlink `06-agents/skills/` into `.cursor/skills/` to use them in Cursor. [See the README →](./product-knowledge-base/06-agents/README.md)
+**Agents** (`06-agents/`) — Cursor skills that act as a PMM agent team: Knowledge Architect, Content Generator, Consistency Guardian, Advisory Board, and Orchestrator. Copy or symlink `06-agents/skills/` into `.cursor/skills/` to use them in Cursor. [Agents guide →](./product-knowledge-base/06-agents/README.md)
 
 ---
 
@@ -63,27 +63,11 @@ product-knowledge-base/
 
 1. **Clone this repo** → [Setup Guide](./SETUP-GUIDE.md)
 2. **Set up agents** (optional but recommended) → Copy or symlink `06-agents/skills/` into `.cursor/skills/` to activate the PMM agent team
-3. **Build your first segment** → Use the **Knowledge Architect** agent or templates in `01-segment-context/` ([README](./product-knowledge-base/01-segment-context/README.md))
-4. **Add your first competitor** → Use the **Knowledge Architect** agent or templates in `05-sales-enablement/` ([README](./product-knowledge-base/05-sales-enablement/README.md))
+3. **Build your first segment** → Use the **Knowledge Architect** agent or templates in `01-segment-context/` ([guide](./product-knowledge-base/01-segment-context/README.md))
+4. **Add your first competitor** → Use the **Knowledge Architect** agent or templates in `05-sales-enablement/` ([guide](./product-knowledge-base/05-sales-enablement/README.md))
 5. **Generate content** → Use the **Content Generator** agent or prompts in `03-prompts/` with your segment context as input
 
 **[Read the Setup Guide →](./SETUP-GUIDE.md)**
-
----
-
-## The Big Idea
-
-**The context layer is the foundation.** The biggest blocker to scaling with AI isn't the tools themselves — it's having structured, accessible context that AI can leverage. Product Marketers sit at the intersection of market, product, and customer — uniquely positioned to build the knowledge layer that powers GTM execution.
-
-When you build the knowledge layer:
-- ✅ Every output stays consistent (structured inputs)
-- ✅ Every team moves faster (accessible context)
-- ✅ Every AI tool works better (clear inputs = better outputs)
-- ✅ Every GTM function improves (solid foundation)
-
-**You build once. Everything downstream improves automatically.**
-
-This isn't about more process — it's about better structure. The fastest teams build intentional knowledge systems. The brands that win won't just use AI — they'll design workflows around it, starting with a solid context layer.
 
 ---
 
@@ -102,7 +86,7 @@ Yes. Share via GitHub and everyone accesses the same knowledge base.
 The knowledge base works with any tool that reads files — Cursor, Claude, ChatGPT, or whatever comes next. The agent system (`06-agents/`) is specifically designed for Cursor, but you can still use the templates, prompts, and briefs with any AI tool.
 
 **What are the agents?**
-The PMM OS includes a team of specialized AI agents that work together: **Knowledge Architect** (codifies your knowledge), **Content Generator** (creates marketing content), **Consistency Guardian** (ensures alignment), **Advisory Board** (provides buyer feedback), and **Orchestrator** (coordinates the team). They automatically hand off work, review and refine content, and ensure quality before delivering results. [See the Agents README →](./product-knowledge-base/06-agents/README.md)
+The PMM OS includes a team of specialized AI agents that work together: **Knowledge Architect** (codifies your knowledge), **Content Generator** (creates marketing content), **Consistency Guardian** (ensures alignment), **Advisory Board** (provides buyer feedback), and **Orchestrator** (coordinates the team). They automatically hand off work, review and refine content, and ensure quality before delivering results. [Agents guide →](./product-knowledge-base/06-agents/README.md)
 
 ---
 
