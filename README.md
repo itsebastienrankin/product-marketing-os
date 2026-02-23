@@ -15,13 +15,13 @@ When you codify it into a shared knowledge base AI tools can reference, you chan
 
 ## How It Works
 
-**1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor. Use the **Knowledge Architect** agent to convert your existing docs into structured templates automatically.
+**1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor. The **Knowledge Architect** agent converts your existing docs into structured templates automatically.
 
-**2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assemble context ad-hoc from 6 different places and hope it's up to date. Activate the **PMM OS agent team** in Cursor to automate workflows.
+**2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assemble context ad-hoc from 6 different places and hope it's up to date. The **PMM OS agent team** works together to get work done and keep you in the loop every step of the way. 
 
-**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. The agent team (Content Generator, Advisory Board, Consistency Guardian) works together to create, review, and refine content automatically.
+**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. The **PMM OS agent team** works together to create, review, and refine content. 
 
-**Result:** You've operationalized your product marketing expertise into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. This is the future of how Product Marketers bring Sales, Product, and Marketing teams together.  
+**Result:** You've operationalized your product marketing expertise into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports everyone. This is the future of how Product Marketers bring Sales, Product, and Marketing teams together.  
 
 ---
 
