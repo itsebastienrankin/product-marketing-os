@@ -2,6 +2,75 @@
 
 This document defines the core writing style and principles for all [COMPANY NAME] [PRODUCT CATEGORY] marketing content. All content generators should reference these guidelines to ensure consistency.
 
+When many people (and AI) create content, the risk isn’t the tools—it’s that everything starts to sound the same. These principles spell out what good sounds like, what to avoid, and where human judgment still matters. AI is a support system that needs guidance; the bar for what we publish doesn’t change.
+
+---
+
+## Voice
+
+Our voice reflects [COMPANY NAME]’s leadership, clarity of thinking, and human connection. Three attributes to keep consistent:
+
+**Confident** — Lead with confidence and clarity. Avoid hedging language.
+
+- ❌ "It might be time to consider other options."
+- ✅ "[Brand-specific confident line, e.g. Don’t renew. Reimagine.]"
+
+**Precise** — Say only what’s needed. Don’t patronize the reader.
+
+- ❌ "The [obvious context] transformed the business landscape."
+- ✅ "[Specific, concrete claim that respects the reader’s intelligence.]"
+
+**Approachable + inspiring** — Have fun. [COMPANY NAME] isn’t afraid to show some personality.
+
+- ❌ "After using our [product], we’re sure you’ll become a strong advocate."
+- ✅ "[Line that feels human, memorable, and on-brand.]"
+
+---
+
+## Tone
+
+**Direct** — Be short, punchy, action-first.
+
+- ❌ "Our solution includes automation features designed to reduce time spent on administrative processes."
+- ✅ "Automate the busywork. Focus on growth."
+
+**Outcome-obsessed** — Tie everything to measurable results.
+
+- ❌ "Powerful [product category] that drives business results."
+- ✅ "Help your [audience] close more deals." / "[Specific outcome]."
+
+**Opinionated** — Challenge the status quo when it’s true to the brand.
+
+- ❌ "[Topic] is one way to measure effectiveness."
+- ✅ "If you’re only measuring [old way], you’re already behind."
+
+**Visionary** — Paint the big picture when it fits. Avoid bland, generic “opportunity” language.
+
+- ❌ "The modern [category] landscape offers many opportunities for innovation."
+- ✅ "This isn’t just a new way to [do X]. It’s a new way to compete."
+
+---
+
+## "AI speak" — Patterns to Catch and Remove
+
+AI is part of the workflow. That doesn’t change the bar for what we publish. These guidelines keep our writing clear and human. They will evolve; the responsibility stays the same. **Catch weak patterns and remove them.** Common ones:
+
+**❌ Giveaway words** — Overused, nonhuman-sounding. Cut or replace.
+
+- *Examples to avoid:* delve, realm, ever-evolving, navigate, embark, leverage, synergy, robust, seamless, cutting-edge, world-class, best-in-class, holistic, ecosystem (when vague), empower (unless intentional), utilize, facilitate, streamline (unless specific)
+
+**❌ Simple contrasts, often alliterative** — "It’s not X, it’s Y" can sound like a template.
+
+- *Examples to avoid:* "It’s about data, not drama." / "It’s not learning, it’s transformation." Use this structure sparingly; when you do, make it specific and true to the brand.
+
+**❌ Em dashes** — Use sparingly. Prefer a full stop, comma, or rephrasing. Overuse makes copy feel breathless and samey.
+
+**❌ Overuse of transitions** — Sounds like an essay, not a human.
+
+- *Examples to avoid:* In conclusion, To summarize, The truth is, At the end of the day, It’s important to note, Furthermore, Additionally (unless it genuinely helps)
+
+**Rule:** If a phrase could appear in any competitor’s content, question it. Replace with something only [COMPANY NAME] would say.
+
 ---
 
 ## Core Writing Philosophy
@@ -103,9 +172,10 @@ Use natural, conversational language that drives action without being pushy or s
 - Define on first use or avoid entirely
 - Don't assume your audience knows industry-specific terms
 
-**Generic buzzwords:**
+**Generic buzzwords and "AI speak":**
 - Don't use "[buzzword 1]," "[buzzword 2]," "[buzzword 3]," "[buzzword 4]" without explanation
 - If you must use them, explain what they mean in context
+- See the **"AI speak"** section above for giveaway words and patterns to catch (delve, realm, overused transitions, etc.)
 
 **Corporate jargon:**
 - Avoid "[jargon 1]," "[jargon 2]," "[jargon 3]," "[jargon 4]," "[jargon 5]"
@@ -235,6 +305,9 @@ While these principles apply to all content, different formats may emphasize dif
 
 Before finalizing any content, verify:
 
+- [ ] **Voice** — Confident, precise, approachable (no hedging; no patronizing; personality where appropriate)
+- [ ] **Tone** — Direct, outcome-obsessed, opinionated or visionary where it fits (see Tone section)
+- [ ] **No "AI speak"** — No giveaway words, lazy contrasts, em-dash overload, or boilerplate transitions (see "AI speak" section)
 - [ ] Written in natural, human voice (not corporate)
 - [ ] Uses everyday language (no jargon)
 - [ ] [Customer/Client] positioned as the hero
