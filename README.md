@@ -46,7 +46,8 @@ product-knowledge-base/
 ├── 03-prompts/                # AI generators for ads, emails, landing pages, case studies
 ├── 04-style-guides/           # Writing principles for voice and tone consistency
 ├── 05-sales-enablement/       # Competitive intelligence — per competitor
-└── 06-agents/                 # PMM OS agent system (Cursor skills + docs)
+├── 06-agents/                 # PMM OS agent system (Cursor skills + docs)
+└── 07-proof-points/           # Case studies and data claims — substantiated evidence
 ```
 
 **Segment Context** (`01-segment-context/`) — One folder per market segment, each with 4 files: positioning & narrative, messaging pillars, buyer personas, and market overview. This is the strategic foundation everything else references. [Segment context guide →](./product-knowledge-base/01-segment-context/README.md)
@@ -57,6 +58,8 @@ product-knowledge-base/
 
 **Agents** (`06-agents/`) — Cursor skills that act as a PMM agent team: Knowledge Architect, Content Generator, Consistency Guardian, Advisory Board, and Orchestrator. Copy or symlink `06-agents/skills/` into `.cursor/skills/` to use them in Cursor. [Agents guide →](./product-knowledge-base/06-agents/README.md)
 
+**Proof Points** (`07-proof-points/`) — Codified evidence that backs your marketing claims. One file per customer case study (approved quotes, metrics, competitive switch context) and a consolidated data claims repository (sourced stats with strength ratings and status tracking). Content Generator pulls from these automatically; Consistency Guardian verifies claims against them. [Proof points guide →](./product-knowledge-base/07-proof-points/README.md)
+
 ---
 
 ## Quick Start
@@ -65,7 +68,8 @@ product-knowledge-base/
 2. **Set up agents** (optional but recommended) → Copy or symlink `06-agents/skills/` into `.cursor/skills/` to activate the PMM agent team
 3. **Build your first segment** → Use the **Knowledge Architect** agent or templates in `01-segment-context/` ([guide](./product-knowledge-base/01-segment-context/README.md))
 4. **Add your first competitor** → Use the **Knowledge Architect** agent or templates in `05-sales-enablement/` ([guide](./product-knowledge-base/05-sales-enablement/README.md))
-5. **Generate content** → Use the **Content Generator** agent or prompts in `03-prompts/` with your segment context as input
+5. **Add proof points** → Use the **Knowledge Architect** agent to codify case studies from URLs and organize data claims in `07-proof-points/` ([guide](./product-knowledge-base/07-proof-points/README.md))
+6. **Generate content** → Use the **Content Generator** agent or prompts in `03-prompts/` with your segment context as input
 
 **[Read the Setup Guide →](./SETUP-GUIDE.md)**
 
