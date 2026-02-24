@@ -32,7 +32,7 @@ Each segment is completely independent. They share a product, but everything els
 
 ## The 4 Files
 
-**`narrative-and-positioning.md`** — The strategic source of truth. Your positioning strategy, competitive alternatives, differentiators, proof points, and narrative all live here. Every other file in the folder references this one. Start here.
+**`narrative-and-positioning.md`** — The strategic source of truth. Your positioning strategy, competitive alternatives, differentiators, proof points, and narrative all live here. Every other file in the folder references this one. Start here. For codified proof points (case studies and data claims), see `07-proof-points/`.
 
 **`messaging-pillars.md`** — The copy execution layer. Translates your positioning into 3 messaging pillars with ready-to-use copy blocks: headlines, body copy, CTAs, email subject lines, and social posts.
 
