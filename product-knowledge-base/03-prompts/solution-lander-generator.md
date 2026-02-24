@@ -185,7 +185,9 @@ Each should be specific, quantified where possible, and emotionally resonant.
    - Result: [Metric]
 
 **Source:** Pull from:
-- `narrative-and-positioning.md` → Customer success stories and proof points
+- `07-proof-points/case-studies/` → Approved customer success stories, quotes, and metrics
+- `07-proof-points/data-claims/data-claims.md` → Substantiated data claims with active status
+- `narrative-and-positioning.md` → Strategic proof points context
 - `messaging-pillars.md` → "Why Customers Care" customer quotes
 
 ---
@@ -267,8 +269,8 @@ Each should be specific, quantified where possible, and emotionally resonant.
 **Defensible Claims:**
 - Operational benefits: "Eliminates tool switching," "Everything searchable in one place"
 - Customer experience: "Set up in 2 hours," "No IT required"
-- Verified metrics: Only from `narrative-and-positioning.md` proof points section
-- Customer quotes: Only from approved case studies or "Why Customers Care" sections
+- Verified metrics: Only from `07-proof-points/data-claims/data-claims.md` with status `active`, or from `narrative-and-positioning.md` proof points section
+- Customer quotes: Only from `07-proof-points/case-studies/` (approved quotes) or "Why Customers Care" sections in `messaging-pillars.md`
 
 **Avoid These Claims (Unless Verified):**
 - Specific rate comparisons without source data

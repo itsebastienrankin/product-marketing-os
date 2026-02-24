@@ -255,18 +255,22 @@ Use [customer] testimonials to:
 
 ### Where to Find Approved Content
 
-**Primary source:** `[knowledge-base-path]/[customer-context-folder]/case-studies/` folder
+**Primary sources:**
+- `product-knowledge-base/07-proof-points/case-studies/` — Codified case studies with approved quotes, metrics, and competitive switch context
+- `product-knowledge-base/07-proof-points/data-claims/data-claims.md` — Externally-approved data claims with sources and status
 
 **What's available:**
 - Published case studies with [customer]-approved quotes
 - Verified metrics and success stories
 - All content approved for public use
+- Data claims with source tracking, strength ratings, and channel approvals
 
 ### How to use:
 
-- Search for relevant [customers] by [vertical/segment/use case]
-- Extract authentic quotes that reinforce your value proposition
-- Use verified metrics to substantiate claims with real customer data
+- Search case study YAML metadata by vertical, segment, competitor, or messaging pillar
+- Use the "Quick Reference: Approved Quotes" table for ready-to-use testimonials
+- Check data claims file for substantiated proof points — only use claims with status `active`
+- Use exact claim text — do not paraphrase, round, or extrapolate
 
 ### Do NOT reference:
 
