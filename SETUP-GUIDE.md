@@ -26,7 +26,7 @@ Get your Product Marketing OS running in 10 minutes.
 git clone https://github.com/sebastienrankin/product-marketing-os.git
 ```
 
-Then open the folder in Cursor. You should see `product-knowledge-base/` with 6 subfolders in the sidebar.
+Then open the folder in Cursor. You should see `product-knowledge-base/` with 7 subfolders in the sidebar.
 
 ---
 
@@ -116,7 +116,31 @@ Start with the 1-2 competitors you see most often in deals.
 
 ---
 
-## Step 5: Start Using It
+## Step 5: Add Proof Points
+
+Proof points — case studies and data claims — give your content substantiated evidence instead of generic assertions.
+
+**With Knowledge Architect agent:**
+```
+Codify all the case studies from https://yoursite.com/customers into our proof points library
+```
+
+The agent will scrape each published story, create one file per customer in `07-proof-points/case-studies/`, and extract approved quotes, metrics, and competitive switch context.
+
+For data claims:
+```
+Here are our key data claims and stats — organize them into the proof points library
+
+[Paste your stats, research findings, benchmark data, or survey results
+with their sources]
+```
+
+**Without agents (manual):**
+Copy the templates in `07-proof-points/` and populate them with your published case studies and verified data claims. See the [Proof Points README](./product-knowledge-base/07-proof-points/README.md) for structure details.
+
+---
+
+## Step 6: Start Using It
 
 With your knowledge base populated, generate content using agents or prompts:
 
