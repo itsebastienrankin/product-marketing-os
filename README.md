@@ -1,5 +1,5 @@
 # Product Marketing OS
-*Turn your marketing strategy into a system that scales — so everyone at your company creates on-brand, on-strategy work with AI, without waiting on you.*
+*Turn your marketing strategy into a system that scales so everyone at your company creates on-brand, on-strategy work with AI, without waiting on you.*
 
 ---
 
