@@ -4,10 +4,7 @@ A team of specialized AI agents that amplify PMM work by automating knowledge co
 
 ## Quick Start
 
-The agents are implemented as **Cursor Skills**. To use them in Cursor:
-
-1. **Copy or symlink** the contents of `product-knowledge-base/06-agents/skills/` into your project's `.cursor/skills/` folder so Cursor can load them.
-2. Then ask for help with PMM tasks and the agents will activate based on your request.
+The agents are supported in both **Cursor** and **Claude Code**. See the relevant setup section below, then use the example prompts to get started.
 
 ### Example Usage
 
@@ -141,6 +138,29 @@ For detailed specifications, see:
 - [Content Generator Skill](./skills/content-generator/SKILL.md) — Content and brief creation
 - [Advisory Board Skill](./skills/advisory-board/SKILL.md) — Buyer resonance review
 - [Consistency Guardian Skill](./skills/consistency-guardian/SKILL.md) — PMM OS alignment review
+
+## Using with Claude Code
+
+Agents load automatically — no setup required beyond cloning the repo.
+
+1. Install Claude Code: `npm install -g @anthropic-ai/claude-code`
+2. Open the repo: `cd product-marketing-os && claude`
+3. Start using it. The `CLAUDE.md` at the repo root is loaded automatically and routes your requests to the right agent.
+
+**How auto-routing works:** When you make a request, Claude Code reads `CLAUDE.md`, identifies the appropriate agent, reads that agent's `SKILL.md`, and executes. No manual configuration needed.
+
+**Explicit invocation with slash commands:**
+```
+/knowledge-architect set up my knowledge base with everything I've shared here
+/content-generator generate 3 Meta ad variants for our SMB segment targeting CFOs
+/advisory-board review these LinkedIn ads for buyer resonance
+/consistency-guardian check this landing page for brand alignment
+/pmm-orchestrator run a full content creation pipeline for our enterprise campaign
+```
+
+**On parallel review:** Orchestrator pipelines call for Advisory Board and Consistency Guardian to run simultaneously. In Claude Code, they run sequentially in the same session — the feedback merging and quality gating work identically.
+
+---
 
 ## Using with Cursor
 

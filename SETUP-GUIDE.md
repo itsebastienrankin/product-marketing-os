@@ -4,9 +4,15 @@ You'll need about 10 minutes and zero technical experience. This guide walks you
 
 By the end, you'll have an AI system that knows your product as well as you do — and you'll be able to ask it for anything.
 
+**Two supported tools:** Choose your setup path below — both give you the full agent system.
+- [Setting up with Cursor](#setting-up-with-cursor) *(recommended if you don't have a preference)*
+- [Setting up with Claude Code](#setting-up-with-claude-code) *(zero terminal setup required)*
+
 ---
 
-## Step 1: Download Cursor
+## Setting Up with Cursor
+
+### Step 1: Download Cursor
 
 Cursor is an editor with AI built in. You'll use it mostly for chatting with AI and reviewing files — think of it as a smarter Google Docs.
 
@@ -18,7 +24,7 @@ That's it for this step. You'll come back to Cursor in a moment.
 
 ---
 
-## Step 2: Get the Knowledge Base from GitHub
+### Step 2: Get the Knowledge Base from GitHub
 
 GitHub is where your knowledge base lives. You're going to make your own copy of it.
 
@@ -45,7 +51,7 @@ You should now see a sidebar on the left with a `product-knowledge-base` folder.
 
 ---
 
-## Step 3: Activate the Agents
+### Step 3: Activate the Agents
 
 The knowledge base comes with AI agents — think of them as specialized assistants that each handle a different part of the work. You need to activate them once.
 
@@ -68,7 +74,7 @@ If you see an error, don't worry — just copy the command again, make sure you'
 
 ---
 
-## Step 4: Dump Everything You Have
+### Step 4: Dump Everything You Have
 
 This is where the magic happens. Gather every piece of marketing context you have and hand it to the agents. They'll read everything, figure out what it is, and build your entire knowledge base from it.
 
@@ -106,7 +112,7 @@ That's it. The agents will read everything, ask you a few questions to confirm w
 
 ---
 
-## Step 5: Fill the Gaps
+### Step 5: Fill the Gaps
 
 The gap report is your to-do list. It tells you what's missing, why it matters, and who to ask for it.
 
@@ -124,7 +130,7 @@ The agents will fill in the gaps and update the report. Every time you add more 
 
 ---
 
-## Step 6: Start Creating
+### Step 6: Start Creating
 
 With your knowledge base populated, ask for whatever you need. Open Cursor's chat and type:
 
@@ -143,6 +149,54 @@ Create a campaign brief for our product launch targeting mid-market ops leaders
 The AI references your actual positioning, messaging, proof points, and competitive intelligence. First drafts that sound like they came from someone who deeply understands your product — because the AI does now.
 
 **Share the knowledge base with your team** — anyone who connects their AI tool to the same repo gets the same structured context. Your demand gen lead generates ad copy grounded in your positioning. Your content writer pulls from approved customer quotes. Your sales team gets battlecards that reflect your actual competitive intelligence. Everyone works from the same source of truth, without waiting on you to review every draft.
+
+---
+
+---
+
+## Setting Up with Claude Code
+
+Claude Code is a terminal-based AI tool from Anthropic. The key difference from Cursor: **no agent activation step required** — the agents load automatically when you open the repo. Zero terminal commands.
+
+### Step 1: Install Claude Code
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Then authenticate by running `claude` and following the login prompt.
+
+### Step 2: Get the Knowledge Base from GitHub
+
+**If you're setting this up for your team:**
+
+1. Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os)
+2. Click the green **Fork** button in the top right — this creates your team's own copy
+3. Clone your fork: `git clone https://github.com/[your-username]/product-marketing-os.git`
+
+**If it's just you:**
+
+```bash
+git clone https://github.com/sebastienrankin/product-marketing-os.git
+```
+
+### Step 3: Open with Claude Code (agents load automatically)
+
+```bash
+cd product-marketing-os
+claude
+```
+
+That's it. No activation command needed. The `CLAUDE.md` file in the repo loads automatically and gives Claude Code the full agent routing system. The agents are ready to use immediately.
+
+### Steps 4–6: Same as Cursor
+
+From here, the experience is identical — dump your context, review the gap report, start creating. See [Step 4](#step-4-dump-everything-you-have), [Step 5](#step-5-fill-the-gaps), and [Step 6](#step-6-start-creating) above.
+
+**Tip — explicit agent invocation:** In addition to natural language, you can invoke agents directly with slash commands:
+- `/knowledge-architect set up my knowledge base with everything I've shared here`
+- `/content-generator generate 3 LinkedIn ads for our SMB segment targeting CFOs`
+- `/pmm-orchestrator run a full campaign pipeline for our enterprise segment`
 
 ---
 
