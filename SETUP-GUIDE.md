@@ -152,8 +152,6 @@ The AI references your actual positioning, messaging, proof points, and competit
 
 ---
 
----
-
 ## Setting Up with Claude Code
 
 Claude Code is a terminal-based AI tool from Anthropic. The key difference from Cursor: **no agent activation step required** — the agents load automatically when you open the repo. Zero terminal commands.
@@ -189,14 +187,90 @@ claude
 
 That's it. No activation command needed. The `CLAUDE.md` file in the repo loads automatically and gives Claude Code the full agent routing system. The agents are ready to use immediately.
 
-### Steps 4–6: Same as Cursor
+### Step 4: Share Your Marketing Context
 
-From here, the experience is identical — dump your context, review the gap report, start creating. See [Step 4](#step-4-dump-everything-you-have), [Step 5](#step-5-fill-the-gaps), and [Step 6](#step-6-start-creating) above.
+This is where the magic happens. Claude Code reads files you have on your computer — give it everything you have.
 
-**Tip — explicit agent invocation:** In addition to natural language, you can invoke agents directly with slash commands:
-- `/knowledge-architect set up my knowledge base with everything I've shared here`
+**Option A — Paste content directly into chat:**
+Copy and paste the contents of each document into the Claude Code chat, one at a time or all at once. Then say:
+
+```
+Set up my knowledge base with everything I've shared here
+```
+
+**Option B — Point Claude Code at files on your computer:**
+If your docs are already on your machine, tell Claude Code where to find them:
+
+```
+Set up my knowledge base using these files:
+- ~/Documents/positioning-doc.pdf
+- ~/Downloads/persona-deck-notes.txt
+- ~/Desktop/competitive-research.md
+```
+
+Claude Code will read each file and build your knowledge base from them.
+
+**Option C — Share a folder:**
+If all your docs are in one folder:
+
+```
+Set up my knowledge base using all the files in ~/Documents/marketing-context/
+```
+
+**What to include** — anything and everything:
+- Positioning docs, messaging frameworks, value prop decks
+- Persona decks, buyer research, customer interview notes
+- Competitive research, win/loss data, sales feedback
+- Data claims, benchmark stats, research findings
+- Brand guidelines, tone of voice docs
+- Meeting notes, strategy decks, internal wikis
+
+Rough, unfinished, disorganized — all fine. The messier it is, the more impressive the output.
+
+**What happens next:**
+
+1. You'll see a **plan** showing what the agents found — segments, competitors, case studies. Confirm it looks right or adjust.
+2. The agents **build** your knowledge base — structured files for every segment, competitor, persona, proof point
+3. You'll get a **gap report** (`_gap-report.md`) showing exactly what's missing, ranked by importance
+
+> **This is the aha moment.** You just handed over a pile of messy docs, and now you have a structured marketing foundation that AI can reference for everything it creates. The more you give it, the longer it takes — but even a rough first pass is a completely different experience from starting with a blank prompt.
+
+### Step 5: Fill the Gaps
+
+The gap report is your to-do list. It tells you what's missing, why it matters, and who to ask for it.
+
+You don't have to fill everything at once. Even a partial knowledge base produces dramatically better AI outputs than starting from scratch every time:
+
+1. Get the missing information from whoever has it (the report suggests who to ask)
+2. Share the new content with Claude Code (paste it or point to the file)
+3. Say something like:
+
+```
+Here's the missing buyer persona research — update my knowledge base
+```
+
+### Step 6: Start Creating
+
+With your knowledge base populated, ask for whatever you need:
+
+```
+Generate 3 LinkedIn ad variants for our SMB segment targeting CFOs
+```
+
+```
+Write a sales email sequence for enterprise prospects switching from Salesforce
+```
+
+```
+Create a campaign brief for our product launch targeting mid-market ops leaders
+```
+
+Or use slash commands for explicit agent invocation:
 - `/content-generator generate 3 LinkedIn ads for our SMB segment targeting CFOs`
-- `/pmm-orchestrator run a full campaign pipeline for our enterprise segment`
+- `/advisory-board review these ads for buyer resonance`
+- `/pmm-orchestrator run a full content creation pipeline for our enterprise campaign`
+
+**Share the knowledge base with your team** — anyone who connects their AI tool to the same repo gets the same structured context. Everyone works from the same source of truth, without waiting on you to review every draft.
 
 ---
 
