@@ -25,8 +25,8 @@
 - **Our messaging pillars** → `01-segment-context/[segment]/messaging-pillars.md`
 - **Our buyer personas** → `01-segment-context/[segment]/buyer-personas.md`
 - **Full competitor profile** → `competitor-overview` (this folder)
-- **Objection scripts** → `objection-handling-template` (this folder)
-- **FUD playbook** → `FUD-template` (this folder)
+- **Objection scripts** → `objection-handling.md` (this folder)
+- **FUD playbook** → `FUD-playbook.md` (this folder)
 
 ---
 

@@ -24,8 +24,8 @@ Every objection response follows this structure:
 - **Our positioning & proof points** → `01-segment-context/[segment]/narrative-and-positioning.md`
 - **Our buyer personas** → `01-segment-context/[segment]/buyer-personas.md`
 - **Full competitor profile** → `competitor-overview` (this folder)
-- **Quick battlecard** → `battlecard-template` (this folder)
-- **FUD playbook** → `FUD-template` (this folder)
+- **Quick battlecard** → `battlecard.md` (this folder)
+- **FUD playbook** → `FUD-playbook.md` (this folder)
 
 ---
 

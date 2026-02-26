@@ -166,3 +166,11 @@ When generating emails:
 - Keep each email under **60 words**.
 - Be curious, calm, and specific.
 - Aim for *a reply*, not a meeting.
+
+## 11. Persona Targeting
+When the target audience includes a buying committee with multiple roles, generate **persona-specific variants** of at least Email 1:
+- **Economic Buyer variant:** Lead with business cost, ROI, or avoided headcount — not workflow details
+- **Champion variant:** Lead with daily workflow pain — the problem they live every day
+- **Technical Buyer variant (if applicable):** Lead with integration, migration, or security concerns
+
+State the target persona explicitly for each email. If only one cadence is requested, default to Champion but note which emails also serve other personas.

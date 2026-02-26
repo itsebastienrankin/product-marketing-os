@@ -11,10 +11,10 @@ The files here complement segment context (`01-segment-context/`). Segment conte
 ```
 05-sales-enablement/
 ├── {{competitor 1}}/                      # Template folder — copy for each competitor
-│   ├── competitor-overview
-│   ├── battlecard-template
-│   ├── objection-handling-template
-│   └── FUD-template
+│   ├── competitor-overview.md
+│   ├── battlecard.md
+│   ├── objection-handling.md
+│   └── FUD-playbook.md
 │
 ├── [competitor-name]/                     # Example: a real competitor
 │   ├── competitor-overview

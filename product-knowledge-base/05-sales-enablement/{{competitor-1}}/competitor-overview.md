@@ -46,9 +46,9 @@
 - **Our positioning strategy** → `01-segment-context/[segment]/narrative-and-positioning.md`
 - **Our messaging pillars** → `01-segment-context/[segment]/messaging-pillars.md`
 - **Our buyer personas** → `01-segment-context/[segment]/buyer-personas.md`
-- **Tactical battlecard** → `battlecard-template` (this folder)
-- **Objection scripts** → `objection-handling-template` (this folder)
-- **FUD playbook** → `FUD-template` (this folder)
+- **Tactical battlecard** → `battlecard.md` (this folder)
+- **Objection scripts** → `objection-handling.md` (this folder)
+- **FUD playbook** → `FUD-playbook.md` (this folder)
 
 ---
 
@@ -136,7 +136,7 @@
 |----------|----------------|----------------|
 | [Strength 1] | [Customer value] | [Buyer persona] |
 
-> **Tactical counter-scripts:** See `battlecard-template` for detailed 3-step counter strategies and trap-setting questions for each strength.
+> **Tactical counter-scripts:** See `battlecard.md` for detailed 3-step counter strategies and trap-setting questions for each strength.
 
 **Example (Confluence):**
 
@@ -152,7 +152,7 @@
 |----------|-----------------|-------------------|
 | [Weakness 1] | [Pain it causes] | [Buyer persona] |
 
-> **Exploitation tactics:** See `battlecard-template` for trap-setting questions and demo contrasts that expose each weakness.
+> **Exploitation tactics:** See `battlecard.md` for trap-setting questions and demo contrasts that expose each weakness.
 
 **Example (Confluence):**
 
@@ -178,7 +178,7 @@
 
 ### What They Say About Us (FUD)
 
-> **Detailed FUD tracking and counter-strategies:** See `FUD-template` in this competitor folder for comprehensive FUD coverage, including truth levels, full counter-scripts, supporting materials, and proactive inoculation tactics.
+> **Detailed FUD tracking and counter-strategies:** See `FUD-playbook.md` in this competitor folder for comprehensive FUD coverage, including truth levels, full counter-scripts, supporting materials, and proactive inoculation tactics.
 
 ---
 
