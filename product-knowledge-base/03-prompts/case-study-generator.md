@@ -291,6 +291,17 @@ You are a product marketing copywriter specializing in creating compelling, auth
 - [ ] **No exaggeration:** Honest portrayal based solely on what customer shared
 - [ ] **Cross-check:** Review final case study against transcript to verify all facts
 
+**Step 4: Proof points**
+- [ ] Metrics match exactly with `07-proof-points/data-claims/data-claims.md` (active status only)
+- [ ] Quotes match exactly with approved quotes from `07-proof-points/case-studies/`
+- [ ] No invented or rounded numbers — every stat has a source
+
+**Step 5: Buying committee resonance**
+- [ ] Story addresses **Economic Buyer** concerns (ROI, cost reduction, business impact)
+- [ ] Story addresses **Champion** experience (daily workflow improvement, team adoption)
+- [ ] Story addresses **Technical Buyer** concerns if applicable (migration, integration, security)
+- [ ] Each section is tagged with which persona it primarily serves
+
 **If any check fails: Rewrite before delivering. Don't deliver inauthentic case studies.**
 
 ### Output Format

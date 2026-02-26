@@ -44,14 +44,15 @@
 
 **Role:** Converts unstructured PMM knowledge into structured PMM OS templates.
 
-**Accepts:** Unstructured documents, notes, transcripts, research, case study URLs, data claims docs, revision constraints
-**Produces:** Populated PMM OS template files (segment context, competitive intelligence, case studies, data claims), gap report
+**Accepts:** Bulk dumps of mixed marketing context, unstructured documents, notes, transcripts, research, case study URLs, data claims docs, revision constraints
+**Produces:** Triage report (onboarding), populated PMM OS template files (segment context, competitive intelligence, case studies, data claims), comprehensive gap report
 
 **Use Cases:**
+- "Set up my knowledge base with everything I've shared here" (onboarding)
 - "I have a positioning doc and persona deck — populate my SMB segment folder"
 - "Convert these competitive research notes into a battlecard for Competitor X"
 - "Codify all the case studies from [URL] into our proof points library"
-- "Organize these data claims into our proof points library"
+- "Here's the missing persona research — update my knowledge base" (gap-filling)
 
 ---
 
@@ -121,6 +122,14 @@ Knowledge Architect → Advisory Board + Consistency Guardian (parallel) → Mer
 Pipeline 2 (to completion) → Pipeline 1 (using codified context)
 ```
 
+### Pipeline 4: Knowledge Base Onboarding
+
+```
+Knowledge Architect (triage) → User confirms plan → Knowledge Architect (populate all) → Advisory Board + Consistency Guardian (parallel) → Merge Feedback → Knowledge Architect (revise) → Quality Gate → Knowledge Architect (template cleanup + gap report)
+```
+
+Use when a new user dumps all their raw marketing context and wants the entire knowledge base set up from scratch. Includes content triage, user confirmation, template cleanup (removes placeholder files), and a comprehensive gap report saved as `_gap-report.md`.
+
 ### Key Design Decisions
 
 **Parallel Review:** Advisory Board and Consistency Guardian evaluate on orthogonal axes (resonance vs. alignment). Running them simultaneously and merging feedback into a single revision pass:
@@ -131,6 +140,10 @@ Pipeline 2 (to completion) → Pipeline 1 (using codified context)
 **Advisory Board Reviews Knowledge:** Codified knowledge is the foundation for all downstream content. If positioning or personas don't resonate with real buyers, everything built on top will miss. Advisory Board validates this at the source.
 
 **Feedback Merging:** The Orchestrator combines both reviewer reports into a unified constraint list, deduplicates overlapping feedback, resolves conflicts, and formats constraints as paste-ready instructions for the builder agent.
+
+**Onboarding Pipeline:** New users can dump all their raw marketing context at once. The Knowledge Architect triages inputs, identifies segments and competitors, presents a plan for user confirmation, populates everything in one pass, cleans up placeholder templates, and produces a comprehensive gap report. This removes the need for users to understand PMM OS structure before getting started.
+
+**Templates are Disposable:** After onboarding, placeholder template folders and files are deleted. The Knowledge Architect's skill definition contains all structural knowledge needed to create new segments, competitors, and proof points in the future — it can also reference existing populated files as examples.
 
 ---
 
@@ -158,6 +171,7 @@ Both must be met to ship without caveats.
 
 - Content Creation: max 3 review cycles
 - Knowledge Codification: max 2 review cycles
+- Knowledge Base Onboarding: max 2 review cycles
 
 ---
 

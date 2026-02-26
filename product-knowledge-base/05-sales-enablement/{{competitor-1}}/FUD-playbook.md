@@ -23,8 +23,8 @@ Competitive tactic where a competitor spreads negative information (true, partia
 - **Our positioning & proof points** → `01-segment-context/[segment]/narrative-and-positioning.md`
 - **Our messaging pillars** → `01-segment-context/[segment]/messaging-pillars.md`
 - **Full competitor profile** → `competitor-overview` (this folder)
-- **Quick battlecard** → `battlecard-template` (this folder)
-- **Objection scripts** → `objection-handling-template` (this folder)
+- **Quick battlecard** → `battlecard.md` (this folder)
+- **Objection scripts** → `objection-handling.md` (this folder)
 
 ---
 

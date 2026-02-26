@@ -11,6 +11,11 @@ The agents are implemented as **Cursor Skills**. To use them in Cursor:
 
 ### Example Usage
 
+**Knowledge Base Onboarding (new users):**
+```
+"Set up my knowledge base with everything I've shared here"
+```
+
 **Knowledge Codification:**
 ```
 "I have a positioning doc and persona deck — populate my SMB segment folder"
@@ -21,14 +26,9 @@ The agents are implemented as **Cursor Skills**. To use them in Cursor:
 "Generate 3 Meta ad variants for our Q1 SMB campaign targeting CFOs"
 ```
 
-**Campaign Brief:**
+**Gap Filling:**
 ```
-"Create a campaign brief for our Q2 product launch targeting enterprise"
-```
-
-**Quality Assurance:**
-```
-"Review this ad copy for alignment with our SMB positioning"
+"Here's the missing persona research — update my knowledge base"
 ```
 
 **Full Pipeline:**
@@ -42,12 +42,14 @@ The agents are implemented as **Cursor Skills**. To use them in Cursor:
 **Purpose:** Converts unstructured PMM knowledge into structured PMM OS templates
 
 **Use When:**
+- You're setting up your knowledge base for the first time (onboarding — dump everything)
 - You have positioning docs, persona decks, or research to codify
 - You need to populate segment context folders
 - You want to create competitive intelligence files
 - You have meeting notes or transcripts to structure
 - You want to codify published case studies from a URL into structured proof point files
 - You need to organize data claims with sources, strength ratings, and status tracking
+- You're filling gaps identified in your gap report
 
 ### Content Generator (Builder)
 **Purpose:** Creates marketing content and briefs using PMM OS knowledge base as context
@@ -108,6 +110,22 @@ The Orchestrator coordinates all handoffs. Individual agents focus on their craf
 1. Run Knowledge Codification to completion
 2. Run Content Creation using the codified context
 
+### Knowledge Base Onboarding Pipeline
+1. **Knowledge Architect** — Triages all shared context (classifies content, identifies segments/competitors)
+2. **Orchestrator** — Presents triage plan to user for confirmation
+3. **Knowledge Architect** — Populates all templates in one pass
+4. **Advisory Board + Consistency Guardian** — Review simultaneously (parallel)
+5. **Orchestrator** — Merges feedback
+6. **Knowledge Architect** — Refines, then cleans up placeholder template files
+7. **Quality Gate** — Ship when thresholds met
+8. **Knowledge Architect** — Produces comprehensive gap report (`_gap-report.md`)
+
+### Gap-Filling Follow-up
+When user returns with missing context referenced in the gap report:
+1. **Knowledge Architect** — Fills specific gaps with new context
+2. **Advisory Board + Consistency Guardian** — Targeted review of updated sections only
+3. **Knowledge Architect** — Updates `_gap-report.md` (marks resolved, surfaces remaining)
+
 ### Proof Points Integration
 Content Generator automatically checks `07-proof-points/case-studies/` for approved quotes and `07-proof-points/data-claims/data-claims.md` for substantiated claims when generating content. Consistency Guardian verifies that any claims or quotes in generated content trace back to these files.
 
@@ -138,10 +156,7 @@ Agents are Cursor Skills. To activate them in your project:
 
 **Example (macOS/Linux):** From project root:
 ```bash
-mkdir -p .cursor/skills
-for name in knowledge-architect content-generator consistency-guardian advisory-board pmm-orchestrator; do
-  ln -sf "../../product-knowledge-base/06-agents/skills/$name" ".cursor/skills/$name"
-done
+mkdir -p .cursor/skills && for name in knowledge-architect content-generator consistency-guardian advisory-board pmm-orchestrator; do ln -sf "../../product-knowledge-base/06-agents/skills/$name" ".cursor/skills/$name"; done
 ```
 
 ## Tips for Best Results

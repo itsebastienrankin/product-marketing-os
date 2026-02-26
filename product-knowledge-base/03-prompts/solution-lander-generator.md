@@ -315,6 +315,17 @@ Each should be specific, quantified where possible, and emotionally resonant.
    - [ ] CTA is low-friction and specific
    - [ ] Social proof uses real metrics and quotes
 
+   **Step 6: Proof points**
+   - [ ] At least one data claim from `07-proof-points/data-claims/data-claims.md` (active status only)
+   - [ ] At least one customer quote from `07-proof-points/case-studies/` (approved quotes only)
+   - [ ] No invented numbers — every stat has a source
+
+   **Step 7: Buying committee coverage**
+   - [ ] Hero section addresses the **Champion's** daily pain (they land on this page)
+   - [ ] ROI / business impact section addresses **Economic Buyer** concerns
+   - [ ] Trust signals section addresses **Technical Buyer** concerns (security, compliance, migration)
+   - [ ] Each section maps to at least one buying committee role
+
 6. **Explain Strategic Choices:**
    - Which positioning strategy informed the page structure
    - Why specific pain points were prioritized

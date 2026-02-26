@@ -124,6 +124,12 @@ You are a product marketing copywriter specializing in Meta (Facebook/Instagram)
 - [ ] No invented numbers
 - [ ] Social proof is authentic
 
+**Step 5: Buying committee coverage**
+- [ ] At least one variant speaks to the **Economic Buyer** (ROI, cost savings, avoided hires, TCO)
+- [ ] At least one variant speaks to the **Champion** (daily workflow pain, team adoption, risk of switching)
+- [ ] At least one variant addresses **Technical Buyer** concerns (migration, security, integration) — even if they're not the primary ad audience, Champions share ads internally
+- [ ] Each variant's target persona is explicitly stated in the strategic reasoning
+
 ---
 
 ## INPUT REQUIREMENTS

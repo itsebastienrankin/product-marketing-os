@@ -1,96 +1,105 @@
 # Product Marketing OS
-*Codify your product marketing foundations so anyone at your company can create on-brand, on-strategy work with AI*
+*Turn your marketing strategy into a system that scales — so everyone at your company creates on-brand, on-strategy work with AI, without waiting on you.*
 
 ---
 
-## What Is This?
+## The Problem
 
-The Product Marketing OS is a knowledge base that codifies everything you know about your product — positioning, messaging, personas, competitive intelligence — into one centralized repository.
+You know your product better than anyone. But that knowledge lives in your head, scattered across a dozen docs, decks, and Slack threads. Every time someone on your team needs to create something — an ad, an email, a sales deck, a campaign brief — they either loop you in or wing it. You become the bottleneck, or the work goes out off-brand.
 
-**Why it matters:** The biggest blocker to making AI useful isn't the tool itself - it's the context it references. Without structured context about your product, AI generates generic content, hallucinates, and misrepresents what makes your product special. Most of that context lives in your head and is scattered across a dozen docs, which makes it hard for people at your company to create assets relevant to their role without looping you in for reviews. You become a bottleneck.  
+AI was supposed to fix this. But without structured context about your product, AI generates the same generic content it generates for everyone else. "Save time and boost productivity." That's not your positioning. That's not how your buyers talk. That's not what makes you different.
 
-When you codify it into a shared knowledge base AI tools can reference, you change the way your entire company works: everyone (sales, demand gen, creative, partnerships) can produce on-brand, on-strategy work with AI, independently. They don't need PMM in the room for every brief, every draft, every review. The AI already knows what makes your product special, because you built the foundation it works from.
+## The Fix
+
+The Product Marketing OS gives you a way to codify everything you know — positioning, messaging, personas, competitive intelligence, proof points — into a structured knowledge base that AI can actually reference.
+
+Once it's built, something changes: **anyone at your company, using any AI tool, can produce work that sounds like it came from you.** Sales writes emails grounded in your competitive positioning. Demand gen creates ads using your actual messaging pillars. Creative pulls from approved customer quotes instead of making them up. Your product launch brief references the right personas and proof points — without you writing it.
+
+You stop being the bottleneck. You become the architect of a system that scales your expertise across the entire org.
+
+---
+
+## What This Looks Like in Practice
+
+**Before:** You paste your positioning into ChatGPT and get "Streamline your workflow with our innovative solution." You rewrite it yourself. Again.
+
+**After:** You drag your messy positioning doc, persona deck, and competitive research into Cursor's chat. Within the hour, you have:
+- Structured messaging pillars with ready-to-use headlines, body copy, and CTAs
+- Buyer personas mapped to the actual buying committee, with role-specific pain points
+- Competitive battlecards your sales team can use tomorrow
+- A gap report telling you exactly what's missing and who on your team has it
+
+Then you ask: *"Write 3 LinkedIn ads for our mid-market segment targeting ops leaders."* And the AI creates copy that uses your primary position, references a real customer quote from your case study library, and follows your brand voice guidelines. First draft. No review cycle.
+
+**The real shift:** Your demand gen lead asks their AI for campaign copy and gets the same quality — because the knowledge base is the shared foundation. They don't need you in the room. The AI already knows your product, your positioning, your buyers, and your proof points.
 
 ---
 
 ## How It Works
 
-**1. Codify Your Knowledge** → Fill in the structured templates with your positioning, messaging, personas, and competitive intel — per segment, per competitor. Use the **Knowledge Architect** agent to convert your existing docs into structured templates automatically.
+**1. Dump everything you have** — Drag your existing docs into Cursor's chat: positioning, personas, competitive research, case studies, data claims, rough notes, whatever you've got. The AI reads everything, classifies it, and structures it for you.
 
-**2. Connect Your Tools** → AI references your knowledge base directly. Teams don't have to assemble context ad-hoc from 6 different places and hope it's up to date. Activate the **PMM OS agent team** in Cursor to automate workflows.
+**2. Review and fill gaps** — You'll get a report showing exactly what's missing, ranked by what matters most, with suggestions for who on your team has that information. Fill gaps at your own pace — even a partial knowledge base is dramatically better than none.
 
-**3. Scale Execution** → When AI and teams are referencing the knowledge base, efficiency improves — consistent positioning, stronger briefs, more resonant creative, fewer review cycles, and faster launches. The agent team (Content Generator, Advisory Board, Consistency Guardian) works together to create, review, and refine content automatically.
-
-**Result:** You've operationalized your product marketing expertise into a system that scales impact across the entire organization. Instead of supporting a few projects, you're building the foundation that supports your entire organization. This is the future of how Product Marketers bring Sales, Product, and Marketing teams together.  
+**3. Start creating** — Ask for whatever you need. The AI references your actual positioning, messaging, proof points, and competitive intelligence — not generic filler. And so can anyone else on your team.
 
 ---
 
-## The Impact
+## What You'll Need
 
-| Before (Fragmented) | After (Structured) |
-|---|---|
-| Positioning scattered across docs | One centralized knowledge base |
-| AI generates generic content | Structured inputs = on-brand outputs |
-| Endless review cycles | Pre-aligned content accelerates reviews |
-| PMMs in reactive mode | System architects who scale impact |
-| Knowledge leaves with people | Codified knowledge persists |
-
----
-
-## What's Inside
-
-```
-product-knowledge-base/
-├── 01-segment-context/        # Positioning, messaging, personas, deal mechanics — per segment
-├── 02-briefs/                 # Campaign and creative brief templates
-├── 03-prompts/                # AI generators for ads, emails, landing pages, case studies
-├── 04-style-guides/           # Writing principles for voice and tone consistency
-├── 05-sales-enablement/       # Competitive intelligence — per competitor
-├── 06-agents/                 # PMM OS agent system (Cursor skills + docs)
-└── 07-proof-points/           # Case studies and data claims — substantiated evidence
-```
-
-**Segment Context** (`01-segment-context/`) — One folder per market segment, each with 4 files: positioning & narrative, messaging pillars, buyer personas, and market overview. This is the strategic foundation everything else references. [Segment context guide →](./product-knowledge-base/01-segment-context/README.md)
-
-**Sales Enablement** (`05-sales-enablement/`) — One folder per competitor, each with 4 files: competitive overview, battlecard, objection scripts, and FUD playbook. Designed for sales teams to use in active deals. [Sales enablement guide →](./product-knowledge-base/05-sales-enablement/README.md)
-
-**Briefs, Prompts & Style Guides** — Templates and AI prompt generators that pull from your segment context. Outputs reflect your actual positioning, proof points, and customer language — not generic copy.
-
-**Agents** (`06-agents/`) — Cursor skills that act as a PMM agent team: Knowledge Architect, Content Generator, Consistency Guardian, Advisory Board, and Orchestrator. Copy or symlink `06-agents/skills/` into `.cursor/skills/` to use them in Cursor. [Agents guide →](./product-knowledge-base/06-agents/README.md)
-
-**Proof Points** (`07-proof-points/`) — Codified evidence that backs your marketing claims. One file per customer case study (approved quotes, metrics, competitive switch context) and a consolidated data claims repository (sourced stats with strength ratings and status tracking). Content Generator pulls from these automatically; Consistency Guardian verifies claims against them. [Proof points guide →](./product-knowledge-base/07-proof-points/README.md)
+- **Cursor** — An editor with built-in AI chat. You'll mostly be dragging in files and chatting — think of it as a smarter Google Docs. [Download Cursor →](https://cursor.sh)
+- **GitHub** — Where your knowledge base lives. Think of it as shared cloud storage with version history built in. [Sign up for GitHub →](https://github.com/signup)
+- **Your existing marketing context** — Positioning docs, persona decks, competitive research, messaging frameworks, case study URLs, data claims. Even rough notes and internal wikis work. The messier it is, the more impressive the output.
 
 ---
 
 ## Quick Start
 
-1. **Clone this repo** → [Setup Guide](./SETUP-GUIDE.md)
-2. **Set up agents** (optional but recommended) → Copy or symlink `06-agents/skills/` into `.cursor/skills/` to activate the PMM agent team
-3. **Build your first segment** → Use the **Knowledge Architect** agent or templates in `01-segment-context/` ([guide](./product-knowledge-base/01-segment-context/README.md))
-4. **Add your first competitor** → Use the **Knowledge Architect** agent or templates in `05-sales-enablement/` ([guide](./product-knowledge-base/05-sales-enablement/README.md))
-5. **Add proof points** → Use the **Knowledge Architect** agent to codify case studies from URLs and organize data claims in `07-proof-points/` ([guide](./product-knowledge-base/07-proof-points/README.md))
-6. **Generate content** → Use the **Content Generator** agent or prompts in `03-prompts/` with your segment context as input
+1. **Get set up** — Download Cursor, grab the knowledge base from GitHub, and activate the agents. About 10 minutes.
+2. **Dump your context** — Open Cursor's chat (`Cmd + L` on Mac, `Ctrl + L` on Windows), drag your docs in, and say "Set up my knowledge base with everything I've shared here"
+3. **Fill gaps** — Review the gap report, gather what's missing, bring it back
+4. **Create content** — Ask for ads, emails, landing pages, briefs — grounded in your actual positioning
 
-**[Read the Setup Guide →](./SETUP-GUIDE.md)**
+**[Read the full Setup Guide →](./SETUP-GUIDE.md)**
+
+---
+
+## What's Inside
+
+Your knowledge base is organized into sections that build on each other:
+
+| Section | What It Does |
+|---------|-------------|
+| **Segment Context** | Your positioning, messaging, personas, and market overview — per segment (e.g., SMB, Enterprise). Supports as many segments as you need. |
+| **Briefs & Prompts** | Templates for campaign briefs and content generators for ads, emails, landing pages, case studies |
+| **Style Guides** | Writing principles that keep voice and tone consistent across everything your team creates |
+| **Sales Enablement** | Competitive intelligence — battlecards, objection handling, FUD playbooks — per competitor |
+| **Proof Points** | Your published case studies and verified data claims, structured so the AI can reference real evidence |
+| **Agents** | AI team members that automate the work: codifying knowledge, generating content, reviewing quality, giving buyer feedback |
+
+You don't need to understand this structure to get started. The agents build it for you from whatever you give them. If you have 2 segments and 3 competitors, you'll get 2 segment folders and 3 competitor folders. If you have 12 segments and 20 competitors, same thing — it scales.
 
 ---
 
 ## FAQ
 
 **Do I need to be technical?**
-No. Everything is Markdown files. If you can edit a document, you can use this.
+No. Once you're set up, you're just chatting with AI and reviewing what it creates. The files are plain text — if you can read a Google Doc, you can read these.
 
-**How long does it take?**
-Cloning the repo: 10 minutes. Building your first segment: 2-4 hours with AI assistance.
+**How long until I see value?**
+Within an hour of dumping your docs, you'll have a structured knowledge base with messaging pillars, buyer personas, and competitive intelligence — populated from your existing context. The more you give it, the longer it takes, but even a rough first pass is dramatically better than what AI produces without any context.
 
-**Can my team use this?**
-Yes. Share via GitHub and everyone accesses the same knowledge base.
+**Does this work for complex orgs?**
+Yes. If you have multiple products, segments, or business units, you create a segment folder for each. The knowledge base scales with you — it's just folders and files, not a SaaS tool with user limits.
 
-**What if I don't use Cursor?**
-The knowledge base works with any tool that reads files — Cursor, Claude, ChatGPT, or whatever comes next. The agent system (`06-agents/`) is specifically designed for Cursor, but you can still use the templates, prompts, and briefs with any AI tool.
+**Can my whole team use this?**
+That's the point. Share the repo through GitHub and everyone works from the same knowledge base. Your demand gen lead, your content writer, your sales team — they all reference the same positioning, the same proof points, the same competitive intelligence. It's like giving everyone a PMM in their pocket.
+
+**What if my team doesn't use Cursor?**
+The knowledge base works with any AI tool that can read files — Claude, ChatGPT, Gemini, or whatever comes next. The agent team is built for Cursor, but the underlying knowledge base is just files. Anyone who connects their AI tool to your repo gets the same structured context.
 
 **What are the agents?**
-The PMM OS includes a team of specialized AI agents that work together: **Knowledge Architect** (codifies your knowledge), **Content Generator** (creates marketing content), **Consistency Guardian** (ensures alignment), **Advisory Board** (provides buyer feedback), and **Orchestrator** (coordinates the team). They automatically hand off work, review and refine content, and ensure quality before delivering results. [Agents guide →](./product-knowledge-base/06-agents/README.md)
+AI team members that work together behind the scenes. One reads your raw docs and structures them. One generates content. One checks that everything aligns with your positioning. One gives you buyer feedback. And one coordinates the team. You don't manage them — just tell Cursor what you need.
 
 ---
 
