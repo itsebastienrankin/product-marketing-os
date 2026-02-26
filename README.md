@@ -47,7 +47,7 @@ Then you ask: *"Write 3 LinkedIn ads for our mid-market segment targeting ops le
 
 ## What You'll Need
 
-- **Cursor** — An editor with built-in AI chat. You'll mostly be dragging in files and chatting — think of it as a smarter Google Docs. [Download Cursor →](https://cursor.sh)
+- **An AI coding tool** — Either [Cursor](https://cursor.sh) or [Claude Code](https://claude.ai/code) (both fully supported). You'll mostly be dragging in files and chatting — think of it as a smarter Google Docs.
 - **GitHub** — Where your knowledge base lives. Think of it as shared cloud storage with version history built in. [Sign up for GitHub →](https://github.com/signup)
 - **Your existing marketing context** — Positioning docs, persona decks, competitive research, messaging frameworks, case study URLs, data claims. Even rough notes and internal wikis work. The messier it is, the more impressive the output.
 
@@ -55,8 +55,8 @@ Then you ask: *"Write 3 LinkedIn ads for our mid-market segment targeting ops le
 
 ## Quick Start
 
-1. **Get set up** — Download Cursor, grab the knowledge base from GitHub, and activate the agents. About 10 minutes.
-2. **Dump your context** — Open Cursor's chat (`Cmd + L` on Mac, `Ctrl + L` on Windows), drag your docs in, and say "Set up my knowledge base with everything I've shared here"
+1. **Get set up** — Download [Cursor](https://cursor.sh) or [Claude Code](https://claude.ai/code), grab the knowledge base from GitHub, and (Cursor only) activate the agents. About 10 minutes.
+2. **Dump your context** — Open chat, drag your docs in, and say "Set up my knowledge base with everything I've shared here"
 3. **Fill gaps** — Review the gap report, gather what's missing, bring it back
 4. **Create content** — Ask for ads, emails, landing pages, briefs — grounded in your actual positioning
 
@@ -96,10 +96,10 @@ Yes. If you have multiple products, segments, or business units, you create a se
 That's the point. Share the repo through GitHub and everyone works from the same knowledge base. Your demand gen lead, your content writer, your sales team — they all reference the same positioning, the same proof points, the same competitive intelligence. It's like giving everyone a PMM in their pocket.
 
 **What if my team doesn't use Cursor?**
-The knowledge base works with any AI tool that can read files — Claude, ChatGPT, Gemini, or whatever comes next. The agent team is built for Cursor, but the underlying knowledge base is just files. Anyone who connects their AI tool to your repo gets the same structured context.
+Cursor and Claude Code are both fully supported — agents, pipelines, and all. The underlying knowledge base is plain markdown files, so any AI tool that can read a repo (ChatGPT, Gemini, GitHub Copilot, or whatever comes next) gets the same structured context, even without the full agent system.
 
 **What are the agents?**
-AI team members that work together behind the scenes. One reads your raw docs and structures them. One generates content. One checks that everything aligns with your positioning. One gives you buyer feedback. And one coordinates the team. You don't manage them — just tell Cursor what you need.
+AI team members that work together behind the scenes. One reads your raw docs and structures them. One generates content. One checks that everything aligns with your positioning. One gives you buyer feedback. And one coordinates the team. You don't manage them — just tell Cursor or Claude Code what you need.
 
 ---
 
