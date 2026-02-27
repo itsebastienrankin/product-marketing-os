@@ -274,8 +274,8 @@ Use [customer] testimonials to:
 
 ### Do NOT reference:
 
-- The `transcripts/` folder (internal research, not approved for public use)
 - Any [customer] testimonials not explicitly provided in approved case studies
+- Internal research materials, interview transcripts, or raw customer notes not codified into the case studies folder
 
 ---
 
