@@ -213,10 +213,6 @@ Agents reference the `product-knowledge-base/` structure:
 - `05-sales-enablement/` — Competitive intelligence templates
 - `07-proof-points/` — Case studies (approved quotes, metrics, competitive switch context) and data claims (substantiated proof points with sources and status)
 
-### Self-Improvement
-
-The Orchestrator maintains an append-only operational log at `product-knowledge-base/06-agents/pmm-agent-lessons.md` to capture patterns, mistakes, and heuristics across runs.
-
 ---
 
 ## Success Metrics

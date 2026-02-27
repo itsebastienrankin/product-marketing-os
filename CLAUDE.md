@@ -42,20 +42,6 @@ When generating content, always check `01-segment-context/`, `07-proof-points/`,
 
 ---
 
-## Design Evaluation Standard
-
-Whenever building or modifying any part of this system — agents, SKILL.md files, knowledge base structure, pipelines, or features — evaluate every decision against these three lenses before shipping it:
-
-**User** — Does this make the tool easier to use and produce better outputs? If a feature requires the user to do extra work, adds ambiguity, or creates a gap between what's promised and what's delivered, cut it or redesign it.
-
-**System** — Does this actually work as described? If a feature isn't wired up end-to-end (nothing reads it, nothing writes it, nothing calls it), it's dead weight. Don't ship placeholders that imply functionality that doesn't exist.
-
-**Builder** — Is this efficient to set up? Does it respect the context window? Every file an agent must read costs tokens. Every step that requires manual scaffolding adds friction. Prefer designs that load only what's needed, when it's needed.
-
-Apply this check when: proposing a new feature, reviewing an existing one, or deciding whether to keep something that was already built. If something fails one lens, question whether it should exist. If it fails two, cut it.
-
----
-
 ## Slash Commands
 
 Agents can also be invoked explicitly:
