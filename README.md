@@ -52,8 +52,8 @@ You need an AI tool to build and maintain the knowledge base. Two are fully supp
 | | **Cursor** | **Claude Code** |
 |---|---|---|
 | **What it is** | A desktop app with AI built in. Visual interface — you drag files in and chat. | A terminal-based AI tool from Anthropic. You type commands and chat. |
-| **Best for** | Most marketers. No terminal or coding experience needed. | People comfortable with the command line, or teams with a technical person who can do initial setup. |
-| **Setup** | Download the app, clone the repo, run one activation command. ~10 minutes. | Install via npm (requires Node.js), clone the repo, run `claude`. ~10 minutes if you're comfortable with a terminal. |
+| **Best for** | Most marketers and non-technical teams. No coding experience needed. | Anyone willing to copy-paste a few terminal commands during setup. Daily use is just chat — nothing technical. |
+| **Setup** | Download the app, clone the repo, run one activation command. ~10 minutes. | Install via npm (requires Node.js), clone the repo, run `claude`. ~10 minutes. |
 | **Agent activation** | One-time terminal command to activate agents, then never touch the terminal again. | Automatic — agents load from `CLAUDE.md` when you open the repo. Zero activation needed. |
 | **How you share docs** | Drag files directly into the chat window. | Paste content, or point to files/folders on your computer. |
 | **Get it** | [Download Cursor →](https://cursor.sh) | [Get Claude Code →](https://docs.anthropic.com/en/docs/claude-code/overview) |
@@ -96,7 +96,7 @@ You don't need to understand this structure to get started. The agents build it 
 ## FAQ
 
 **Do I need to be technical?**
-Not with Cursor. You download an app, click through a setup, and then you're just chatting with AI and reviewing what it creates. There's one terminal command during setup — you copy and paste it, and never touch the terminal again. Claude Code is a terminal tool, so it's better suited for people comfortable with that, or teams where someone technical handles the initial setup.
+Not particularly. Cursor is a desktop app — you download it, click through setup, and then chat with AI. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Claude Code runs in your terminal, but the experience is still just chat: you type messages and read responses. The setup takes a few commands; the daily use doesn't. Non-technical teams (marketing, ops, content) use both tools regularly.
 
 **How long until I see value?**
 Within an hour of sharing your docs, you'll have a structured knowledge base with messaging pillars, buyer personas, and competitive intelligence — populated from your existing context. Even a rough first pass is dramatically better than what AI produces without any context.
@@ -105,7 +105,13 @@ Within an hour of sharing your docs, you'll have a structured knowledge base wit
 Yes. If you have multiple products, segments, or business units, you create a segment folder for each. The knowledge base scales with you — it's just folders and files, not a SaaS tool with user limits.
 
 **Can my whole team use this?**
-That's the point. Share the knowledge base through GitHub and everyone works from the same foundation. Your demand gen lead, your content writer, your sales team — they all reference the same positioning, the same proof points, the same competitive intelligence. They can use whatever AI tool they prefer. It's like giving everyone a PMM in their pocket.
+That's the point. Once the knowledge base is built, there are three ways to share it with teammates:
+
+- **Claude Projects** (easiest): Upload the knowledge base files to a Claude.ai Project and invite your team. They open it and start asking questions — no setup on their end.
+- **GitHub MCP**: Connect Claude to your GitHub repo directly so the knowledge base stays live-synced. Works with Claude Code, Claude Desktop, and Claude.ai. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically) for instructions.
+- **Clone the repo**: Teammates who use Cursor or VS Code can clone the repo and get the full agent system, just like you.
+
+Everyone works from the same positioning, proof points, and competitive intelligence — without waiting on you.
 
 **What if different people on my team use different AI tools?**
 That's fine. Cursor and Claude Code are both fully supported with the complete agent system. And the underlying knowledge base is plain text files — any AI tool that can read a GitHub repo (ChatGPT, Gemini, Copilot, or whatever comes next) gets the same structured context, even without the agent system.

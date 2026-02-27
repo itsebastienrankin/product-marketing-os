@@ -37,19 +37,19 @@ Two AI tools are fully supported. Choose one:
 
 ### Cursor *(recommended for most people)*
 
-Cursor is a desktop app with AI built in. Think of it as a smarter Google Docs — you drag in files, chat with AI, and review what it creates.
+Cursor is a desktop app with AI built in. Think of it as a smarter Google Docs — you drag in files, chat with AI, and review what it creates. Many non-technical teams (marketing, operations, content) use Cursor as their primary AI tool.
 
-**Good for:** Anyone who prefers a visual, point-and-click interface. No coding or terminal experience needed.
+**Good for:** Anyone who prefers a visual, point-and-click interface. No coding or technical experience needed.
 
 **One heads-up:** There's a single terminal command during setup (you copy-paste it). After that, you never touch the terminal again.
 
 [Download Cursor →](https://cursor.sh) — then continue to [Setting Up with Cursor](#setting-up-with-cursor).
 
-### Claude Code *(for terminal-comfortable users)*
+### Claude Code *(setup takes a few terminal commands — then it's just chat)*
 
-Claude Code is a command-line AI tool from Anthropic. You type commands and chat in your terminal.
+Claude Code is an AI tool from Anthropic that runs in your terminal. You type messages and read responses — it looks like a terminal, but you're just having a conversation.
 
-**Good for:** People who already use the terminal, or teams where one technical person can handle the initial setup. The agents load automatically with zero configuration — just open the repo and go.
+**Good for:** Anyone willing to copy-paste a few setup commands. The installation involves the terminal; the daily experience doesn't. Once it's running, you're just chatting. No coding required.
 
 **Prerequisite:** You'll need [Node.js](https://nodejs.org) installed (version 18+). If you're not sure whether you have it, open your terminal and type `node --version`. If you see a number, you're good. If not, [download Node.js here](https://nodejs.org).
 
@@ -224,6 +224,91 @@ Set up my knowledge base using all the files in ~/Documents/marketing-context/
 - `/knowledge-architect populate my SMB segment from this doc`
 - `/content-generator write 3 LinkedIn ads for our mid-market segment`
 - `/pmm-orchestrator run a full content pipeline for our enterprise segment`
+
+**Now continue to [Fill the Gaps →](#fill-the-gaps)**
+
+---
+
+## Sharing the Knowledge Base with Your Team
+
+You set up the knowledge base — now your teammates want to use it. Here's how to give everyone access, depending on how technical they are.
+
+### Option A: Claude Projects *(easiest — zero setup for teammates)*
+
+Claude Projects let you upload files into a shared AI workspace. Anyone you invite can open the Project in Claude.ai and start asking questions immediately — no GitHub account, no installation, nothing.
+
+**How to set it up (you do this once):**
+
+1. Go to [claude.ai](https://claude.ai) and open the Projects tab
+2. Create a new Project and give it a name (e.g., "Product Marketing Knowledge Base")
+3. Upload the key files from your `product-knowledge-base/` folder — at minimum, the segment context files, style guide, and proof points
+4. Invite your teammates to the Project
+
+**What teammates get:**
+They open Claude.ai → Projects → your project → and start asking. The AI already knows your positioning, your personas, your brand voice, your proof points. No setup on their end.
+
+**Limitation:** The Project's files don't update automatically. When you update the knowledge base in GitHub, you'll need to re-upload the changed files to the Project. For a small team that updates the KB infrequently, this is fine.
+
+---
+
+### Option B: GitHub MCP *(live sync — knowledge base updates automatically)*
+
+If you want Claude to read directly from your GitHub repo — so updates sync automatically — you can connect Claude to GitHub via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/). This is more technical but requires no manual re-uploading.
+
+**Who this makes sense for:** Teams that update the knowledge base frequently and want every Claude session to reflect the latest version automatically.
+
+#### For Claude Code users
+
+Claude Code has built-in MCP support. To connect it to your GitHub repo:
+
+1. Create a GitHub Personal Access Token at [github.com/settings/tokens](https://github.com/settings/tokens) with `repo` scope (or `contents: read` for fine-grained tokens)
+2. Add the token to your environment:
+
+```bash
+export GITHUB_PERSONAL_ACCESS_TOKEN=ghp_yourtokenhere
+```
+
+3. Add the GitHub MCP server:
+
+```bash
+claude mcp add github-kb -s user -- npx -y @modelcontextprotocol/server-github
+```
+
+4. Now Claude Code can read your GitHub repo directly. Ask it: *"Read the files in the product-knowledge-base/ folder of [your-repo-url]"*
+
+#### For Claude Desktop users
+
+Claude Desktop supports MCP through a config file. Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
+
+```json
+{
+  "mcpServers": {
+    "github-kb": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_yourtokenhere"
+      }
+    }
+  }
+}
+```
+
+Restart Claude Desktop and it will have access to your GitHub repos.
+
+#### For Claude.ai (web) users
+
+Claude.ai supports GitHub as a connected integration. Go to **Settings → Integrations** and connect your GitHub account. Once connected, you can reference your repo in any conversation.
+
+---
+
+### Option C: Clone the repo *(for teammates using Cursor or VS Code)*
+
+If teammates use Cursor, VS Code, or any similar editor with AI built in, they can just clone your GitHub repo and open it. They get the full knowledge base as local files, and Cursor/Copilot/etc. can reference them directly.
+
+For Cursor users, share the [Cursor setup steps](#setting-up-with-cursor) from this guide — it's the same process.
+
+---
 
 **Now continue to [Fill the Gaps →](#fill-the-gaps)**
 
