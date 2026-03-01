@@ -69,24 +69,16 @@ Claude Code is an AI tool from Anthropic that runs in your terminal. You type me
 
 GitHub is where your knowledge base lives. Think of it as shared cloud storage with version history built in. If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
-**If you're setting this up for your team:**
+**Important:** You'll fork the repo first — this creates your own copy on GitHub. That's where your knowledge base will actually live. You're not working in the original repo.
 
 1. Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os)
-2. Click the green **Fork** button in the top right. This creates your team's own copy.
-3. You'll land on your copy's page. Click the green **Code** button, then copy the URL
+2. Click the green **Fork** button in the top right, then click **Create fork**. You'll land on your own copy at `github.com/YOUR-USERNAME/product-marketing-os`.
+3. Click the green **Code** button and copy the HTTPS URL
 4. Back in Cursor: press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows) to open the command bar
 5. Type `Git: Clone` and select it
 6. Paste the URL you copied and press Enter
 7. Choose a folder on your computer (Desktop works fine) and click **Select Repository Location**
 8. When it asks "Would you like to open the cloned repository?" click **Open**
-
-**If it's just you:**
-
-1. In Cursor: press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows)
-2. Type `Git: Clone` and select it
-3. Paste this URL: `https://github.com/sebastienrankin/product-marketing-os.git`
-4. Choose a folder on your computer and press Enter
-5. Click **Open** when prompted
 
 You should now see a sidebar on the left with a `product-knowledge-base` folder. You're in.
 
@@ -157,20 +149,14 @@ Then run `claude` once and follow the login prompt to authenticate with your Ant
 
 If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
-**If you're setting this up for your team:**
+**Important:** Fork the repo first — this creates your own copy on GitHub. That's where your knowledge base will live. You're not working in the original repo.
 
 1. Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os)
-2. Click the green **Fork** button in the top right. This creates your team's own copy.
+2. Click the green **Fork** button in the top right, then click **Create fork**
 3. Clone your fork:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/product-marketing-os.git
-```
-
-**If it's just you:**
-
-```bash
-git clone https://github.com/sebastienrankin/product-marketing-os.git
 ```
 
 ### Step 4: Open the Repo (Agents Load Automatically)
