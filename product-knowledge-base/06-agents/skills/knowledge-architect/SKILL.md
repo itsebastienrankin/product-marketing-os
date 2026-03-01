@@ -112,7 +112,7 @@ Present to user. Wait for confirmation before populating.
 
 After quality gate passes, delete placeholder template files:
 - `01-segment-context/{{segment-1}}/` — entire folder
-- `05-sales-enablement/{{competitor 1}}/` — entire folder
+- `05-sales-enablement/{{competitor-1}}/` — entire folder
 - `05-sales-enablement/{{competitor-2}}/` — entire folder
 - `07-proof-points/case-studies/{{case-study-template}}.md`
 - `07-proof-points/data-claims/{{data-claims-template}}.md`
