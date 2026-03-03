@@ -11,9 +11,11 @@ AI was supposed to fix this. But without structured context about your product, 
 
 And the context problem compounds. Every session starts from scratch — you explain your product, your buyers, your positioning, again. Your teammate does the same in their session. There's no shared memory, no version history, no single source of truth. Everyone's AI is working from different, incomplete context.
 
+---
+
 ## The Fix
 
-The Product Marketing OS gives you a way to codify everything you know (positioning, messaging, personas, competitive intelligence, proof points) into a structured knowledge base that lives in GitHub — versioned, shared with your team, and persistent across every session and every tool.
+The Product Marketing OS is how you codify everything you know (positioning, messaging, personas, competitive intelligence, proof points) into a structured knowledge base that lives in GitHub — versioned, shared with your team, and persistent across every session and every tool.
 
 Once it's built, something changes: **anyone at your company, using any AI tool, can produce work that sounds like it came from you.** Sales writes emails grounded in your competitive positioning. Demand gen creates ads using your actual messaging pillars. Creative pulls from approved customer quotes instead of making them up. Your product launch brief references the right personas and proof points, without you writing it.
 
@@ -55,8 +57,8 @@ You need an AI tool to build and maintain the knowledge base. Two are fully supp
 |---|---|---|
 | **What it is** | A desktop app with AI built in. You drag files into the chat window. | A terminal-based AI tool from Anthropic. You type commands and chat. |
 | **Best for** | Most marketers and non-technical teams. No coding experience needed. | Anyone willing to copy-paste a few terminal commands during setup. Daily use is just chat, nothing technical. |
-| **Setup** | Download the app, clone the repo, run one activation command. ~10 minutes. | Install via npm (requires Node.js), clone the repo, run `claude`. ~10 minutes. |
-| **Agent activation** | One-time terminal command to activate agents, then never touch the terminal again. | Agents load from `CLAUDE.md` when you open the repo. Zero activation needed. |
+| **Setup** | Download the app, clone the repo, run one activation command. ~10 minutes. | Install via terminal, clone the repo, run `claude`. ~10 minutes. See the [Setup Guide](./SETUP-GUIDE.md) for the exact steps. |
+| **Agent activation** | One-time terminal command to activate agents, then never touch the terminal again. | Agents activate automatically when you open the repo. Zero activation needed. |
 | **How you share docs** | Drag files directly into the chat window. | Paste content, or point to files/folders on your computer. |
 | **Get it** | [Download Cursor →](https://cursor.sh) | [Get Claude Code →](https://docs.anthropic.com/en/docs/claude-code/overview) |
 
@@ -102,6 +104,9 @@ You don't need to understand this structure to get started. The agents build it 
 **Do I need to be technical?**
 Not particularly. Cursor is a desktop app: you download it, click through setup, and then chat with AI. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Claude Code runs in your terminal, but the experience is still just chat: you type messages and read responses. The setup takes a few commands; the daily use doesn't. Non-technical teams (marketing, ops, content) use both tools regularly.
 
+**What do I need to prepare?**
+Gather whatever marketing docs you have: positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a specific checklist. Don't worry if it's messy or incomplete; the system tells you exactly what's missing and who to ask for it.
+
 **How long until I see value?**
 Within an hour of sharing your docs, you'll have a structured knowledge base with messaging pillars, buyer personas, and competitive intelligence, populated from your existing context. Even a rough first pass is dramatically better than what AI produces without any context.
 
@@ -114,7 +119,7 @@ That's the point. Because the knowledge base lives in GitHub, it's your team's s
 Three ways to connect teammates to it:
 
 - **Claude Projects** (easiest): Upload the knowledge base files to a Claude.ai Project and invite your team. They open it and start asking questions, no setup on their end.
-- **GitHub MCP**: Connect Claude to your GitHub repo directly so the knowledge base stays live-synced. Works with Claude Code, Claude Desktop, and Claude.ai. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically) for instructions.
+- **Connect Claude directly to GitHub**: Your knowledge base stays live-synced — no manual uploads. Works with Claude Code, Claude Desktop, and Claude.ai. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically) for instructions.
 - **Clone the repo**: Teammates who use Cursor or VS Code can clone the repo and get the full agent system, just like you.
 
 Everyone works from the same positioning, proof points, and competitive intelligence, without waiting on you.
@@ -126,9 +131,6 @@ The **agent system** — the part that automatically routes your request to the 
 
 **What are the agents?**
 AI team members that work together behind the scenes. One reads your raw docs and structures them (Knowledge Architect). One generates content (Content Generator). One checks that everything aligns with your positioning (Consistency Guardian). One gives you buyer feedback as if your actual buyers were reviewing the work (Advisory Board). And one coordinates the team (PMM Orchestrator). You don't manage them. Just ask for what you need and they figure out who does what.
-
-**What do I need to prepare?**
-Gather whatever marketing docs you have: positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a specific checklist. Don't worry if it's messy or incomplete; the system tells you exactly what's missing and who to ask for it.
 
 ---
 
