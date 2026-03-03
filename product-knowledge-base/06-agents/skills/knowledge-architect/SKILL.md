@@ -17,6 +17,7 @@ Converts unstructured PMM knowledge into structured PMM OS templates.
 - Populated competitive intelligence files (`05-sales-enablement/[competitor]/`)
 - Codified case studies (`07-proof-points/case-studies/[customer-name].md`)
 - Populated data claims (`07-proof-points/data-claims/data-claims.md`)
+- Filled call debriefs (`08-transcripts/[YYYY-MM-DD]-[company]-[type].md`)
 - Gap report (`_gap-report.md`)
 
 **Does NOT:** Review its own work, decide pipeline flow, or create marketing content.
@@ -162,6 +163,33 @@ When user returns with new context, update the report and fill specific gaps.
 
 ---
 
+## Transcript Processing
+
+**Accepts:** Raw transcript in any format — Gong export, Apollo summary, Salesforce call log, Chorus/Clari transcript, Otter.ai, Fireflies, or pasted notes. Partial call summaries are fine; a full verbatim transcript is not required.
+
+**Workflow:**
+
+1. **Read transcript** — read everything the user provides, regardless of format
+2. **Read debrief schema** — open `08-transcripts/_debrief-template.md` to load the extraction schema
+3. **Fill debrief** — extract all schema fields from the transcript:
+   - Use **exact customer language** for quotes — do not paraphrase, clean up, or improve their wording
+   - Flag proof point candidates explicitly as "Candidate — needs approval" — never treat them as approved
+   - Infer call metadata (call type, deal stage, segment) from context if not stated
+4. **Surface update recommendations** — for each knowledge base file affected, propose the specific addition or change. Reference file path and section. Be precise.
+5. **Wait for confirmation** — present the filled debrief and recommendations to the user. Do not write to any knowledge base file until the user explicitly approves each update.
+6. **Apply approved updates** — update only confirmed files. Add a note at the bottom of each updated file: `*Updated [date] based on [company-name] call debrief.*`
+7. **Save debrief** — write the completed debrief to `08-transcripts/[YYYY-MM-DD]-[company-name]-[call-type].md`
+
+**Pattern detection:** If the user shares multiple transcripts at once, look for recurring themes across calls (objections, competitor mentions, proof point reactions, language patterns) and flag them in a summary before the individual debriefs. Three occurrences of the same theme is a signal to update positioning.
+
+**Rules:**
+- Never update knowledge base files without explicit user approval
+- Never treat candidate proof points as approved — they need customer sign-off before going into `07-proof-points/`
+- Never invent or extrapolate details not present in the transcript
+- If the transcript is thin, produce what you can and flag what's missing
+
+---
+
 ## Revision Mode
 
 When Orchestrator sends merged feedback: read constraint list, refine only affected sections (don't regenerate), derive missing details from other files when safe, or ask user specific questions.
@@ -182,9 +210,11 @@ product-knowledge-base/
 │   ├── battlecard.md
 │   ├── objection-handling.md
 │   └── FUD-playbook.md
-└── 07-proof-points/
-    ├── case-studies/[customer-name].md
-    └── data-claims/data-claims.md
+├── 07-proof-points/
+│   ├── case-studies/[customer-name].md
+│   └── data-claims/data-claims.md
+└── 08-transcripts/
+    └── [YYYY-MM-DD]-[company-name]-[call-type].md
 ```
 
 Always create new folders with descriptive names. Maintain template structure and formatting. Include all sections, even if brief.

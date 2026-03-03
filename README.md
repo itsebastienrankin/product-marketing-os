@@ -17,6 +17,8 @@ Once it's built, something changes: **anyone at your company, using any AI tool,
 
 You stop being the bottleneck. You become the architect of a system that scales your expertise across the entire org.
 
+And it compounds. Every call transcript you process, every case study you add, every competitor you codify — it stays. You never re-explain your product to AI again. Every session starts with full context, automatically. The knowledge base doesn't reset between conversations; it grows.
+
 ---
 
 ## What This Looks Like in Practice
@@ -86,6 +88,7 @@ Your knowledge base is organized into sections that build on each other:
 | **Style Guides** | Your brand voice and writing principles. So everything the AI creates sounds like your brand, not generic AI output. |
 | **Sales Enablement** | Competitive intelligence (battlecards, objection handling, FUD playbooks) per competitor. So sales has the latest intel without asking you. |
 | **Proof Points** | Your published case studies and verified data claims, structured so the AI references real evidence, not invented stats. |
+| **Transcripts** | Drop any call transcript — Gong, Apollo, Salesforce, pasted notes — and the AI extracts persona language, competitive signals, objections, and proof point candidates. The knowledge base gets smarter every time. |
 | **Agents** | AI team members that automate the work: one codifies your knowledge, one generates content, one checks brand alignment, one gives buyer feedback, and one coordinates the team. |
 
 You don't need to understand this structure to get started. The agents build it for you from whatever you give them. If you have 2 segments and 3 competitors, you'll get 2 segment folders and 3 competitor folders. If you have 12 segments and 20 competitors, same thing. It scales.

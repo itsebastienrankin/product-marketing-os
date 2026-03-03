@@ -11,7 +11,7 @@ Before responding to any PMM request, identify the right agent from the table be
 | Intent | Agent | Read this file |
 |--------|-------|----------------|
 | Set up knowledge base from scratch, bulk context dump, onboarding ("here's everything I have") | **PMM Orchestrator** | `product-knowledge-base/06-agents/skills/pmm-orchestrator/SKILL.md` |
-| Codify a specific doc or note, populate a single segment or competitor folder, codify case studies from URLs, fill gaps from gap report | **Knowledge Architect** | `product-knowledge-base/06-agents/skills/knowledge-architect/SKILL.md` |
+| Codify a specific doc or note, populate a single segment or competitor folder, codify case studies from URLs, process call transcripts, fill gaps from gap report | **Knowledge Architect** | `product-knowledge-base/06-agents/skills/knowledge-architect/SKILL.md` |
 | Generate ads, emails, landing pages, one-pagers, case studies, campaign briefs, content variants | **Content Generator** | `product-knowledge-base/06-agents/skills/content-generator/SKILL.md` |
 | Review for buyer resonance — simulate buying committee reaction, get persona-grounded feedback | **Advisory Board** | `product-knowledge-base/06-agents/skills/advisory-board/SKILL.md` |
 | Review for brand and positioning alignment — check consistency against PMM OS standards | **Consistency Guardian** | `product-knowledge-base/06-agents/skills/consistency-guardian/SKILL.md` |
@@ -35,7 +35,8 @@ product-knowledge-base/
 ├── 04-style-guides/       # brand voice & writing principles
 ├── 05-sales-enablement/   # competitive intelligence per competitor
 ├── 06-agents/             # agent specifications and Cursor Skills
-└── 07-proof-points/       # case studies and data claims
+├── 07-proof-points/       # case studies and data claims
+└── 08-transcripts/        # call debriefs extracted from raw transcripts (any source)
 ```
 
 When generating content, always check `01-segment-context/`, `07-proof-points/`, and `04-style-guides/` for the relevant segment before creating anything.
