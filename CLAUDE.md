@@ -12,7 +12,7 @@ Before responding to any PMM request, identify the right agent from the table be
 |--------|-------|----------------|
 | Set up knowledge base from scratch, bulk context dump, onboarding ("here's everything I have") | **PMM Orchestrator** | `product-knowledge-base/06-agents/skills/pmm-orchestrator/SKILL.md` |
 | Codify a specific doc or note, populate a single segment or competitor folder, codify case studies from URLs, fill gaps from gap report | **Knowledge Architect** | `product-knowledge-base/06-agents/skills/knowledge-architect/SKILL.md` |
-| Generate ads, emails, landing pages, case studies, campaign briefs, content variants | **Content Generator** | `product-knowledge-base/06-agents/skills/content-generator/SKILL.md` |
+| Generate ads, emails, landing pages, one-pagers, case studies, campaign briefs, content variants | **Content Generator** | `product-knowledge-base/06-agents/skills/content-generator/SKILL.md` |
 | Review for buyer resonance — simulate buying committee reaction, get persona-grounded feedback | **Advisory Board** | `product-knowledge-base/06-agents/skills/advisory-board/SKILL.md` |
 | Review for brand and positioning alignment — check consistency against PMM OS standards | **Consistency Guardian** | `product-knowledge-base/06-agents/skills/consistency-guardian/SKILL.md` |
 | Full pipeline, multi-agent workflow, quality-gated output, or any goal that spans multiple agents | **PMM Orchestrator** | `product-knowledge-base/06-agents/skills/pmm-orchestrator/SKILL.md` |

@@ -37,6 +37,7 @@ Read these files for the relevant segment — **only load what you need for the 
    - Meta/LinkedIn ads: Primary 125 chars, Headline 40 chars, Description 30 chars
    - Google SEM: Headlines 30 chars × 3, Descriptions 90 chars × 2
    - Emails: Conversational, curiosity-driven, problem → question framework
+   - One-pagers: Follow `03-prompts/one-pager-generator.md` — letter-format Figma asset, strict per-element char limits
    - Briefs: Follow template structure from `02-briefs/`
 4. **Apply style** — Ultra-concise, hook in first 5 words, single CTA, customer as hero, clear over clever
 5. **Incorporate proof points:**
