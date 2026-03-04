@@ -196,7 +196,7 @@ The following agents from earlier designs have been consolidated into existing a
 
 ### Agent Structure
 
-Each agent is implemented as a Cursor Skill in `product-knowledge-base/06-agents/skills/` with:
+Each agent is defined in `product-knowledge-base/06-agents/skills/` and works in both **Cursor** (as Skills in `.cursor/skills/`) and **Claude Code** (as slash commands in `.claude/commands/`). Each agent spec includes:
 - Clear I/O contract (what it accepts and produces)
 - Role definition and capabilities
 - Workflow and methodology
