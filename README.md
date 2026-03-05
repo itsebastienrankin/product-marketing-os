@@ -53,16 +53,16 @@ Your demand gen lead asks their AI for campaign copy and gets the same quality, 
 
 You need an AI tool to build and maintain the knowledge base. Two are fully supported, agents and review pipelines included:
 
-| | **Cursor** | **Claude Code** |
+| | **Claude Code** *(recommended)* | **Cursor** |
 |---|---|---|
-| **What it is** | A desktop app with AI built in. You drag files into the chat window. | A terminal-based AI tool from Anthropic. You type commands and chat. |
-| **Best for** | Most marketers and non-technical teams. No coding experience needed. | Anyone willing to copy-paste a few terminal commands during setup. Daily use is just chat, nothing technical. |
-| **Setup** | Download the app, clone the repo, run one activation command. ~10 minutes. | Install via terminal, clone the repo, run `claude`. ~10 minutes. See the [Setup Guide](./SETUP-GUIDE.md) for the exact steps. |
-| **Agent activation** | One-time terminal command to activate agents, then never touch the terminal again. | Agents activate automatically when you open the repo. Zero activation needed. |
-| **How you share docs** | Drag files directly into the chat window. | Paste content, or point to files/folders on your computer. |
-| **Get it** | [Download Cursor →](https://cursor.sh) | [Get Claude Code →](https://docs.anthropic.com/en/docs/claude-code/overview) |
+| **What it is** | Chat with Claude directly — in your browser, the desktop app, or the terminal. | A desktop app where you see the file tree, watch files get written in real time, and edit alongside the AI. |
+| **Best for** | Most people. No coding experience needed. Just open, chat, and go. | People who want to see exactly what's changing and make edits on the fly. |
+| **Setup** | Fork the repo, open it in Claude, start chatting. ~10 minutes. | Download the app, clone the repo, run one activation command. ~10 minutes. |
+| **Agent activation** | Agents activate automatically. Nothing to configure. | One-time terminal command, then never touch the terminal again. |
+| **How you share docs** | Drag files into the chat, paste content, or point to files in your repo. | Drag files into the chat window. |
+| **Get it** | [Open Claude →](https://claude.ai) / [Download Desktop →](https://claude.ai/download) | [Download Cursor →](https://cursor.sh) |
 
-**Not sure?** Start with Cursor. It's the most visual and requires the least technical comfort.
+**Not sure?** Start with Claude Code in your browser — there's nothing to install.
 
 **Important:** You only need a tool to *build* the knowledge base. Once it's built, your team can use the same knowledge base with any AI tool: Claude, ChatGPT, Copilot, Gemini, whatever they prefer. The knowledge base is just files. It works everywhere.
 
@@ -102,7 +102,7 @@ You don't need to understand this structure to get started. The agents build it 
 ## FAQ
 
 **Do I need to be technical?**
-Not particularly. Cursor is a desktop app: you download it, click through setup, and then chat with AI. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Claude Code runs in your terminal, but the experience is still just chat: you type messages and read responses. The setup takes a few commands; the daily use doesn't. Non-technical teams (marketing, ops, content) use both tools regularly.
+No. Claude Code works right in your browser or the desktop app — just chat. Cursor is a desktop app where you can also see the file tree and watch edits happen in real time, which some people prefer. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Non-technical teams (marketing, ops, content) use both tools regularly.
 
 **What do I need to prepare?**
 Gather whatever marketing docs you have: positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a specific checklist. Don't worry if it's messy or incomplete; the system tells you exactly what's missing and who to ask for it.

@@ -33,17 +33,17 @@ Spend 15 minutes collecting your marketing context. You don't need all of this; 
 
 ## Step 1: Choose Your Tool
 
-### Cursor *(recommended for most people)*
+### Claude Code *(recommended for most people)*
 
-A visual desktop app. Drag files into chat, review what the AI creates. No coding experience needed. One terminal command during setup, then never touch the terminal again.
+Chat with Claude directly — in your browser at [claude.ai](https://claude.ai), or in the [desktop app](https://claude.ai/download). No coding experience needed. Nothing to install beyond the app itself.
+
+Continue to [Setting Up with Claude Code](#setting-up-with-claude-code).
+
+### Cursor
+
+A desktop app where you see the file tree and watch files get created and edited in real time. Great if you want to spot changes as they happen and make edits on the fly. One terminal command during setup, then never touch the terminal again.
 
 [Download Cursor →](https://cursor.sh), then continue to [Setting Up with Cursor](#setting-up-with-cursor).
-
-### Claude Code
-
-Runs in your terminal. You type messages and read responses — it's a conversation, not a coding environment. **Requires [Node.js 18+](https://nodejs.org)** — run `node --version` to check.
-
-[Get Claude Code →](https://docs.anthropic.com/en/docs/claude-code/overview), then continue to [Setting Up with Claude Code](#setting-up-with-claude-code).
 
 ---
 
@@ -101,81 +101,43 @@ Set up my knowledge base with everything I've shared here
 
 ## Setting Up with Claude Code
 
-### Step 2: Install Claude Code
-
-Check that you have Node.js 18+:
-
-```bash
-node --version
-```
-
-If missing or below 18, download from [nodejs.org](https://nodejs.org) and restart your terminal.
-
-Then install Claude Code:
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-Run `claude` once and follow the login prompt.
-
-### Step 3: Fork and Clone the Repo
+### Step 2: Fork the Repo
 
 Forking creates your own copy on GitHub — that's where your knowledge base will live. You're not working in the original repo.
 
 If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
 1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os) and click **Fork** → **Create fork**
-2. Clone your fork:
+2. You'll land on your own copy at `github.com/YOUR-USERNAME/product-marketing-os`
 
-```bash
-git clone https://github.com/YOUR-USERNAME/product-marketing-os.git
-```
+### Step 3: Open in Claude
 
-### Step 4: Open the Repo
+**Browser (claude.ai):**
 
-```bash
-cd product-marketing-os
-claude
-```
+1. Go to [claude.ai](https://claude.ai)
+2. Connect your GitHub account: **Settings → Integrations → GitHub**
+3. Start a new chat and attach your forked repo — Claude reads the `CLAUDE.md` file automatically and activates the full agent system
 
-The `CLAUDE.md` file loads automatically and activates the full agent system. No configuration needed.
+**Desktop app:**
 
-### Step 5: Share Your Docs
+1. Download the [Claude desktop app](https://claude.ai/download)
+2. Connect your GitHub account in Settings, same as above
+3. Open a new chat and attach your forked repo
 
-**Point to files (recommended):**
+> **Using the terminal instead?** If you prefer the CLI: install with `npm install -g @anthropic-ai/claude-code` (requires [Node.js 18+](https://nodejs.org)), then `git clone` your fork and run `claude` from inside the repo folder. Everything works the same way — the `CLAUDE.md` file loads automatically.
 
-```
-Set up my knowledge base using these files:
-- ~/Documents/positioning-doc.pdf
-- ~/Downloads/persona-deck-notes.txt
-- ~/Desktop/competitive-research.md
-```
+### Step 4: Share Your Docs
 
-**Point to a folder:**
-
-```
-Set up my knowledge base using all the files in ~/Documents/marketing-context/
-```
-
-**Add files to context directly:**
-
-You can also use the `/add` command to attach files before sending your message:
-
-```
-/add ~/Documents/positioning-doc.pdf
-/add ~/Downloads/persona-deck-notes.txt
-```
-
-Then type: `Set up my knowledge base with everything I've shared here`
-
-**Paste content directly:**
-
-If your context is short (bullet points, a few paragraphs), you can paste it into the chat:
+Drag your files into the chat (you can drag multiple at once), or paste content directly. Then type:
 
 ```
 Set up my knowledge base with everything I've shared here
 ```
+
+**Other ways to share docs:**
+
+- **Point to files:** `Set up my knowledge base using these files: positioning-doc.pdf, persona-deck.txt`
+- **Paste directly:** If your context is short (bullet points, a few paragraphs), paste it right into the chat
 
 You can also invoke agents directly with slash commands:
 - `/knowledge-architect populate my SMB segment from this doc`
@@ -221,11 +183,17 @@ Upload your `product-knowledge-base/` files to a [Claude.ai](https://claude.ai) 
 
 ### Option B: GitHub MCP *(live sync)*
 
-Connects Claude directly to your GitHub repo so updates sync automatically. More setup, but no manual re-uploading.
+Connects Claude directly to your GitHub repo so updates sync automatically. No manual re-uploading.
 
 **Best for:** Teams that update the knowledge base frequently.
 
-#### Claude Code
+#### Claude.ai (web) or Claude Desktop
+
+Go to **Settings → Integrations** and connect your GitHub account. That's it — Claude can now read your repo directly.
+
+#### Claude Code (terminal)
+
+If you're using the terminal CLI, connect via MCP:
 
 1. Create a GitHub Personal Access Token at [github.com/settings/tokens](https://github.com/settings/tokens) with `repo` scope (or `contents: read` for fine-grained tokens)
 2. Add the token and connect the MCP server:
@@ -234,30 +202,6 @@ Connects Claude directly to your GitHub repo so updates sync automatically. More
 export GITHUB_PERSONAL_ACCESS_TOKEN=ghp_yourtokenhere
 claude mcp add github-kb -s user -- npx -y @modelcontextprotocol/server-github
 ```
-
-#### Claude Desktop
-
-Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
-
-```json
-{
-  "mcpServers": {
-    "github-kb": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_yourtokenhere"
-      }
-    }
-  }
-}
-```
-
-Restart Claude Desktop after saving.
-
-#### Claude.ai (web)
-
-Go to **Settings → Integrations** and connect your GitHub account.
 
 ---
 
@@ -283,13 +227,18 @@ For teammates using Cursor or VS Code — have them clone your fork's URL and fo
 
 ### Claude Code
 
-**`npm install` failed or `claude` not found**
-- Check Node.js: `node --version` — needs 18+. Download from [nodejs.org](https://nodejs.org).
-- On Mac: restart your terminal after installing Node.js
+**GitHub repo not connecting**
+- Check that your GitHub account is connected: **Settings → Integrations → GitHub**
+- Make sure you're attaching your forked copy, not the original repo
 
 **Agents not activating**
+- Make sure the repo is attached to the conversation — Claude needs to read the `CLAUDE.md` file at the repo root
+- Be explicit: "Using the Knowledge Architect, set up my knowledge base with these files"
+
+**Using the terminal and `npm install` failed?**
+- Check Node.js: `node --version` — needs 18+. Download from [nodejs.org](https://nodejs.org)
+- On Mac: restart your terminal after installing Node.js
 - Run `claude` from inside the repo: `cd product-marketing-os` first
-- Check that `CLAUDE.md` exists at the root of the repo
 
 ### Still stuck?
 
