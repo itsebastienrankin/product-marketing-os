@@ -51,6 +51,6 @@ You don't need to use these directly — the **Content Generator** agent reads t
 ## Cross-References
 
 - `01-segment-context/` — Positioning and messaging that generators reference
-- `02-briefs/` — Campaign briefs that define what content to generate
+- `02-campaigns/` — Campaign folders with briefs that define what content to generate
 - `04-style-guides/` — Writing principles applied to all generated content
 - `07-proof-points/` — Case studies and data claims used for substantiation
