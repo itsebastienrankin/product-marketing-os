@@ -55,8 +55,8 @@ You need an AI tool to build and maintain the knowledge base. Two are fully supp
 
 | | **Claude Code** *(recommended)* | **Cursor** |
 |---|---|---|
-| **What it is** | Chat with Claude directly — in your browser, the desktop app, or the terminal. | A desktop code editor with AI built in. You drag files into the chat window. |
-| **Best for** | Most people. No coding experience needed. Just open, chat, and go. | Teams already using Cursor for development. |
+| **What it is** | Chat with Claude directly — in your browser, the desktop app, or the terminal. | A desktop app where you see the file tree, watch files get written in real time, and edit alongside the AI. |
+| **Best for** | Most people. No coding experience needed. Just open, chat, and go. | People who want to see exactly what's changing and make edits on the fly. |
 | **Setup** | Fork the repo, open it in Claude, start chatting. ~10 minutes. | Download the app, clone the repo, run one activation command. ~10 minutes. |
 | **Agent activation** | Agents activate automatically. Nothing to configure. | One-time terminal command, then never touch the terminal again. |
 | **How you share docs** | Drag files into the chat, paste content, or point to files in your repo. | Drag files into the chat window. |
@@ -102,7 +102,7 @@ You don't need to understand this structure to get started. The agents build it 
 ## FAQ
 
 **Do I need to be technical?**
-No. Claude Code works right in your browser or the desktop app — just chat. Cursor is similar: a desktop app where you chat with AI. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Non-technical teams (marketing, ops, content) use both tools regularly.
+No. Claude Code works right in your browser or the desktop app — just chat. Cursor is a desktop app where you can also see the file tree and watch edits happen in real time, which some people prefer. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Non-technical teams (marketing, ops, content) use both tools regularly.
 
 **What do I need to prepare?**
 Gather whatever marketing docs you have: positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a specific checklist. Don't worry if it's messy or incomplete; the system tells you exactly what's missing and who to ask for it.

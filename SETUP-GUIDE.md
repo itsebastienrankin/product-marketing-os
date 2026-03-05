@@ -41,7 +41,7 @@ Continue to [Setting Up with Claude Code](#setting-up-with-claude-code).
 
 ### Cursor
 
-A desktop code editor with AI built in. Drag files into chat, review what the AI creates. One terminal command during setup, then never touch the terminal again.
+A desktop app where you see the file tree and watch files get created and edited in real time. Great if you want to spot changes as they happen and make edits on the fly. One terminal command during setup, then never touch the terminal again.
 
 [Download Cursor →](https://cursor.sh), then continue to [Setting Up with Cursor](#setting-up-with-cursor).
 
