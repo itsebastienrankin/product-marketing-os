@@ -10,7 +10,7 @@ The files here complement segment context (`01-segment-context/`). Segment conte
 
 ```
 05-sales-enablement/
-├── {{competitor 1}}/                      # Template folder — copy for each competitor
+├── {{competitor-1}}/                      # Template folder — copy for each competitor
 │   ├── competitor-overview.md
 │   ├── battlecard.md
 │   ├── objection-handling.md
@@ -56,6 +56,6 @@ The files here complement segment context (`01-segment-context/`). Segment conte
 
 ## How to Create a New Competitor Folder
 
-Copy `{{competitor 1}}/`, rename it to the competitor's name, and populate. The fastest path is using the **Knowledge Architect** agent (if you've set up `06-agents/`) or AI-assisted prompts — see the [Setup Guide](../../SETUP-GUIDE.md) for the exact approach.
+Copy `{{competitor-1}}/`, rename it to the competitor's name, and populate. The fastest path is using the **Knowledge Architect** agent (if you've set up `06-agents/`) or AI-assisted prompts — see the [Setup Guide](../../SETUP-GUIDE.md) for the exact approach.
 
 Start with the competitors you encounter most often in deals. Most teams need 2-3 competitor folders to cover 80% of competitive situations.

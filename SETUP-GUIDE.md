@@ -61,7 +61,7 @@ GitHub is where your knowledge base lives — forking creates your own copy. Tha
 
 If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
-1. Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os) and click **Fork** → **Create fork**. You'll land on your own copy at `github.com/YOUR-USERNAME/product-marketing-os`.
+1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os) and click **Fork** → **Create fork**. You'll land on your own copy at `github.com/YOUR-USERNAME/product-marketing-os`.
 2. Click the green **Code** button and copy the HTTPS URL
 3. In Cursor: press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows), type `Git: Clone`, select it
 4. Paste the URL, choose a folder (Desktop works fine), click **Select Repository Location**
@@ -125,7 +125,7 @@ Forking creates your own copy on GitHub — that's where your knowledge base wil
 
 If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
-1. Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os) and click **Fork** → **Create fork**
+1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os) and click **Fork** → **Create fork**
 2. Clone your fork:
 
 ```bash
@@ -293,4 +293,4 @@ For teammates using Cursor or VS Code — have them clone your fork's URL and fo
 
 ### Still stuck?
 
-Open an issue on [GitHub](https://github.com/sebastienrankin/product-marketing-os/issues) and we'll help you out.
+Open an issue on [GitHub](https://github.com/itsebastienrankin/product-marketing-os/issues) and we'll help you out.
