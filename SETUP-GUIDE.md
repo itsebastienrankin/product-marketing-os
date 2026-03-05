@@ -1,176 +1,275 @@
 # Setup Guide
 
-You'll need about 10 minutes and zero technical experience. This guide walks you through every click.
+By the end of this guide, you'll have an AI system that knows your product as well as you do, and you'll be able to ask it for anything.
 
-By the end, you'll have an AI system that knows your product as well as you do — and you'll be able to ask it for anything.
+**Time:** About 10 minutes for tool setup, plus however long you spend sharing your docs (most people take 30–60 minutes for the first pass).
 
 ---
 
-## Step 1: Download Cursor
+## Before You Start: Gather Your Docs
 
-Cursor is an editor with AI built in. You'll use it mostly for chatting with AI and reviewing files — think of it as a smarter Google Docs.
+Spend 15 minutes collecting your marketing context. You don't need all of this; even 2–3 documents is enough to start.
 
-1. Go to [cursor.sh](https://cursor.sh) and download the app for your computer
-2. Install it like any other app (drag to Applications on Mac, or run the installer on Windows)
+### The essentials
+
+- [ ] **Positioning or messaging doc:** Your core positioning, value prop, or messaging framework. Even a rough draft or strategy deck works.
+- [ ] **Buyer/persona info:** Who you sell to, their pain points, how they buy. A persona deck, customer interview notes, or bullet points from your sales team all work.
+- [ ] **Competitive landscape:** Who you compete against and how you're different. Win/loss notes, competitor research, sales battle notes, anything.
+
+### Bonus (adds depth fast)
+
+- [ ] **Case study URL:** The page on your website where customer stories are published (e.g., `yoursite.com/customers`). The AI will find every story on that page and structure them automatically.
+- [ ] **Data claims:** Stats you use in marketing (e.g., "87% of customers saw X in 90 days"). Include the source if you have it.
+- [ ] **Brand voice or style guide:** Tone of voice docs, brand guidelines, writing principles. Even rough notes from a brand workshop work.
+- [ ] **Sales feedback:** Win/loss reports, competitive notes from your sales team, objection patterns, deal stage insights.
+
+### Don't worry about
+
+- **Format:** Google Docs, PDFs, slide decks, text files, pasted Slack threads. All fine.
+- **Organization:** Messy is fine. The AI classifies and structures everything for you.
+- **Completeness:** A rough first pass is dramatically better than no context. The gap report tells you exactly what's missing and who on your team has it.
+
+---
+
+## Step 1: Choose Your Tool
+
+### Cursor *(recommended for most people)*
+
+A visual desktop app. Drag files into chat, review what the AI creates. No coding experience needed. One terminal command during setup, then never touch the terminal again.
+
+[Download Cursor →](https://cursor.sh), then continue to [Setting Up with Cursor](#setting-up-with-cursor).
+
+### Claude Code
+
+Runs in your terminal. You type messages and read responses — it's a conversation, not a coding environment. **Requires [Node.js 18+](https://nodejs.org)** — run `node --version` to check.
+
+[Get Claude Code →](https://docs.anthropic.com/en/docs/claude-code/overview), then continue to [Setting Up with Claude Code](#setting-up-with-claude-code).
+
+---
+
+## Setting Up with Cursor
+
+### Step 2: Install Cursor
+
+1. Go to [cursor.sh](https://cursor.sh) and download the app
+2. Install it (drag to Applications on Mac, run the installer on Windows)
 3. Open Cursor
 
-That's it for this step. You'll come back to Cursor in a moment.
+### Step 3: Fork and Clone the Repo
 
----
+GitHub is where your knowledge base lives — forking creates your own copy. That's where your knowledge base will actually live. You're not working in the original repo.
 
-## Step 2: Get the Knowledge Base from GitHub
+If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
-GitHub is where your knowledge base lives. You're going to make your own copy of it.
-
-**If you're setting this up for your team:**
-
-1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os)
-2. Click the green **Fork** button in the top right — this creates your team's own copy
-3. You'll land on your fork's page. Click the green **Code** button, then copy the URL
-4. Back in Cursor: press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows) to open the command bar
-5. Type `Git: Clone` and select it
-6. Paste the URL you copied and press Enter
-7. Choose a folder on your computer where you want to save it (Desktop works fine)
-8. When it asks "Would you like to open the cloned repository?" — click **Open**
-
-**If it's just you:**
-
-1. In Cursor: press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows)
-2. Type `Git: Clone` and select it
-3. Paste this URL: `https://github.com/itsebastienrankin/product-marketing-os.git`
-4. Choose a folder on your computer and press Enter
+1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os) and click **Fork** → **Create fork**. You'll land on your own copy at `github.com/YOUR-USERNAME/product-marketing-os`.
+2. Click the green **Code** button and copy the HTTPS URL
+3. In Cursor: press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows), type `Git: Clone`, select it
+4. Paste the URL, choose a folder (Desktop works fine), click **Select Repository Location**
 5. Click **Open** when prompted
 
-You should now see a sidebar on the left with a `product-knowledge-base` folder. You're in.
+You should now see a sidebar with a `product-knowledge-base` folder.
 
----
+### Step 4: Activate the Agents
 
-## Step 3: Activate the Agents
+1. Open the terminal: `` Ctrl+` `` (backtick key, above Tab) or **Terminal → New Terminal**
 
-The knowledge base comes with AI agents — think of them as specialized assistants that each handle a different part of the work. You need to activate them once.
+   **Windows:** If the terminal shows PowerShell or CMD, switch to Git Bash: click the dropdown next to `+` in the terminal panel and select **Git Bash**.
 
-1. In Cursor, open the built-in terminal:
-   - Mac: `Ctrl + ~` (that's the key above Tab)
-   - Windows: `` Ctrl + ` ``
-   - Or go to the menu: **Terminal → New Terminal**
-2. A panel will appear at the bottom of the screen. Click inside it and paste this entire block, then press Enter:
+2. Click inside the terminal, paste this entire block, and press Enter:
 
 ```bash
 mkdir -p .cursor/skills && cd .cursor/skills && for name in knowledge-architect content-generator consistency-guardian advisory-board pmm-orchestrator; do ln -sf "../../product-knowledge-base/06-agents/skills/$name" "$name"; done && echo "Agents activated!"
 ```
 
-3. You should see `Agents activated!` — that means it worked. (This creates shortcuts so Cursor can find the agents — you'll never need to do this again.)
-4. Quit Cursor completely (`Cmd + Q` on Mac, close the window on Windows) and reopen it — this loads the agents
+3. You should see `Agents activated!`. Quit Cursor completely (`Cmd+Q` on Mac, close on Windows) and reopen it.
 
-**This is the only time you'll need to touch the terminal.** From here on, everything happens through chat.
+**That's the only time you'll need the terminal.** Everything from here is chat.
 
-If you see an error, don't worry — just copy the command again, make sure you're pasting the whole thing, and try once more. If it still doesn't work, see [Troubleshooting](#troubleshooting) below.
+### Step 5: Share Your Docs
 
----
-
-## Step 4: Dump Everything You Have
-
-This is where the magic happens. Gather every piece of marketing context you have and hand it to the agents. They'll read everything, figure out what it is, and build your entire knowledge base from it.
-
-**What to include** — anything and everything:
-- Positioning docs, messaging frameworks, value prop decks
-- Persona decks, buyer research, customer interview notes
-- Competitive research, win/loss data, sales feedback
-- Data claims, benchmark stats, research findings
-- Brand guidelines, tone of voice docs
-- Meeting notes, strategy decks, internal wikis
-
-Rough, unfinished, disorganized — all fine. The messier it is, the more impressive the output.
-
-**How to do it:**
-
-1. Open Cursor's chat panel — click the chat icon in the top right, or press `Cmd + L` (Mac) / `Ctrl + L` (Windows)
-2. Drag your files directly into the chat window (you can drag multiple files at once)
-3. Type this message and press Enter:
+1. Open the chat panel: `Cmd+L` (Mac) / `Ctrl+L` (Windows), or click the chat icon
+2. Drag your files into the chat (you can drag multiple at once)
+3. Type this and press Enter:
 
 ```
 Set up my knowledge base with everything I've shared here
 ```
 
-That's it. The agents will read everything, ask you a few questions to confirm what they found, and start building.
-
-**Case studies:** The agents will ask you for the URL where your case studies are published (e.g., `yoursite.com/customers` or `yoursite.com/case-studies`). Just share the link — they'll find every published story on that page and create a structured file for each one automatically. You don't need to copy-paste anything.
-
-**What happens next:**
-
-1. You'll see a **plan** showing what the agents found in your docs — segments, competitors, case studies. Confirm it looks right or adjust.
-2. The agents will **build** your entire knowledge base — structured files for every segment, competitor, persona, proof point
-3. You'll get a **gap report** showing exactly what's missing, ranked by importance, with suggestions for who on your team has the information
-
-> **This is the aha moment.** You just dragged in a pile of messy docs, and now you have a structured marketing foundation that AI can reference for everything it creates — ads, emails, landing pages, briefs. The more docs you give it, the longer it takes — but even a rough first pass is a completely different experience from starting with a blank prompt.
+**Continue to [What Happens Next →](#what-happens-next)**
 
 ---
 
-## Step 5: Fill the Gaps
+## Setting Up with Claude Code
 
-The gap report is your to-do list. It tells you what's missing, why it matters, and who to ask for it.
+### Step 2: Install Claude Code
 
-You don't have to fill everything at once. Even a partial knowledge base produces dramatically better AI outputs than starting from scratch every time. Work through it at your own pace:
-
-1. Get the missing information from whoever has it (the report suggests who to ask)
-2. Drag the new docs into Cursor's chat
-3. Say something like:
-
-```
-Here's the missing buyer persona research — update my knowledge base
+```bash
+npm install -g @anthropic-ai/claude-code
 ```
 
-The agents will fill in the gaps and update the report. Every time you add more context, everything the AI creates gets better.
+Then run `claude` once and follow the login prompt.
+
+### Step 3: Fork and Clone the Repo
+
+Forking creates your own copy on GitHub — that's where your knowledge base will live. You're not working in the original repo.
+
+If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
+
+1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os) and click **Fork** → **Create fork**
+2. Clone your fork:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/product-marketing-os.git
+```
+
+### Step 4: Open the Repo
+
+```bash
+cd product-marketing-os
+claude
+```
+
+The `CLAUDE.md` file loads automatically and activates the full agent system. No configuration needed.
+
+### Step 5: Share Your Docs
+
+**Paste content directly:**
+
+```
+Set up my knowledge base with everything I've shared here
+```
+
+(Paste your docs into chat before sending.)
+
+**Point to files:**
+
+```
+Set up my knowledge base using these files:
+- ~/Documents/positioning-doc.pdf
+- ~/Downloads/persona-deck-notes.txt
+- ~/Desktop/competitive-research.md
+```
+
+**Point to a folder:**
+
+```
+Set up my knowledge base using all the files in ~/Documents/marketing-context/
+```
+
+You can also invoke agents directly with slash commands:
+- `/knowledge-architect populate my SMB segment from this doc`
+- `/content-generator write 3 LinkedIn ads for our mid-market segment`
+- `/pmm-orchestrator run a full content pipeline for our enterprise segment`
+
+**Continue to [What Happens Next →](#what-happens-next)**
 
 ---
 
-## Step 6: Start Creating
+## What Happens Next
 
-With your knowledge base populated, ask for whatever you need. Open Cursor's chat and type:
+After you share your docs, the agents will:
+
+1. Show you a **triage plan** — what they found: segments, competitors, case studies. Confirm it looks right or adjust before they build.
+2. **Build your knowledge base** — structured files for every segment, competitor, persona, and proof point
+3. **Run two reviews** — one checking buyer resonance, one checking brand alignment
+4. Deliver a **gap report** (`_gap-report.md`) — what's missing, why it matters, who on your team has it, and what you can generate right now
+
+**Case studies:** If you have a case study URL, share it. The agents will visit every story on that page and create a structured file for each one automatically.
+
+> You just shared a pile of messy docs, and now you have a structured marketing foundation. Even a rough first pass is a completely different experience from starting with a blank prompt.
+
+**Adding context over time:** When you have new material to add, share it and say something like:
 
 ```
-Generate 3 LinkedIn ad variants for our SMB segment targeting CFOs
+Here's the missing buyer persona research, please update my knowledge base
 ```
 
-```
-Write a sales email sequence for enterprise prospects switching from Salesforce
+Every time you add context, everything the AI creates gets better.
+
+---
+
+## Share with Your Team
+
+### Option A: Claude Projects *(easiest)*
+
+Upload your `product-knowledge-base/` files to a [Claude.ai](https://claude.ai) Project and invite teammates. They open the Project and start chatting — no setup on their end.
+
+**Limitation:** Files don't sync automatically. Re-upload changed files when you update the knowledge base.
+
+---
+
+### Option B: GitHub MCP *(live sync)*
+
+Connects Claude directly to your GitHub repo so updates sync automatically. More setup, but no manual re-uploading.
+
+**Best for:** Teams that update the knowledge base frequently.
+
+#### Claude Code
+
+1. Create a GitHub Personal Access Token at [github.com/settings/tokens](https://github.com/settings/tokens) with `repo` scope (or `contents: read` for fine-grained tokens)
+2. Add the token and connect the MCP server:
+
+```bash
+export GITHUB_PERSONAL_ACCESS_TOKEN=ghp_yourtokenhere
+claude mcp add github-kb -s user -- npx -y @modelcontextprotocol/server-github
 ```
 
-```
-Create a campaign brief for our product launch targeting mid-market ops leaders
+#### Claude Desktop
+
+Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
+
+```json
+{
+  "mcpServers": {
+    "github-kb": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_yourtokenhere"
+      }
+    }
+  }
+}
 ```
 
-The AI references your actual positioning, messaging, proof points, and competitive intelligence. First drafts that sound like they came from someone who deeply understands your product — because the AI does now.
+Restart Claude Desktop after saving.
 
-**Share the knowledge base with your team** — anyone who connects their AI tool to the same repo gets the same structured context. Your demand gen lead generates ad copy grounded in your positioning. Your content writer pulls from approved customer quotes. Your sales team gets battlecards that reflect your actual competitive intelligence. Everyone works from the same source of truth, without waiting on you to review every draft.
+#### Claude.ai (web)
+
+Go to **Settings → Integrations** and connect your GitHub account.
+
+---
+
+### Option C: Clone the repo
+
+For teammates using Cursor or VS Code — have them clone your fork's URL and follow the [Cursor setup steps](#setting-up-with-cursor). They skip the fork step and use your repo URL instead.
 
 ---
 
 ## Troubleshooting
 
-**The agent activation command didn't work**
-- Make sure you copied the entire command (it's long — scroll to get all of it)
-- Make sure you're in the terminal panel at the bottom of Cursor, not in the chat
-- Try closing and reopening the terminal (`Ctrl + ~`), then pasting again
+### Cursor
 
-**Cursor isn't recognizing the agents**
-- Did you quit and reopen Cursor after Step 3? The agents only load on startup.
-- Check that you see a `.cursor/skills` folder in your sidebar (you may need to toggle hidden files: `Cmd + Shift + .` on Mac)
+**Activation command failed**
+- Copy the entire command (it's long; scroll right to make sure you got all of it)
+- Make sure you're in the terminal panel at the bottom, not the chat
+- Windows: make sure you're in Git Bash, not PowerShell or CMD
 
-**The agents aren't responding to my messages**
-- Make sure you're in the chat panel (click the chat icon or press `Cmd + L`)
-- Try being more explicit: "Using the Knowledge Architect agent, set up my knowledge base with these files"
+**Agents not responding**
+- Quit and reopen Cursor after activation — agents only load on startup
+- Check that `.cursor/skills` exists in your sidebar (toggle hidden files: `Cmd+Shift+.` on Mac)
+- Be explicit: "Using the Knowledge Architect, set up my knowledge base with these files"
 
-**I'm stuck and nothing is working**
-- Take a breath. This is new tooling and it's normal to hit bumps.
-- Check the [Agents README](./product-knowledge-base/06-agents/README.md) for more detailed instructions
-- Open an issue on GitHub and we'll help you out
+### Claude Code
 
----
+**`npm install` failed or `claude` not found**
+- Check Node.js: `node --version` — needs 18+. Download from [nodejs.org](https://nodejs.org).
+- On Mac: restart your terminal after installing Node.js
 
-## Tips
+**Agents not activating**
+- Run `claude` from inside the repo: `cd product-marketing-os` first
+- Check that `CLAUDE.md` exists at the root of the repo
 
-- **Don't worry about being organized.** The agents handle classification and structuring. Messy is fine.
-- **Start with what you have.** A rough first pass is dramatically better than no context at all.
-- **Use the gap report as your to-do list.** It tells you exactly what to prioritize.
-- **Share the repo with your team.** Once the knowledge base is populated, anyone connected to it has a PMM expert in their pocket — through any AI tool.
+### Still stuck?
+
+Open an issue on [GitHub](https://github.com/itsebastienrankin/product-marketing-os/issues) and we'll help you out.
