@@ -30,7 +30,7 @@ When a request clearly spans multiple agents (e.g., "codify this and create camp
 ```
 product-knowledge-base/
 ├── 01-segment-context/    # positioning, messaging, personas per segment
-├── 02-briefs/             # campaign & creative brief templates
+├── 02-campaigns/          # campaign folders with briefs & generated assets
 ├── 03-prompts/            # platform-specific content generators
 ├── 04-style-guides/       # brand voice & writing principles
 ├── 05-sales-enablement/   # competitive intelligence per competitor

@@ -9,7 +9,7 @@ Creates marketing content and campaign briefs using PMM OS knowledge base as con
 
 ## Input / Output Contract
 
-**Accepts:** Segment context files, campaign brief or requirements, style guide, platform-specific prompt templates (`03-prompts/`), brief templates (`02-briefs/`), revision constraints from Orchestrator
+**Accepts:** Segment context files, campaign brief or requirements, style guide, platform-specific prompt templates (`03-prompts/`), brief templates (`02-campaigns/_templates/`), revision constraints from Orchestrator
 
 **Produces:** Marketing assets (ads, emails, landing pages, case studies), campaign/creative briefs, multiple variants for A/B testing, strategic reasoning for each asset
 
@@ -25,7 +25,7 @@ Read these files for the relevant segment — **only load what you need for the 
 2. **Style guide** (`04-style-guides/writing-principles.md`)
 3. **Proof points** (`07-proof-points/`) — case studies for approved quotes, data claims for substantiated stats
 4. **Platform prompt** (`03-prompts/[relevant-generator].md`) — only the one matching the content type
-5. **Brief template** (`02-briefs/`) — only if generating briefs
+5. **Brief template** (`02-campaigns/_templates/`) — only if generating briefs
 
 ---
 
@@ -38,7 +38,7 @@ Read these files for the relevant segment — **only load what you need for the 
    - Google SEM: Headlines 30 chars × 3, Descriptions 90 chars × 2
    - Emails: Conversational, curiosity-driven, problem → question framework
    - One-pagers: Follow `03-prompts/one-pager-generator.md` — letter-format Figma asset, strict per-element char limits
-   - Briefs: Follow template structure from `02-briefs/`
+   - Briefs: Follow template structure from `02-campaigns/_templates/`
 4. **Apply style** — Ultra-concise, hook in first 5 words, single CTA, customer as hero, clear over clever
 5. **Incorporate proof points:**
    - Case studies: Use only quotes marked approved for the relevant channel. Match to target persona and pillar.
