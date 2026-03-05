@@ -138,4 +138,4 @@ AI team members that work together behind the scenes. One reads your raw docs an
 
 [MIT License](./LICENSE). Free to use, adapt, and extend.
 
-Created by [Sebastien Rankin](https://github.com/sebastienrankin)
+Created by [Sebastien Rankin](https://github.com/itsebastienrankin)
