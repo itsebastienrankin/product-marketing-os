@@ -24,7 +24,7 @@ GitHub is where your knowledge base lives. You're going to make your own copy of
 
 **If you're setting this up for your team:**
 
-1. Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os)
+1. Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os)
 2. Click the green **Fork** button in the top right — this creates your team's own copy
 3. You'll land on your fork's page. Click the green **Code** button, then copy the URL
 4. Back in Cursor: press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows) to open the command bar
@@ -37,7 +37,7 @@ GitHub is where your knowledge base lives. You're going to make your own copy of
 
 1. In Cursor: press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows)
 2. Type `Git: Clone` and select it
-3. Paste this URL: `https://github.com/sebastienrankin/product-marketing-os.git`
+3. Paste this URL: `https://github.com/itsebastienrankin/product-marketing-os.git`
 4. Choose a folder on your computer and press Enter
 5. Click **Open** when prompted
 

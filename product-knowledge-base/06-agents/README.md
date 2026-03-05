@@ -156,7 +156,7 @@ Agents are Cursor Skills. To activate them in your project:
 
 **Example (macOS/Linux):** From project root:
 ```bash
-mkdir -p .cursor/skills && for name in knowledge-architect content-generator consistency-guardian advisory-board pmm-orchestrator; do ln -sf "../../product-knowledge-base/06-agents/skills/$name" ".cursor/skills/$name"; done
+mkdir -p .cursor/skills && cd .cursor/skills && for name in knowledge-architect content-generator consistency-guardian advisory-board pmm-orchestrator; do ln -sf "../../product-knowledge-base/06-agents/skills/$name" "$name"; done && cd ../..
 ```
 
 ## Tips for Best Results
