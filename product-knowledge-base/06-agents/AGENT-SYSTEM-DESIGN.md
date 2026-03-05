@@ -207,7 +207,7 @@ Each agent is defined in `product-knowledge-base/06-agents/skills/` and works in
 
 Agents reference the `product-knowledge-base/` structure:
 - `01-segment-context/` — Segment positioning, messaging, personas, market overview
-- `02-campaigns/` — Campaign folders with briefs, assets, and templates (`_templates/`)
+- `02-campaigns/` — Campaign folders with briefs, assets, and `{{campaign-template}}/`
 - `03-prompts/` — Platform-specific content generators
 - `04-style-guides/` — Writing principles and voice guidelines
 - `05-sales-enablement/` — Competitive intelligence templates
