@@ -144,12 +144,12 @@ Structure:
 
 ## Campaigns (`02-campaigns/`)
 
-Each campaign gets a folder under `02-campaigns/` with populated briefs and generated assets. Templates live in `02-campaigns/_templates/`.
+Each campaign gets its own folder under `02-campaigns/`. Copy `{{campaign-template}}/`, rename it, and populate. Same pattern as `01-segment-context/` and `05-sales-enablement/`.
 
-### _templates/campaign-brief-template.md
+### campaign-brief.md
 
 Sections: Campaign Overview, Target Audience, Messaging (table mapping pillars to audience), Data Claims (substantiated proof points), Channel Strategy, Asset Requirements, RACI, Timeline/Milestones, Measurement, Budget
 
-### _templates/creative-brief-template.md
+### creative-brief.md
 
 Sections: Project Overview, Strategic Context (from campaign brief), Creative Strategy, Visual Direction (mood, mandatory elements, no-gos), Copy Direction (tone, key messages, mandatories), Technical Specs (per asset type), Review/Approval Process

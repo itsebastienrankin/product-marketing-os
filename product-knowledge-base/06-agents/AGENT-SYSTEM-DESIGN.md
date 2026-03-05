@@ -184,7 +184,7 @@ The following agents from earlier designs have been consolidated into existing a
 | Template Populator | Knowledge Architect | Identical function — extracting from unstructured sources and populating templates |
 | Competitive Intelligence Analyst | Knowledge Architect | KA already handles all competitive intel templates (overview, battlecard, objection handling, FUD) |
 | Content Optimizer | Content Generator | CG already includes optimization, variant generation, and revision loops |
-| Brief Builder | Content Generator | CG now handles campaign brief and creative brief generation using `02-campaigns/_templates/` templates |
+| Brief Builder | Content Generator | CG now handles campaign brief and creative brief generation using `02-campaigns/` templates |
 
 ### Future Consideration
 

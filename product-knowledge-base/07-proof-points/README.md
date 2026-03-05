@@ -108,7 +108,7 @@ Claims get stale. The data claims file includes:
 This folder is referenced by:
 - `01-segment-context/[segment]/narrative-and-positioning.md` — Proof points and evidence section
 - `01-segment-context/[segment]/messaging-pillars.md` — Copy blocks and claims
-- `02-campaigns/_templates/campaign-brief-template.md` — Data claims and social proof sections
+- `02-campaigns/[campaign]/campaign-brief.md` — Data claims and social proof sections
 - `03-prompts/*.md` — All content generators reference proof points
 - `04-style-guides/writing-principles.md` — Claim substantiation rules
 - `05-sales-enablement/` — Battlecards and objection handling reference case study evidence
