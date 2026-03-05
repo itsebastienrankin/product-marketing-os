@@ -70,7 +70,7 @@ You need an AI tool to build and maintain the knowledge base. Two are fully supp
 
 ## Quick Start
 
-1. **Fork the repo.** Go to the [Product Marketing OS on GitHub](https://github.com/sebastienrankin/product-marketing-os) and click **Fork**. This creates your own copy — your knowledge base will live here.
+1. **Fork the repo.** Go to the [Product Marketing OS on GitHub](https://github.com/itsebastienrankin/product-marketing-os) and click **Fork**. This creates your own copy — your knowledge base will live here.
 2. **Gather your docs.** See the [preparation checklist](./SETUP-GUIDE.md#before-you-start-gather-your-docs) for exactly what to collect
 3. **Set up your tool.** Follow the [Setup Guide](./SETUP-GUIDE.md) for Cursor or Claude Code (~10 minutes)
 4. **Dump your context.** Share your docs and say "Set up my knowledge base with everything I've shared here"
