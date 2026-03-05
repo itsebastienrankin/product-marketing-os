@@ -29,6 +29,7 @@ When a request clearly spans multiple agents (e.g., "codify this and create camp
 
 ```
 product-knowledge-base/
+├── 00-projects/           # local-only workspace (gitignored, never shared)
 ├── 01-segment-context/    # positioning, messaging, personas per segment
 ├── 02-campaigns/          # campaign folders with briefs & generated assets
 ├── 03-prompts/            # platform-specific content generators

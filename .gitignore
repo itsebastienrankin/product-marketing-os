@@ -10,3 +10,7 @@
 *.pages
 *.numbers
 _source-docs/
+
+# Local-only projects folder (keep README, ignore everything else)
+product-knowledge-base/00-projects/*
+!product-knowledge-base/00-projects/README.md
