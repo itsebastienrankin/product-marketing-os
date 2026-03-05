@@ -103,11 +103,21 @@ Set up my knowledge base with everything I've shared here
 
 ### Step 2: Install Claude Code
 
+Check that you have Node.js 18+:
+
+```bash
+node --version
+```
+
+If missing or below 18, download from [nodejs.org](https://nodejs.org) and restart your terminal.
+
+Then install Claude Code:
+
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-Then run `claude` once and follow the login prompt.
+Run `claude` once and follow the login prompt.
 
 ### Step 3: Fork and Clone the Repo
 
@@ -133,15 +143,7 @@ The `CLAUDE.md` file loads automatically and activates the full agent system. No
 
 ### Step 5: Share Your Docs
 
-**Paste content directly:**
-
-```
-Set up my knowledge base with everything I've shared here
-```
-
-(Paste your docs into chat before sending.)
-
-**Point to files:**
+**Point to files (recommended):**
 
 ```
 Set up my knowledge base using these files:
@@ -154,6 +156,25 @@ Set up my knowledge base using these files:
 
 ```
 Set up my knowledge base using all the files in ~/Documents/marketing-context/
+```
+
+**Add files to context directly:**
+
+You can also use the `/add` command to attach files before sending your message:
+
+```
+/add ~/Documents/positioning-doc.pdf
+/add ~/Downloads/persona-deck-notes.txt
+```
+
+Then type: `Set up my knowledge base with everything I've shared here`
+
+**Paste content directly:**
+
+If your context is short (bullet points, a few paragraphs), you can paste it into the chat:
+
+```
+Set up my knowledge base with everything I've shared here
 ```
 
 You can also invoke agents directly with slash commands:
@@ -172,7 +193,7 @@ After you share your docs, the agents will:
 1. Show you a **triage plan** — what they found: segments, competitors, case studies. Confirm it looks right or adjust before they build.
 2. **Build your knowledge base** — structured files for every segment, competitor, persona, and proof point
 3. **Run two reviews** — one checking buyer resonance, one checking brand alignment
-4. Deliver a **gap report** (`_gap-report.md`) — what's missing, why it matters, who on your team has it, and what you can generate right now
+4. Deliver a **gap report** — saved as `_gap-report.md` in your repo root. It tells you what's missing, why it matters, who on your team has it, and what you can generate right now
 
 **Case studies:** If you have a case study URL, share it. The agents will visit every story on that page and create a structured file for each one automatically.
 

@@ -73,7 +73,17 @@ During onboarding, populate `04-style-guides/writing-principles.md` using any br
 5. Fill claim substantiation examples using actual claims from `07-proof-points/data-claims/`
 6. Fill style compliance examples (brand-specific word choices, terminology preferences)
 
-If the user provides no explicit brand voice notes, infer voice and tone from the positioning and messaging context they share — every brand has a voice even if not documented. At minimum, replace all `[COMPANY NAME]` and `[PRODUCT CATEGORY]` placeholders.
+If the user provides no explicit brand voice notes, infer voice and tone from the positioning and messaging context they share — every brand has a voice even if not documented. At minimum, replace all placeholders listed below.
+
+**Placeholder tokens to find and replace (all must be resolved):**
+- `[COMPANY NAME]` — company name throughout
+- `[PRODUCT NAME]` — product name
+- `[PRODUCT CATEGORY]` — product category (e.g., "project management," "CRM")
+- `[CUSTOMER]` and `[CUSTOMER/CLIENT]` — what the company calls its customers (e.g., "customers," "clients," "users")
+- `[TARGET AUDIENCE]` — primary audience description
+- `[buzzword 1-4]`, `[jargon 1-5]` — fill with industry-specific terms to avoid, or delete rows if not applicable
+- `[Approved phrase 1-3]`, `[Avoid phrase 1-2]` — fill from positioning context or brand notes
+- All `[Example 1-3]` placeholders in Claim Substantiation and Style Compliance sections
 
 ---
 

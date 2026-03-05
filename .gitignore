@@ -1,1 +1,14 @@
 ROADMAP.md
+
+# Source documents (avoid accidentally committing internal marketing docs)
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.xlsx
+*.xls
+*.key
+*.pages
+*.numbers
+_source-docs/
