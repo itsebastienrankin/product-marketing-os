@@ -141,13 +141,15 @@ For detailed specifications, see:
 
 ## Using with Claude Code
 
-Agents load automatically — no setup required beyond cloning the repo.
+Agents load automatically — no setup required beyond connecting your repo.
 
-1. Install Claude Code: `npm install -g @anthropic-ai/claude-code`
-2. Open the repo: `cd product-marketing-os && claude`
-3. Start using it. The `CLAUDE.md` at the repo root is loaded automatically and routes your requests to the right agent.
+1. Open [claude.ai](https://claude.ai) or the [Claude desktop app](https://claude.ai/download)
+2. Connect your GitHub account (**Settings → Integrations**) and attach your forked repo
+3. Start using it. Claude reads the `CLAUDE.md` at the repo root automatically and routes your requests to the right agent.
 
-**How auto-routing works:** When you make a request, Claude Code reads `CLAUDE.md`, identifies the appropriate agent, reads that agent's `SKILL.md`, and executes. No manual configuration needed.
+> **Using the terminal CLI?** Install with `npm install -g @anthropic-ai/claude-code`, clone the repo, and run `claude` from inside the folder. Same agent system, same auto-routing.
+
+**How auto-routing works:** When you make a request, Claude reads `CLAUDE.md`, identifies the appropriate agent, reads that agent's `SKILL.md`, and executes. No manual configuration needed.
 
 **Explicit invocation with slash commands:**
 ```
