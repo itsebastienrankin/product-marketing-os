@@ -184,7 +184,7 @@ The following agents from earlier designs have been consolidated into existing a
 | Template Populator | Knowledge Architect | Identical function — extracting from unstructured sources and populating templates |
 | Competitive Intelligence Analyst | Knowledge Architect | KA already handles all competitive intel templates (overview, battlecard, objection handling, FUD) |
 | Content Optimizer | Content Generator | CG already includes optimization, variant generation, and revision loops |
-| Brief Builder | Content Generator | CG now handles campaign brief and creative brief generation using `02-campaigns/_templates/` templates |
+| Brief Builder | Content Generator | CG now handles campaign brief and creative brief generation using `02-campaigns/` templates |
 
 ### Future Consideration
 
@@ -207,7 +207,7 @@ Each agent is defined in `product-knowledge-base/06-agents/skills/` and works in
 
 Agents reference the `product-knowledge-base/` structure:
 - `01-segment-context/` — Segment positioning, messaging, personas, market overview
-- `02-campaigns/` — Campaign folders with briefs, assets, and templates (`_templates/`)
+- `02-campaigns/` — Campaign folders with briefs, assets, and `{{campaign-template}}/`
 - `03-prompts/` — Platform-specific content generators
 - `04-style-guides/` — Writing principles and voice guidelines
 - `05-sales-enablement/` — Competitive intelligence templates

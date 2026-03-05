@@ -1,6 +1,6 @@
 # Campaigns
 
-Campaign home base. Each campaign gets its own folder with a populated campaign brief, creative brief, and generated assets. Templates live in `_templates/`.
+Campaign home base. Each campaign gets its own folder with a campaign brief, creative brief, and generated assets. Copy the `{{campaign-template}}/` folder, rename it for your campaign, and fill it in.
 
 ---
 
@@ -8,13 +8,13 @@ Campaign home base. Each campaign gets its own folder with a populated campaign 
 
 ```
 02-campaigns/
-├── _templates/
-│   ├── campaign-brief-template.md    # Strategic brief — goals, audience, channels, budget, timeline
-│   └── creative-brief-template.md    # Execution brief — messaging, tone, deliverables, specs
-├── [campaign-name]/                  # One folder per campaign
-│   ├── campaign-brief.md             # Populated strategic brief
-│   ├── creative-brief.md             # Populated execution brief
-│   └── assets/                       # Generated content for this campaign
+├── {{campaign-template}}/               # Copy this folder for each new campaign
+│   ├── campaign-brief.md                # Strategic brief — goals, audience, channels, budget, timeline
+│   └── creative-brief.md               # Execution brief — messaging, tone, deliverables, specs
+├── [campaign-name]/                     # One folder per campaign (e.g., q2-2026-enterprise-launch/)
+│   ├── campaign-brief.md               # Populated strategic brief
+│   ├── creative-brief.md               # Populated execution brief
+│   └── assets/                          # Generated content for this campaign
 │       ├── [ad-variants].md
 │       ├── [email-sequence].md
 │       └── ...
@@ -27,11 +27,10 @@ Campaign home base. Each campaign gets its own folder with a populated campaign 
 
 ### Starting a New Campaign
 
-1. Create a new folder under `02-campaigns/` named for the campaign (e.g., `q2-2026-enterprise-launch/`)
-2. Copy the templates from `_templates/` into the campaign folder (drop the `-template` suffix)
-3. Fill in the bracketed placeholders with your campaign details
-4. Reference your segment context (`01-segment-context/`) for positioning and personas
-5. Store all generated assets in an `assets/` subfolder within the campaign
+1. Copy the `{{campaign-template}}/` folder and rename it for your campaign (e.g., `q2-2026-enterprise-launch/`)
+2. Fill in the bracketed placeholders in both briefs with your campaign details
+3. Reference your segment context (`01-segment-context/`) for positioning and personas
+4. Store all generated assets in an `assets/` subfolder within the campaign
 
 ### AI-Assisted Campaign Setup
 
@@ -39,11 +38,11 @@ The **Content Generator** agent can draft both briefs from your segment context 
 
 ---
 
-## Templates
+## The 2 Files (per campaign)
 
-**`_templates/campaign-brief-template.md`** — The strategic layer. Defines campaign objectives, target segment, channels, budget, success metrics, and workback schedule. Start here when planning a new campaign.
+**`campaign-brief.md`** — The strategic layer. Defines campaign objectives, target segment, channels, budget, success metrics, and workback schedule. Start here when planning a new campaign.
 
-**`_templates/creative-brief-template.md`** — The execution layer. Translates the campaign brief into creative direction — messaging angle, tone, deliverables, format specs, and design references. Hand this to anyone producing content or creative.
+**`creative-brief.md`** — The execution layer. Translates the campaign brief into creative direction — messaging angle, tone, deliverables, format specs, and design references. Hand this to anyone producing content or creative.
 
 ---
 

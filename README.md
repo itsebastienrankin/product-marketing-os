@@ -83,17 +83,54 @@ You need an AI tool to build and maintain the knowledge base. Two are fully supp
 
 ## What's Inside
 
-Your knowledge base is organized into sections that build on each other:
-
-| Section | What It Does For You |
-|---------|---------------------|
-| **Segment Context** | Your positioning, messaging, personas, and market overview, organized per segment (e.g., SMB, Enterprise). So the AI knows exactly how you talk to each audience. |
-| **Briefs & Prompts** | Templates for campaign briefs and platform-specific content generators (Meta ads, LinkedIn ads, Google SEM, emails, landing pages). So the AI follows your formats. |
-| **Style Guides** | Your brand voice and writing principles. So everything the AI creates sounds like your brand, not generic AI output. |
-| **Sales Enablement** | Competitive intelligence (battlecards, objection handling, FUD playbooks) per competitor. So sales has the latest intel without asking you. |
-| **Proof Points** | Your published case studies and verified data claims, structured so the AI references real evidence, not invented stats. |
-| **Transcripts** | Drop any call transcript — Gong, Apollo, Salesforce, pasted notes — and the AI extracts persona language, competitive signals, objections, and proof point candidates. The knowledge base gets smarter every time. |
-| **Agents** | AI team members that automate the work: one codifies your knowledge, one generates content, one checks brand alignment, one gives buyer feedback, and one coordinates the team. |
+```
+product-knowledge-base/
+│
+├── 00-projects/              # Your local workspace. Never pushed, never shared.
+│   └── (your working files)  # Drafts, brainstorms, deal rooms — anything in progress.
+│
+├── 01-segment-context/       # What you know about each audience.
+│   ├── {{segment-1}}/        # One folder per segment (e.g., enterprise/, smb/).
+│   │   ├── positioning.md    # How you win — differentiation, value props, proof points
+│   │   ├── messaging.md      # Pillars, headlines, body copy, CTAs — ready to use
+│   │   ├── personas.md       # The buying committee, mapped by role
+│   │   └── market-overview.md
+│   └── ...
+│
+├── 02-campaigns/             # Campaign HQ. One folder per campaign.
+│   ├── {{campaign}}/         # Copy the template folder, rename, fill it in.
+│   │   ├── campaign-brief.md # Strategy — goals, audience, channels, budget, timeline
+│   │   ├── creative-brief.md # Execution — messaging angle, tone, deliverables, specs
+│   │   └── assets/           # Generated ads, emails, landing pages, etc.
+│   └── ...
+│
+├── 03-prompts/               # Platform-specific content generators.
+│   ├── meta-ads.md           # Meta ad copy prompt
+│   ├── linkedin-ads.md       # LinkedIn ad copy prompt
+│   ├── google-sem.md         # Search ad prompt
+│   └── ...
+│
+├── 04-style-guides/          # How your brand sounds.
+│   └── voice-and-tone.md     # Writing principles the AI follows for every output
+│
+├── 05-sales-enablement/      # Competitive intelligence. One folder per competitor.
+│   ├── {{competitor-1}}/     # Battlecard, objection handling, FUD playbook
+│   └── ...
+│
+├── 06-agents/                # The AI team that runs behind the scenes.
+│   ├── Knowledge Architect   # Reads your raw docs, structures the knowledge base
+│   ├── Content Generator     # Creates ads, emails, briefs, landing pages
+│   ├── Advisory Board        # Simulates buyer feedback on your work
+│   ├── Consistency Guardian  # Checks brand and positioning alignment
+│   └── PMM Orchestrator      # Coordinates the team, runs multi-step pipelines
+│
+├── 07-proof-points/          # Evidence the AI can actually cite.
+│   ├── case-studies/         # Published customer stories, structured for reuse
+│   └── data-claims.md        # Verified stats — sourced, dated, ready to drop in
+│
+└── 08-transcripts/           # Call intelligence. Drop any transcript, any source.
+    └── (Gong, Apollo, etc.)  # AI extracts personas, objections, competitive signals
+```
 
 You don't need to understand this structure to get started. The agents build it for you from whatever you give them. If you have 2 segments and 3 competitors, you'll get 2 segment folders and 3 competitor folders. If you have 12 segments and 20 competitors, same thing. It scales.
 
