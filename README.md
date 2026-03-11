@@ -1,31 +1,25 @@
 # Product Marketing OS
-*Turn your marketing strategy into a system that scales, so everyone at your company creates on-brand, on-strategy work with AI, without waiting on you.*
+*Your positioning, messaging, personas, and competitive intel — codified into structured context that any AI tool can use. You control what it knows. That controls what it produces.*
 
 ---
 
-## The Problem
+## Why This Exists
 
-You know your product better than anyone. But that knowledge lives in your head, scattered across a dozen docs, decks, and Slack threads. Every time someone on your team needs to create something (an ad, an email, a sales deck, a campaign brief), they either loop you in or wing it. You become the bottleneck, or the work goes out off-brand.
+Your marketing context is scattered across docs, decks, Slack threads, and your own head. Every time you use AI, you re-explain your product, your buyers, your positioning. Your teammate does the same in their session with different context. There's no shared memory, no version history, no single source of truth.
 
-AI was supposed to fix this. But without structured context about your product, AI generates the same generic content it generates for everyone else. "Save time and boost productivity." That's not your positioning. That's not how your buyers talk. That's not what makes you different.
+The result: AI produces the same generic output for everyone. "Save time and boost productivity." That's not your positioning. That's not how your buyers talk.
 
-And the context problem compounds. Every session starts from scratch — you explain your product, your buyers, your positioning, again. Your teammate does the same in their session. There's no shared memory, no version history, no single source of truth. Everyone's AI is working from different, incomplete context.
+**The fix isn't better prompts. It's better context.**
 
----
+The Product Marketing OS gives you a structured, version-controlled knowledge base for everything you know — positioning, messaging, personas, competitive intelligence, proof points, brand voice — that lives in GitHub and works with any AI tool.
 
-## The Fix
+This is not an AI content machine. It's marketing infrastructure. The same shift [happening across marketing teams](https://www.linkedin.com/feed/update/urn:li:activity:7437157841158729728): your ICP definitions, messaging frameworks, and competitive intel are becoming structured context files that tell AI how you write, who your customers are, and what "good" looks like. Version history on every change. A shared foundation your whole team works from.
 
-The Product Marketing OS is how you codify everything you know (positioning, messaging, personas, competitive intelligence, proof points) into a structured knowledge base that lives in GitHub — versioned, shared with your team, and persistent across every session and every tool.
-
-Once it's built, something changes: **anyone at your company, using any AI tool, can produce work that sounds like it came from you.** Sales writes emails grounded in your competitive positioning. Demand gen creates ads using your actual messaging pillars. Creative pulls from approved customer quotes instead of making them up. Your product launch brief references the right personas and proof points, without you writing it.
-
-You stop being the bottleneck. You become the architect of a system that scales your expertise across the entire org.
-
-And it compounds. Every call transcript you process, every case study you add, every competitor you codify — it stays. You never re-explain your product to AI again. Every session starts with full context, automatically. The knowledge base doesn't reset between conversations; it grows.
+**When you control the context AI ingests, you control the quality of what it produces.** That's the entire premise.
 
 ---
 
-## What This Looks Like in Practice
+## What This Looks Like
 
 Share your messy positioning doc, persona deck, and competitive research with the AI. Within the hour, you have:
 - Structured messaging pillars with ready-to-use headlines, body copy, and CTAs
@@ -33,9 +27,9 @@ Share your messy positioning doc, persona deck, and competitive research with th
 - Competitive battlecards your sales team can use tomorrow
 - A gap report telling you exactly what's missing and who on your team has it
 
-Then ask: *"Write 3 LinkedIn ads for our mid-market segment targeting ops leaders."* The AI creates copy that uses your actual position, references a real customer quote from your case study library, and follows your brand voice guidelines. First draft. No review cycle.
+From there, any AI tool your team uses can reference your actual positioning, real customer quotes, and brand voice guidelines — because the context is structured and persistent. You never re-explain your product again.
 
-Your demand gen lead asks their AI for campaign copy and gets the same quality, because the knowledge base is the shared foundation. They don't need you in the room. The AI already knows your product, your positioning, your buyers, and your proof points.
+**And everything is yours to customize.** Don't like the content generation briefs? Change them. Want different prompt structures? Swap them out. The knowledge base and every template in it are plain text files you own and control. The most important thing this system does is codify your marketing context into a machine-readable format. What you build on top of that is up to you.
 
 ---
 
@@ -43,9 +37,9 @@ Your demand gen lead asks their AI for campaign copy and gets the same quality, 
 
 **1. Gather your docs.** Positioning, personas, competitive research, case studies, data claims, brand guidelines, rough notes. Whatever you've got. Don't worry about formatting or organization; the AI handles that.
 
-**2. Dump everything in.** Share your docs with the AI and say "Set up my knowledge base." It reads everything, classifies it, and builds a structured knowledge base, complete with a gap report showing exactly what's missing.
+**2. Dump everything in.** Share your docs with the AI and say "Set up my knowledge base." It reads everything, classifies it, and builds a structured knowledge base — complete with a gap report showing exactly what's missing.
 
-**3. Start creating.** Ask for whatever you need. The AI references your actual positioning, messaging, proof points, and competitive intelligence, not generic filler. And so can anyone else on your team.
+**3. Use it.** Your knowledge base now works as persistent context for any AI tool. Ask for ads, emails, briefs, or battlecards and the AI pulls from your actual positioning, not generic filler. Share it with your team and they get the same context, automatically.
 
 ---
 
@@ -139,35 +133,27 @@ You don't need to understand this structure to get started. The agents build it 
 ## FAQ
 
 **Do I need to be technical?**
-No. Claude Code works right in your browser or the desktop app — just chat. Cursor is a desktop app where you can also see the file tree and watch edits happen in real time, which some people prefer. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Non-technical teams (marketing, ops, content) use both tools regularly.
+No. Claude Code works in your browser — just chat. Cursor is a desktop app if you prefer seeing the file tree. There's one terminal command during Cursor setup that you copy-paste once and never touch again.
 
 **What do I need to prepare?**
-Gather whatever marketing docs you have: positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a specific checklist. Don't worry if it's messy or incomplete; the system tells you exactly what's missing and who to ask for it.
+Whatever marketing docs you have — positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a checklist. Messy and incomplete is fine; the system tells you exactly what's missing.
 
 **How long until I see value?**
-Within an hour of sharing your docs, you'll have a structured knowledge base with messaging pillars, buyer personas, and competitive intelligence, populated from your existing context. Even a rough first pass is dramatically better than what AI produces without any context.
-
-**Does this work for complex orgs?**
-Yes. If you have multiple products, segments, or business units, you create a segment folder for each. The knowledge base scales with you. It's just folders and files, not a SaaS tool with user limits.
+Within an hour you'll have a structured knowledge base populated from your existing docs. Even a rough first pass is dramatically better than what AI produces without any context.
 
 **Can my whole team use this?**
-That's the point. Because the knowledge base lives in GitHub, it's your team's single source of truth — one place, always current, with a full history of every change. When you update your competitive positioning, everyone's AI gets it. When you add a new case study, it's available to every teammate immediately. No more emailing decks or Slacking the latest doc.
+That's the point. The knowledge base lives in GitHub — one place, always current, full version history. When you update your competitive positioning, everyone's AI gets it immediately.
 
-Three ways to connect teammates to it:
+Three ways to connect teammates:
+- **Claude Projects** (easiest): Upload the knowledge base files and invite your team
+- **Connect Claude to GitHub**: Live-synced, no manual uploads. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically)
+- **Clone the repo**: Full agent system, same as you
 
-- **Claude Projects** (easiest): Upload the knowledge base files to a Claude.ai Project and invite your team. They open it and start asking questions, no setup on their end.
-- **Connect Claude directly to GitHub**: Your knowledge base stays live-synced — no manual uploads. Works with Claude Code, Claude Desktop, and Claude.ai. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically) for instructions.
-- **Clone the repo**: Teammates who use Cursor or VS Code can clone the repo and get the full agent system, just like you.
-
-Everyone works from the same positioning, proof points, and competitive intelligence, without waiting on you.
-
-**What if different people on my team use different AI tools?**
-That's fine. There are two separable things here. The **knowledge base** (positioning, personas, proof points, competitive intel) is plain text files — any AI that can read files gets the same structured context. Portable by design.
-
-The **agent system** — the part that automatically routes your request to the right agent, runs the five-agent workflow, and reviews the output — is built for Cursor and Claude Code. Other AI tools can read your knowledge base; they just won't have the automated team working behind the scenes. That said, AI that knows your actual strategy is most of the value.
+**What if my team uses different AI tools?**
+The **knowledge base** is plain text files — any AI that can read files gets the same context. Portable by design. The **agent system** (auto-routing, multi-agent workflows, review pipelines) is built for Cursor and Claude Code. Other tools can read your knowledge base; they just won't have the agents. That said, AI that knows your actual strategy is most of the value.
 
 **What are the agents?**
-AI team members that work together behind the scenes. One reads your raw docs and structures them (Knowledge Architect). One generates content (Content Generator). One checks that everything aligns with your positioning (Consistency Guardian). One gives you buyer feedback as if your actual buyers were reviewing the work (Advisory Board). And one coordinates the team (PMM Orchestrator). You don't manage them. Just ask for what you need and they figure out who does what.
+Five AI agents that work behind the scenes: one structures your raw docs (Knowledge Architect), one generates content (Content Generator), one checks brand alignment (Consistency Guardian), one simulates buyer feedback (Advisory Board), and one coordinates the team (PMM Orchestrator). You don't manage them — just ask for what you need.
 
 ---
 
