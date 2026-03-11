@@ -7,9 +7,7 @@
 
 Every PMM has the same problem: your positioning lives in a Google Doc, your personas are in a deck, competitive intel is in Slack threads, and half of it is just in your head. When you use AI, you re-explain all of it. Your teammate does the same thing in a separate session with different context. Nobody's AI has the full picture.
 
-The Product Marketing OS fixes this by giving you a single, structured place for everything you know — positioning, messaging, personas, competitive intelligence, proof points, brand voice — version-controlled in GitHub, usable by any AI tool.
-
-This is marketing infrastructure, not an AI content machine. The [same shift happening across marketing teams](https://www.linkedin.com/feed/update/urn:li:activity:7437157841158729728): your ICP definitions, messaging frameworks, and competitive intel become structured files that any AI can read. Version history on every change. One foundation your whole team works from. When the context is right, the output is right.
+The Product Marketing OS fixes this by giving you a single, structured place for everything you know — positioning, messaging, personas, competitive intelligence, proof points, brand voice — version-controlled in GitHub, usable by any AI tool. This is marketing infrastructure, not an AI content machine. Your marketiny strategy becomes structured files that any AI can read. Version history on every change. One foundation your whole team works from.
 
 ---
 
