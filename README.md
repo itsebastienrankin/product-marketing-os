@@ -59,8 +59,9 @@ You only need one of these tools to *build* the knowledge base. Once it's built,
 2. **Gather your docs.** See the [preparation checklist](./SETUP-GUIDE.md#before-you-start-gather-your-docs) for exactly what to collect
 3. **Set up your tool.** Follow the [Setup Guide](./SETUP-GUIDE.md) for Cursor or Claude Code (~10 minutes)
 4. **Dump your context.** Share your docs and say "Set up my knowledge base with everything I've shared here"
-5. **Fill gaps.** Review the gap report, gather what's missing, bring it back
-6. **Create content.** Ask for ads, emails, landing pages, briefs, grounded in your actual positioning
+5. **Review and refine.** Check the output, adjust what doesn't match your strategy, fill gaps from the gap report
+6. **Connect your team.** Point your team's AI tools at the repo so everyone works from the same foundation
+7. **Start building.** Ask for campaign briefs, ad copy, emails, landing pages, or battlecards
 
 **[Read the full Setup Guide →](./SETUP-GUIDE.md)**
 
