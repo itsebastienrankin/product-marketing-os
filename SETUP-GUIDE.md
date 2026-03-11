@@ -35,7 +35,7 @@ Spend 15 minutes collecting your marketing context. You don't need all of this; 
 
 ### Claude Code *(recommended for most people)*
 
-Chat with Claude directly — in your browser at [claude.ai](https://claude.ai), or in the [desktop app](https://claude.ai/download). No coding experience needed. Nothing to install beyond the app itself.
+Chat with Claude directly, in your browser at [claude.ai](https://claude.ai) or in the [desktop app](https://claude.ai/download). No coding experience needed. Nothing to install beyond the app itself.
 
 Continue to [Setting Up with Claude Code](#setting-up-with-claude-code).
 
@@ -57,7 +57,7 @@ A desktop app where you see the file tree and watch files get created and edited
 
 ### Step 3: Fork and Clone the Repo
 
-GitHub is where your knowledge base lives — forking creates your own copy. That's where your knowledge base will actually live. You're not working in the original repo.
+GitHub is where your knowledge base lives. Forking creates your own copy, and that's where your knowledge base will actually live. You're not working in the original repo.
 
 If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
@@ -103,7 +103,7 @@ Set up my knowledge base with everything I've shared here
 
 ### Step 2: Fork the Repo
 
-Forking creates your own copy on GitHub — that's where your knowledge base will live. You're not working in the original repo.
+Forking creates your own copy on GitHub. That's where your knowledge base will live. You're not working in the original repo.
 
 If you don't have a GitHub account, [sign up here](https://github.com/signup) (free).
 
@@ -116,7 +116,7 @@ If you don't have a GitHub account, [sign up here](https://github.com/signup) (f
 
 1. Go to [claude.ai](https://claude.ai)
 2. Connect your GitHub account: **Settings → Integrations → GitHub**
-3. Start a new chat and attach your forked repo — Claude reads the `CLAUDE.md` file automatically and activates the full agent system
+3. Start a new chat and attach your forked repo. Claude reads the `CLAUDE.md` file automatically and activates the full agent system
 
 **Desktop app:**
 
@@ -124,7 +124,7 @@ If you don't have a GitHub account, [sign up here](https://github.com/signup) (f
 2. Connect your GitHub account in Settings, same as above
 3. Open a new chat and attach your forked repo
 
-> **Using the terminal instead?** If you prefer the CLI: install with `npm install -g @anthropic-ai/claude-code` (requires [Node.js 18+](https://nodejs.org)), then `git clone` your fork and run `claude` from inside the repo folder. Everything works the same way — the `CLAUDE.md` file loads automatically.
+> **Using the terminal instead?** If you prefer the CLI: install with `npm install -g @anthropic-ai/claude-code` (requires [Node.js 18+](https://nodejs.org)), then `git clone` your fork and run `claude` from inside the repo folder. Everything works the same way. The `CLAUDE.md` file loads automatically.
 
 ### Step 4: Share Your Docs
 
@@ -152,10 +152,10 @@ You can also invoke agents directly with slash commands:
 
 After you share your docs, the agents will:
 
-1. Show you a **triage plan** — what they found: segments, competitors, case studies. Confirm it looks right or adjust before they build.
-2. **Build your knowledge base** — structured files for every segment, competitor, persona, and proof point
-3. **Run two reviews** — one checking buyer resonance, one checking brand alignment
-4. Deliver a **gap report** — saved as `_gap-report.md` in your repo root. It tells you what's missing, why it matters, who on your team has it, and what you can generate right now
+1. Show you a **triage plan**: what they found (segments, competitors, case studies). Confirm it looks right or adjust before they build.
+2. **Build your knowledge base**: structured files for every segment, competitor, persona, and proof point
+3. **Run two reviews**: one checking buyer resonance, one checking brand alignment
+4. Deliver a **gap report** saved as `_gap-report.md` in your repo root. It tells you what's missing, why it matters, who on your team has it, and what you can generate right now
 
 **Case studies:** If you have a case study URL, share it. The agents will visit every story on that page and create a structured file for each one automatically.
 
@@ -175,7 +175,7 @@ Every time you add context, everything the AI creates gets better.
 
 ### Option A: Claude Projects *(easiest)*
 
-Upload your `product-knowledge-base/` files to a [Claude.ai](https://claude.ai) Project and invite teammates. They open the Project and start chatting — no setup on their end.
+Upload your `product-knowledge-base/` files to a [Claude.ai](https://claude.ai) Project and invite teammates. They open the Project and start chatting. No setup on their end.
 
 **Limitation:** Files don't sync automatically. Re-upload changed files when you update the knowledge base.
 
@@ -189,7 +189,7 @@ Connects Claude directly to your GitHub repo so updates sync automatically. No m
 
 #### Claude.ai (web) or Claude Desktop
 
-Go to **Settings → Integrations** and connect your GitHub account. That's it — Claude can now read your repo directly.
+Go to **Settings → Integrations** and connect your GitHub account. That's it. Claude can now read your repo directly.
 
 #### Claude Code (terminal)
 
@@ -207,7 +207,7 @@ claude mcp add github-kb -s user -- npx -y @modelcontextprotocol/server-github
 
 ### Option C: Clone the repo
 
-For teammates using Cursor or VS Code — have them clone your fork's URL and follow the [Cursor setup steps](#setting-up-with-cursor). They skip the fork step and use your repo URL instead.
+For teammates using Cursor or VS Code. Have them clone your fork's URL and follow the [Cursor setup steps](#setting-up-with-cursor). They skip the fork step and use your repo URL instead.
 
 ---
 
@@ -221,7 +221,7 @@ For teammates using Cursor or VS Code — have them clone your fork's URL and fo
 - Windows: make sure you're in Git Bash, not PowerShell or CMD
 
 **Agents not responding**
-- Quit and reopen Cursor after activation — agents only load on startup
+- Quit and reopen Cursor after activation. Agents only load on startup
 - Check that `.cursor/skills` exists in your sidebar (toggle hidden files: `Cmd+Shift+.` on Mac)
 - Be explicit: "Using the Knowledge Architect, set up my knowledge base with these files"
 
@@ -232,11 +232,11 @@ For teammates using Cursor or VS Code — have them clone your fork's URL and fo
 - Make sure you're attaching your forked copy, not the original repo
 
 **Agents not activating**
-- Make sure the repo is attached to the conversation — Claude needs to read the `CLAUDE.md` file at the repo root
+- Make sure the repo is attached to the conversation. Claude needs to read the `CLAUDE.md` file at the repo root
 - Be explicit: "Using the Knowledge Architect, set up my knowledge base with these files"
 
 **Using the terminal and `npm install` failed?**
-- Check Node.js: `node --version` — needs 18+. Download from [nodejs.org](https://nodejs.org)
+- Check Node.js: `node --version` (needs 18+). Download from [nodejs.org](https://nodejs.org)
 - On Mac: restart your terminal after installing Node.js
 - Run `claude` from inside the repo: `cd product-marketing-os` first
 

@@ -41,9 +41,9 @@ Create outbound sequences that:
 
 | Section | Description | Notes |
 |----------|--------------|-------|
-| **Subject** | 3–6 words, casual | “Quick question about your checkout” |
-| **Opening** | Friendly, contextual | “Noticed you’re expanding stores…” |
-| **Observation** | Relate to their pain | “Most brands I talk to…” |
+| **Subject** | 3–6 words, casual | “Quick question about your team’s docs” |
+| **Opening** | Friendly, contextual | “Noticed your team is growing fast…” |
+| **Observation** | Relate to their pain | “Most teams I talk to…” |
 | **Question** | Invite response | “How are you handling that?” |
 | **CTA** | Light, polite | “Open to comparing notes?” |
 
@@ -75,48 +75,48 @@ Create outbound sequences that:
 ---
 
 ## 7. Example 4-Email Cadence
-*(Fictional company: OmniSync – POS + eCommerce platform)*
+*(Fictional company: TeamSync, a connected workspace platform)*
 
 ### Email 1 – Curiosity
-**Subject:** Quick question about your checkout  
-Hey {{first_name}},  
-Noticed you’re expanding both online and in-store.  
-Curious — how’s your team keeping track of what’s selling where?  
-Most brands I chat with end up manually syncing reports each week.  
-Is that the case for you too?  
+**Subject:** Quick question about your team’s docs
+Hey {{first_name}},
+Noticed your team is growing fast across a few offices.
+Curious: how’s everyone keeping track of decisions, specs, and project context?
+Most teams I talk to end up with knowledge scattered across five different tools.
+Is that the case for you too?
 
 – {{my_first_name}}
 
 ---
 
 ### Email 2 – Social Proof
-**Subject:** What Finch did differently  
-Hey {{first_name}},  
-Chatted with a brand that had the same challenge — POS and online data all over the place.  
-Once they connected everything into one view, their ops team stopped spending weekends reconciling.  
-Does that sound familiar?  
+**Subject:** What Larkin’s team did differently
+Hey {{first_name}},
+Talked to a team that had the same challenge: project context spread across docs, Slack, and wikis.
+Once they pulled everything into one workspace, their onboarding time dropped by half.
+Does that sound familiar?
 
 – {{my_first_name}}
 
 ---
 
 ### Email 3 – Value & Perspective
-**Subject:** When systems talk, things calm down  
-Hi {{first_name}},  
-Ever notice how messy data leads to “which report is right” debates?  
-That’s what we help solve — one clean, shared source of truth.  
-Would it be nuts to compare how a few brands set it up?  
+**Subject:** When context lives in one place, things calm down
+Hi {{first_name}},
+Ever notice how scattered docs lead to “where did we land on this?” conversations?
+That’s what we help solve: one shared workspace where decisions and context actually stick.
+Would it be worth comparing how a few teams set it up?
 
 – {{my_first_name}}
 
 ---
 
 ### Email 4 – Nudge
-**Subject:** Should I close the loop?  
-Hey {{first_name}},  
-Didn’t hear back — totally fine if now’s not the time.  
-Just figured I’d check one last time in case unifying store + online data is on your radar.  
-Would a quick chat help you see what’s possible?  
+**Subject:** Should I close the loop?
+Hey {{first_name}},
+Didn’t hear back, totally fine if now’s not the time.
+Just figured I’d check one last time in case consolidating your team’s knowledge is on the radar.
+Would a quick chat help you see what’s possible?
 
 – {{my_first_name}}
 
