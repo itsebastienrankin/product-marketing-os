@@ -31,11 +31,11 @@ Everything is plain text files you own and control. Change the templates, swap t
 
 **2. Dump everything in.** Share your docs with the AI and say "Set up my knowledge base." It reads everything, classifies it, and builds a structured knowledge base, complete with a gap report showing exactly what's missing.
 
-**3. Review and refine.** The AI structures your strategy, but templates can't capture every nuance that makes your brand and product unique. Review the output, adjust what needs adjusting, and fill gaps from the gap report. This is the knowledge base your entire team will build on, so make sure it reflects the strategy you actually want to enable.
+**3. Review and refine.** The AI structures your strategy, but no template captures every nuance of your brand and product. Review the output, adjust what needs adjusting, and fill gaps from the gap report. This is what your entire team builds on, so make sure it actually reflects your strategy.
 
-**4. Connect your team.** Get your team's AI tools pointed at the GitHub repo. Upload files to a Claude Project, connect Claude to GitHub directly, or have teammates clone the repo. Once connected, everyone's AI pulls from the same foundation.
+**4. Connect your team.** Get your team's AI tools pointed at the GitHub repo. Upload files to a Claude Project, connect Claude to GitHub directly, or have teammates clone the repo. Once connected, everyone's AI pulls from the same strategic foundation automatically.
 
-**5. Build on it.** Ask for campaign briefs, ad copy, emails, landing pages, battlecards, or one-pagers. The AI pulls from your actual positioning, real proof points, and brand voice. Your team gets consistent, grounded output instead of generic filler.
+**5. Build on it.** Ask for campaign briefs, ad copy, emails, landing pages, battlecards, or one-pagers. The AI grounds everything in your actual positioning, real proof points, and brand voice instead of generating generic filler your team has to rewrite.
 
 ---
 
