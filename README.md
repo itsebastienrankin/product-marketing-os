@@ -5,9 +5,9 @@
 
 ## Why This Exists
 
-Every PMM has the same problem: your positioning lives in a Google Doc, your personas are in a deck, competitive intel is in Slack threads, and half of it is just in your head. When you use AI, you re-explain all of it. Your teammate does the same thing in a separate session with different context. Nobody's AI has the full picture.
+Most marketing teams have already invested serious effort in their strategy, but it's scattered across Google Docs, slide decks, Slack threads, and living in people’s heads. That fragmentation was manageable before, but AI changes the equation. Without a shared, structured foundation, every AI session starts from a blank slate, and the output is only as good as what each person remembers to include.
 
-The Product Marketing OS fixes this by giving you a single, structured place for everything you know — positioning, messaging, personas, competitive intelligence, proof points, brand voice — version-controlled in GitHub, usable by any AI tool. This is marketing infrastructure, not an AI content machine. Your marketiny strategy becomes structured files that any AI can read. Version history on every change. One foundation your whole team works from.
+The Product Marketing OS turns your marketing strategy into proper infrastructure: a version-controlled GitHub repository that underpins every AI tool your team uses. Your whole team operates from the same foundation, and every AI interaction is grounded in the full depth of your marketing strategy—not whatever one person remembered to include in a prompt. 
 
 ---
 
