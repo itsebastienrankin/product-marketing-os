@@ -1,5 +1,5 @@
 # Product Marketing OS
-*Your positioning, messaging, personas, and competitive intel — codified into structured context that any AI tool can use. You control what it knows. That controls what it produces.*
+*Turn your marketing strategy into a structured knowledge base so every AI tool your team uses understands your product, your buyers, and your brand.*
 
 ---
 
