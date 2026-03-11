@@ -1,31 +1,21 @@
 # Product Marketing OS
-*Turn your marketing strategy into a system that scales, so everyone at your company creates on-brand, on-strategy work with AI, without waiting on you.*
+*Turn your marketing strategy into a structured knowledge base so every AI tool your team uses understands your product, your buyers, and your brand.*
 
 ---
 
-## The Problem
+## Why This Exists
 
-You know your product better than anyone. But that knowledge lives in your head, scattered across a dozen docs, decks, and Slack threads. Every time someone on your team needs to create something (an ad, an email, a sales deck, a campaign brief), they either loop you in or wing it. You become the bottleneck, or the work goes out off-brand.
+Every PMM has the same problem: your positioning lives in a Google Doc, your personas are in a deck, competitive intel is in Slack threads, and half of it is just in your head. When you use AI, you re-explain all of it. Your teammate does the same thing in a separate session with different context. Nobody's AI has the full picture.
 
-AI was supposed to fix this. But without structured context about your product, AI generates the same generic content it generates for everyone else. "Save time and boost productivity." That's not your positioning. That's not how your buyers talk. That's not what makes you different.
+The output reflects that. Generic messaging. Wrong tone. No awareness of your buyers, your competitors, or the proof points that actually close deals.
 
-And the context problem compounds. Every session starts from scratch — you explain your product, your buyers, your positioning, again. Your teammate does the same in their session. There's no shared memory, no version history, no single source of truth. Everyone's AI is working from different, incomplete context.
+The Product Marketing OS fixes this by giving you a single, structured place for everything you know — positioning, messaging, personas, competitive intelligence, proof points, brand voice — version-controlled in GitHub, usable by any AI tool.
 
----
-
-## The Fix
-
-The Product Marketing OS is how you codify everything you know (positioning, messaging, personas, competitive intelligence, proof points) into a structured knowledge base that lives in GitHub — versioned, shared with your team, and persistent across every session and every tool.
-
-Once it's built, something changes: **anyone at your company, using any AI tool, can produce work that sounds like it came from you.** Sales writes emails grounded in your competitive positioning. Demand gen creates ads using your actual messaging pillars. Creative pulls from approved customer quotes instead of making them up. Your product launch brief references the right personas and proof points, without you writing it.
-
-You stop being the bottleneck. You become the architect of a system that scales your expertise across the entire org.
-
-And it compounds. Every call transcript you process, every case study you add, every competitor you codify — it stays. You never re-explain your product to AI again. Every session starts with full context, automatically. The knowledge base doesn't reset between conversations; it grows.
+This is marketing infrastructure, not an AI content machine. The [same shift happening across marketing teams](https://www.linkedin.com/feed/update/urn:li:activity:7437157841158729728): your ICP definitions, messaging frameworks, and competitive intel become structured files that any AI can read. Version history on every change. One foundation your whole team works from. When the context is right, the output is right.
 
 ---
 
-## What This Looks Like in Practice
+## What This Looks Like
 
 Share your messy positioning doc, persona deck, and competitive research with the AI. Within the hour, you have:
 - Structured messaging pillars with ready-to-use headlines, body copy, and CTAs
@@ -33,9 +23,9 @@ Share your messy positioning doc, persona deck, and competitive research with th
 - Competitive battlecards your sales team can use tomorrow
 - A gap report telling you exactly what's missing and who on your team has it
 
-Then ask: *"Write 3 LinkedIn ads for our mid-market segment targeting ops leaders."* The AI creates copy that uses your actual position, references a real customer quote from your case study library, and follows your brand voice guidelines. First draft. No review cycle.
+From there, any AI tool your team uses can reference your actual positioning, real customer quotes, and brand voice guidelines — because the context is structured and persistent. You never re-explain your product again.
 
-Your demand gen lead asks their AI for campaign copy and gets the same quality, because the knowledge base is the shared foundation. They don't need you in the room. The AI already knows your product, your positioning, your buyers, and your proof points.
+Everything is plain text files you own and control. Change the templates, swap the prompt structures, adapt the folder layout. The system codifies your marketing context into a format AI can read. What you build on top of it is up to you.
 
 ---
 
@@ -43,28 +33,23 @@ Your demand gen lead asks their AI for campaign copy and gets the same quality, 
 
 **1. Gather your docs.** Positioning, personas, competitive research, case studies, data claims, brand guidelines, rough notes. Whatever you've got. Don't worry about formatting or organization; the AI handles that.
 
-**2. Dump everything in.** Share your docs with the AI and say "Set up my knowledge base." It reads everything, classifies it, and builds a structured knowledge base, complete with a gap report showing exactly what's missing.
+**2. Dump everything in.** Share your docs with the AI and say "Set up my knowledge base." It reads everything, classifies it, and builds a structured knowledge base — complete with a gap report showing exactly what's missing.
 
-**3. Start creating.** Ask for whatever you need. The AI references your actual positioning, messaging, proof points, and competitive intelligence, not generic filler. And so can anyone else on your team.
+**3. Use it.** Your knowledge base now works as persistent context for any AI tool. Ask for ads, emails, briefs, or battlecards and the AI pulls from your actual positioning, not generic filler. Share it with your team and they get the same context, automatically.
 
 ---
 
 ## Choose Your Tool
 
-You need an AI tool to build and maintain the knowledge base. Two are fully supported, agents and review pipelines included:
+Two AI tools are fully supported with the complete agent system — auto-routing, multi-agent workflows, and review pipelines:
 
 | | **Claude Code** *(recommended)* | **Cursor** |
 |---|---|---|
-| **What it is** | Chat with Claude directly — in your browser, the desktop app, or the terminal. | A desktop app where you see the file tree, watch files get written in real time, and edit alongside the AI. |
-| **Best for** | Most people. No coding experience needed. Just open, chat, and go. | People who want to see exactly what's changing and make edits on the fly. |
-| **Setup** | Fork the repo, open it in Claude, start chatting. ~10 minutes. | Download the app, clone the repo, run one activation command. ~10 minutes. |
-| **Agent activation** | Agents activate automatically. Nothing to configure. | One-time terminal command, then never touch the terminal again. |
-| **How you share docs** | Drag files into the chat, paste content, or point to files in your repo. | Drag files into the chat window. |
+| **Best for** | Most people. Chat-based, no coding experience needed. | People who want to see the file tree and edit alongside the AI. |
+| **Setup** | Fork the repo, open it in Claude, start chatting. | Download the app, clone the repo, run one activation command. |
 | **Get it** | [Open Claude →](https://claude.ai) / [Download Desktop →](https://claude.ai/download) | [Download Cursor →](https://cursor.sh) |
 
-**Not sure?** Start with Claude Code in your browser — there's nothing to install.
-
-**Important:** You only need a tool to *build* the knowledge base. Once it's built, your team can use the same knowledge base with any AI tool: Claude, ChatGPT, Copilot, Gemini, whatever they prefer. The knowledge base is just files. It works everywhere.
+You only need one of these tools to *build* the knowledge base. Once it's built, your team can use it with any AI tool — Claude, ChatGPT, Copilot, Gemini, whatever they prefer. The knowledge base is just files. It works everywhere.
 
 ---
 
@@ -86,88 +71,82 @@ You need an AI tool to build and maintain the knowledge base. Two are fully supp
 ```
 product-knowledge-base/
 │
-├── 00-projects/              # Your local workspace. Never pushed, never shared.
-│   └── (your working files)  # Drafts, brainstorms, deal rooms — anything in progress.
+├── 00-projects/                           # Your local workspace. Never pushed to GitHub.
+│   └── (your working files)               # Campaign drafts, quarterly plans, brainstorms —
+│                                          #   anything not ready to share yet.
 │
-├── 01-segment-context/       # What you know about each audience.
-│   ├── {{segment-1}}/        # One folder per segment (e.g., enterprise/, smb/).
-│   │   ├── positioning.md    # How you win — differentiation, value props, proof points
-│   │   ├── messaging.md      # Pillars, headlines, body copy, CTAs — ready to use
-│   │   ├── personas.md       # The buying committee, mapped by role
-│   │   └── market-overview.md
-│   └── ...
+├── 01-segment-context/                    # Everything you know about each audience segment.
+│   └── {{segment}}/                       # One folder per segment (e.g., enterprise/, smb/).
+│       ├── narrative-and-positioning.md   #   How you win — differentiation, value props, proof points
+│       ├── messaging-pillars.md           #   Headlines, body copy, CTAs — ready to use
+│       ├── buyer-persona-overview.md      #   The buying committee, mapped by role
+│       └── market-segment-overview.md     #   Market size, dynamics, trends for this segment
 │
-├── 02-campaigns/             # Campaign HQ. One folder per campaign.
-│   ├── {{campaign}}/         # Copy the template folder, rename, fill it in.
-│   │   ├── campaign-brief.md # Strategy — goals, audience, channels, budget, timeline
-│   │   ├── creative-brief.md # Execution — messaging angle, tone, deliverables, specs
-│   │   └── assets/           # Generated ads, emails, landing pages, etc.
-│   └── ...
+├── 02-campaigns/                          # One folder per campaign.
+│   └── {{campaign}}/                      # Copy the template, rename, fill it in.
+│       ├── campaign-brief.md              #   Strategy — goals, audience, channels, timeline
+│       └── creative-brief.md              #   Execution — messaging angle, tone, deliverables
 │
-├── 03-prompts/               # Platform-specific content generators.
-│   ├── meta-ads.md           # Meta ad copy prompt
-│   ├── linkedin-ads.md       # LinkedIn ad copy prompt
-│   ├── google-sem.md         # Search ad prompt
-│   └── ...
+├── 03-prompts/                            # Content generation prompts, one per format.
+│   ├── meta-ads-generator.md              #   Meta ad copy
+│   ├── linkedin-ads-generator.md          #   LinkedIn ad copy
+│   ├── google-sem-ads-generator.md        #   Google search ads
+│   ├── google-display-ads-generator.md    #   Google display ads
+│   ├── sales-email-generator.md           #   Sales email sequences
+│   ├── solution-lander-generator.md       #   Landing pages
+│   ├── one-pager-generator.md             #   One-pagers and sell sheets
+│   ├── case-study-generator.md            #   Customer case studies
+│   └── ad-copy-generator.md               #   General ad copy
 │
-├── 04-style-guides/          # How your brand sounds.
-│   └── voice-and-tone.md     # Writing principles the AI follows for every output
+├── 04-style-guides/                       # How your brand writes.
+│   └── writing-principles.md              #   Voice, tone, and style rules the AI follows
 │
-├── 05-sales-enablement/      # Competitive intelligence. One folder per competitor.
-│   ├── {{competitor-1}}/     # Battlecard, objection handling, FUD playbook
-│   └── ...
+├── 05-sales-enablement/                   # Competitive intelligence. One folder per competitor.
+│   └── {{competitor}}/
+│       ├── competitor-overview.md         #   Who they are, what they sell, where they win
+│       ├── battlecard.md                  #   Side-by-side comparison for sales conversations
+│       ├── objection-handling.md          #   Common objections and how to respond
+│       └── FUD-playbook.md               #   Fear, uncertainty, doubt — and your counters
 │
-├── 06-agents/                # The AI team that runs behind the scenes.
-│   ├── Knowledge Architect   # Reads your raw docs, structures the knowledge base
-│   ├── Content Generator     # Creates ads, emails, briefs, landing pages
-│   ├── Advisory Board        # Simulates buyer feedback on your work
-│   ├── Consistency Guardian  # Checks brand and positioning alignment
-│   └── PMM Orchestrator      # Coordinates the team, runs multi-step pipelines
+├── 06-agents/                             # The AI agents that power the system.
+│   └── skills/
+│       ├── knowledge-architect/           #   Reads raw docs, structures the knowledge base
+│       ├── content-generator/             #   Creates ads, emails, briefs, landing pages
+│       ├── advisory-board/                #   Simulates buyer feedback on your work
+│       ├── consistency-guardian/           #   Checks brand and positioning alignment
+│       └── pmm-orchestrator/              #   Coordinates agents, runs multi-step pipelines
 │
-├── 07-proof-points/          # Evidence the AI can actually cite.
-│   ├── case-studies/         # Published customer stories, structured for reuse
-│   └── data-claims.md        # Verified stats — sourced, dated, ready to drop in
+├── 07-proof-points/                       # Evidence the AI can cite.
+│   ├── case-studies/                      #   Customer stories, structured for reuse
+│   └── data-claims/                       #   Verified stats — sourced, dated, ready to use
 │
-└── 08-transcripts/           # Call intelligence. Drop any transcript, any source.
-    └── (Gong, Apollo, etc.)  # AI extracts personas, objections, competitive signals
+└── 08-transcripts/                        # Call intelligence from any source.
+    └── (Gong, Apollo, etc.)               #   AI extracts personas, objections, competitive signals
 ```
 
-You don't need to understand this structure to get started. The agents build it for you from whatever you give them. If you have 2 segments and 3 competitors, you'll get 2 segment folders and 3 competitor folders. If you have 12 segments and 20 competitors, same thing. It scales.
+You don't need to understand this structure to get started. The agents build it for you from whatever docs you share. Two segments and three competitors? Two segment folders, three competitor folders. It scales to whatever you have.
 
 ---
 
 ## FAQ
 
 **Do I need to be technical?**
-No. Claude Code works right in your browser or the desktop app — just chat. Cursor is a desktop app where you can also see the file tree and watch edits happen in real time, which some people prefer. There's one terminal command during Cursor setup that you copy-paste once and never touch again. Non-technical teams (marketing, ops, content) use both tools regularly.
+No. Claude Code works in your browser — just chat. Cursor is a desktop app if you prefer seeing files. Neither requires coding experience.
 
 **What do I need to prepare?**
-Gather whatever marketing docs you have: positioning, personas, competitive research, case studies, brand guidelines. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a specific checklist. Don't worry if it's messy or incomplete; the system tells you exactly what's missing and who to ask for it.
-
-**How long until I see value?**
-Within an hour of sharing your docs, you'll have a structured knowledge base with messaging pillars, buyer personas, and competitive intelligence, populated from your existing context. Even a rough first pass is dramatically better than what AI produces without any context.
-
-**Does this work for complex orgs?**
-Yes. If you have multiple products, segments, or business units, you create a segment folder for each. The knowledge base scales with you. It's just folders and files, not a SaaS tool with user limits.
+Whatever marketing docs you have. The [Setup Guide](./SETUP-GUIDE.md#before-you-start-gather-your-docs) has a checklist. Messy and incomplete is fine — the system tells you exactly what's missing.
 
 **Can my whole team use this?**
-That's the point. Because the knowledge base lives in GitHub, it's your team's single source of truth — one place, always current, with a full history of every change. When you update your competitive positioning, everyone's AI gets it. When you add a new case study, it's available to every teammate immediately. No more emailing decks or Slacking the latest doc.
+Yes. The knowledge base lives in GitHub with full version history. When you update competitive positioning, everyone's AI gets it immediately. Three ways to connect teammates:
+- **Claude Projects** (easiest): Upload files and invite your team
+- **Connect Claude to GitHub**: Live-synced, no manual uploads. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically)
+- **Clone the repo**: Full agent system, same as you
 
-Three ways to connect teammates to it:
-
-- **Claude Projects** (easiest): Upload the knowledge base files to a Claude.ai Project and invite your team. They open it and start asking questions, no setup on their end.
-- **Connect Claude directly to GitHub**: Your knowledge base stays live-synced — no manual uploads. Works with Claude Code, Claude Desktop, and Claude.ai. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically) for instructions.
-- **Clone the repo**: Teammates who use Cursor or VS Code can clone the repo and get the full agent system, just like you.
-
-Everyone works from the same positioning, proof points, and competitive intelligence, without waiting on you.
-
-**What if different people on my team use different AI tools?**
-That's fine. There are two separable things here. The **knowledge base** (positioning, personas, proof points, competitive intel) is plain text files — any AI that can read files gets the same structured context. Portable by design.
-
-The **agent system** — the part that automatically routes your request to the right agent, runs the five-agent workflow, and reviews the output — is built for Cursor and Claude Code. Other AI tools can read your knowledge base; they just won't have the automated team working behind the scenes. That said, AI that knows your actual strategy is most of the value.
+**What if my team uses different AI tools?**
+The knowledge base is plain text files — any AI that can read files gets the same context. The agent system (auto-routing, workflows, review pipelines) is built for Cursor and Claude Code, but the knowledge base works everywhere.
 
 **What are the agents?**
-AI team members that work together behind the scenes. One reads your raw docs and structures them (Knowledge Architect). One generates content (Content Generator). One checks that everything aligns with your positioning (Consistency Guardian). One gives you buyer feedback as if your actual buyers were reviewing the work (Advisory Board). And one coordinates the team (PMM Orchestrator). You don't manage them. Just ask for what you need and they figure out who does what.
+Five AI agents that run behind the scenes: Knowledge Architect (structures raw docs), Content Generator (creates ads, emails, briefs), Consistency Guardian (checks brand alignment), Advisory Board (simulates buyer feedback), and PMM Orchestrator (coordinates multi-step pipelines). You don't manage them — just ask for what you need.
 
 ---
 
