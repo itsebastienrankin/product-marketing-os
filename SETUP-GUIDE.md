@@ -171,6 +171,34 @@ Every time you add context, everything the AI creates gets better.
 
 ---
 
+## Set Up Automatic Syncing
+
+Keep your local knowledge base current without manual `git pull`. A scheduled sync runs every weekday morning and pulls the latest context automatically.
+
+### For the admin (you)
+
+From your repo root:
+
+```bash
+make setup
+```
+
+This installs a cron job (default: 9 AM ET, Monday–Friday) and prints a one-line command to share with your team. [Full details and troubleshooting →](./docs/scheduled-sync.md)
+
+### For team members
+
+Share the one-liner that `make setup` generated. Your teammate pastes it into their terminal — it clones the repo, installs the sync schedule, and confirms it works. No git knowledge required.
+
+After setup, these commands are available from the repo folder:
+
+| Command | What it does |
+|---------|-------------|
+| `make sync` | Pull latest right now |
+| `make status` | Check when the last sync ran |
+| `make uninstall` | Remove the scheduled sync |
+
+---
+
 ## Share with Your Team
 
 ### Option A: Claude Projects *(easiest)*
