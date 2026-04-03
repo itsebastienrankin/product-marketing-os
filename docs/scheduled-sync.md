@@ -1,5 +1,7 @@
 # Scheduled Sync Guide
 
+> **Using Claude (web or desktop)?** You don't need any of this. Claude reads directly from your GitHub repo — it's always up to date. This guide is for teams using **Cursor or VS Code**, where the repo is cloned locally and needs to be kept in sync.
+
 Keep your local knowledge base up to date automatically. When someone on your team updates positioning, adds a battlecard, or publishes a new case study, your local copy pulls the changes on schedule — no manual `git pull` required.
 
 ---
