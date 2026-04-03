@@ -139,9 +139,11 @@ Whatever marketing docs you have. The [Setup Guide](./SETUP-GUIDE.md#before-you-
 
 **Can my whole team use this?**
 Yes. The knowledge base lives in GitHub with full version history. When you update competitive positioning, everyone's AI gets it immediately. Three ways to connect teammates:
-- **Claude Projects** (easiest): Upload files and invite your team
-- **Connect Claude to GitHub**: Live-synced, no manual uploads. See the [Setup Guide](./SETUP-GUIDE.md#option-b-github-mcp-live-sync--knowledge-base-updates-automatically)
-- **Clone the repo**: Full agent system, same as you
+- **Connect Claude to GitHub** (recommended): Teammates connect once, context stays current automatically. Zero maintenance.
+- **Claude Projects**: Upload files and invite your team. Simple but requires re-uploading when you make changes.
+- **Clone the repo + auto-sync**: For Cursor/VS Code users. A one-command setup installs a scheduled sync so their local copy stays fresh.
+
+See the [Setup Guide](./SETUP-GUIDE.md#share-with-your-team) for details on each option.
 
 **What if my team uses different AI tools?**
 The knowledge base is plain text files. Any AI that can read files gets the same context. The agent system (auto-routing, workflows, review pipelines) is built for Cursor and Claude Code, but the knowledge base works everywhere.
