@@ -1,0 +1,51 @@
+# Optional: Posts a notification when knowledge base files change.
+# Configure SLACK_WEBHOOK_URL in your repo's Settings > Secrets.
+
+name: Notify on Context Update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'product-knowledge-base/01-segment-context/**'
+      - 'product-knowledge-base/04-style-guides/**'
+      - 'product-knowledge-base/05-sales-enablement/**'
+      - 'product-knowledge-base/07-proof-points/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: github.repository != 'itsebastienrankin/product-marketing-os'  # Skip on the template repo
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed files
+        id: changes
+        run: |
+          FILES=$(git diff --name-only HEAD~1 HEAD -- product-knowledge-base/ | head -20)
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "count=$(echo "$FILES" | grep -c .)" >> $GITHUB_OUTPUT
+
+      - name: Send Slack notification
+        if: env.SLACK_WEBHOOK_URL != ''
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -s -X POST "$SLACK_WEBHOOK_URL" \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"text\": \"PMM OS knowledge base updated (${{ steps.changes.outputs.count }} files changed)\",
+              \"blocks\": [
+                {
+                  \"type\": \"section\",
+                  \"text\": {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*PMM OS knowledge base updated* (${{ steps.changes.outputs.count }} files changed)\n\`\`\`${{ steps.changes.outputs.files }}\`\`\`\nYour local copy will sync automatically at the next scheduled pull. Run \`make sync\` to update now.\"
+                  }
+                }
+              ]
+            }"

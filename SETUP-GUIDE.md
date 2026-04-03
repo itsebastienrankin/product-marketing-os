@@ -173,41 +173,83 @@ Every time you add context, everything the AI creates gets better.
 
 ## Share with Your Team
 
-### Option A: Claude Projects *(easiest)*
+Once your knowledge base is built, get your team connected. The right option depends on what tool they use. **For most teams, Option A is the answer** — your teammates connect GitHub once and they're done forever. No syncing, no terminal, no maintenance.
+
+### Option A: Connect Claude to GitHub *(recommended — always up to date, zero maintenance)*
+
+**Best for:** Teams where most people use Claude (web or desktop app). This is the lowest-friction option. When you push an update to GitHub, everyone's Claude reads the latest version automatically. Nobody needs to sync, pull, or think about it.
+
+**What the admin does:**
+
+Push your knowledge base updates to your GitHub fork as usual. That's it.
+
+**What you send your team** (copy-paste this to Slack, email, or your onboarding doc):
+
+> **How to connect to our marketing knowledge base**
+>
+> 1. Go to [claude.ai](https://claude.ai) (or open the Claude desktop app)
+> 2. Go to **Settings → Integrations → GitHub** and connect your GitHub account
+> 3. Start a new chat and attach our repo: `github.com/YOUR-ORG/product-marketing-os`
+> 4. Start asking for what you need — positioning, ad copy, battlecards, whatever
+>
+> The AI already knows our full product context. Just ask.
+
+That's the entire team member experience. No terminal. No git. No syncing. They connect once and every future conversation pulls from the latest knowledge base.
+
+---
+
+### Option B: Claude Projects *(simplest, but no auto-sync)*
 
 Upload your `product-knowledge-base/` files to a [Claude.ai](https://claude.ai) Project and invite teammates. They open the Project and start chatting. No setup on their end.
 
-**Limitation:** Files don't sync automatically. Re-upload changed files when you update the knowledge base.
+**Tradeoff:** Files don't sync automatically. When you update the knowledge base, you need to re-upload the changed files to the Project. Fine for teams that update infrequently.
 
 ---
 
-### Option B: GitHub MCP *(live sync)*
+### Option C: Clone the repo + auto-sync *(for Cursor and VS Code users)*
 
-Connects Claude directly to your GitHub repo so updates sync automatically. No manual re-uploading.
+For teammates who use Cursor or VS Code, they need a local copy of the repo. The auto-sync scripts keep it current so nobody works from stale context.
 
-**Best for:** Teams that update the knowledge base frequently.
+**What the admin does:**
 
-#### Claude.ai (web) or Claude Desktop
-
-Go to **Settings → Integrations** and connect your GitHub account. That's it. Claude can now read your repo directly.
-
-#### Claude Code (terminal)
-
-If you're using the terminal CLI, connect via MCP:
-
-1. Create a GitHub Personal Access Token at [github.com/settings/tokens](https://github.com/settings/tokens) with `repo` scope (or `contents: read` for fine-grained tokens)
-2. Add the token and connect the MCP server:
+Run this once from your repo to set up your own sync schedule and generate the team command:
 
 ```bash
-export GITHUB_PERSONAL_ACCESS_TOKEN=ghp_yourtokenhere
-claude mcp add github-kb -s user -- npx -y @modelcontextprotocol/server-github
+make setup
 ```
+
+It installs a cron job (default: 9 AM ET, Monday–Friday) and prints a one-liner to share with your team.
+
+**What you send your team:**
+
+The `make setup` command generates a ready-to-share one-liner. It looks like this:
+
+```bash
+curl -sL https://raw.githubusercontent.com/YOUR-ORG/product-marketing-os/main/scripts/team-join.sh | bash -s -- https://github.com/YOUR-ORG/product-marketing-os.git
+```
+
+Your teammate pastes that into their terminal. It clones the repo, installs the sync schedule, and confirms it works. One command, done.
+
+After setup, they can use these from the repo folder:
+
+| Command | What it does |
+|---------|-------------|
+| `make sync` | Pull latest right now |
+| `make status` | Check when the last sync ran |
+| `make uninstall` | Remove the sync schedule |
+
+[Full sync guide with troubleshooting →](./docs/scheduled-sync.md)
 
 ---
 
-### Option C: Clone the repo
+### Which option should I pick?
 
-For teammates using Cursor or VS Code. Have them clone your fork's URL and follow the [Cursor setup steps](#setting-up-with-cursor). They skip the fork step and use your repo URL instead.
+| Your team uses | Best option | Why |
+|---------------|-------------|-----|
+| Claude (web or desktop) | **Option A** | Zero setup for teammates. Always current. |
+| Claude, updates are rare | **Option B** | Even simpler, just re-upload when things change. |
+| Cursor or VS Code | **Option C** | They need local files. Auto-sync keeps them fresh. |
+| A mix of tools | **Option A + C** | Claude users get A, Cursor users get C. |
 
 ---
 
