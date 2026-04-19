@@ -15,6 +15,7 @@ Before responding to any PMM request, identify the right agent from the table be
 | Generate ads, emails, landing pages, one-pagers, case studies, campaign briefs, content variants | **Content Generator** | `product-knowledge-base/06-agents/skills/content-generator/SKILL.md` |
 | Review for buyer resonance — simulate buying committee reaction, get persona-grounded feedback | **Advisory Board** | `product-knowledge-base/06-agents/skills/advisory-board/SKILL.md` |
 | Review for brand and positioning alignment — check consistency against PMM OS standards | **Consistency Guardian** | `product-knowledge-base/06-agents/skills/consistency-guardian/SKILL.md` |
+| Research competitors, check what changed with a competitor, refresh battlecard with latest intel, run competitive intelligence | **Competitive Intel Researcher** | `product-knowledge-base/06-agents/skills/competitive-intel-researcher/SKILL.md` |
 | Full pipeline, multi-agent workflow, quality-gated output, or any goal that spans multiple agents | **PMM Orchestrator** | `product-knowledge-base/06-agents/skills/pmm-orchestrator/SKILL.md` |
 
 **Always read the full SKILL.md before proceeding.** Do not skip this step. Do not ask for permission — read it, then execute.
@@ -53,3 +54,4 @@ Agents can also be invoked explicitly:
 - `/advisory-board` — buyer resonance review
 - `/consistency-guardian` — brand alignment review
 - `/pmm-orchestrator` — full pipeline coordination
+- `/competitive-intel` — autonomous competitive research loop (researches all competitors and proposes updates)
