@@ -1,0 +1,98 @@
+name: Competitive Intel Research
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'  # 1st of every month at 9am UTC
+  workflow_dispatch:      # Manual trigger via GitHub UI — click Actions > Competitive Intel Research > Run workflow
+    inputs:
+      competitor:
+        description: 'Specific competitor to research (leave empty to research all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run competitive intel research
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          COMPETITOR="${{ github.event.inputs.competitor }}"
+          if [ -n "$COMPETITOR" ]; then
+            ARGS="$COMPETITOR"
+          else
+            ARGS="all competitors"
+          fi
+
+          claude --dangerously-skip-permissions -p \
+            "You are the Competitive Intel Researcher from the PMM OS agent system. \
+            Read product-knowledge-base/06-agents/skills/competitive-intel-researcher/SKILL.md in full, \
+            then execute following those instructions exactly. \
+            Research: $ARGS. \
+            This is an automated CI run — apply all updates directly without asking for approval. \
+            Write a clear Competitive Intel Summary at the end for the pull request description." \
+            > /tmp/research-output.txt 2>&1 || true
+
+          cat /tmp/research-output.txt
+
+      - name: Check for file changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Extract PR summary
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          SUMMARY=$(awk '/## Competitive Intel Summary/,0' /tmp/research-output.txt | head -40)
+          if [ -z "$SUMMARY" ]; then
+            SUMMARY="Automated competitive intelligence research complete. Review the changes below."
+          fi
+          echo "PR_SUMMARY<<EOF" >> $GITHUB_ENV
+          echo "$SUMMARY" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Create pull request
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: competitive-intel/run-${{ github.run_number }}
+          delete-branch: true
+          title: 'Competitive Intel Update'
+          body: |
+            ## Automated Competitive Intelligence Research
+
+            ${{ env.PR_SUMMARY }}
+
+            ---
+
+            **How to review:**
+            1. Check each file diff below
+            2. Merge what is accurate — edit or remove anything that needs adjustment
+            3. If nothing is relevant, close without merging
+
+            *Generated automatically by `.github/workflows/competitive-intel.yml`*
+          commit-message: 'chore: competitive intel research update'
+          labels: competitive-intel
